@@ -4,6 +4,13 @@
              xmlns:local="clr-namespace:nida.tools_team_9b"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
-         
+
+
+        <SolidColorBrush x:Key="ClrGridBackground" Color="#f0f0f0"/>
+        <SolidColorBrush x:Key="ClrMenuBackground" Color="#3d3c5b"/>
+        <SolidColorBrush x:Key="ClrTopHeaderBackground" Color="#2196f3"/>
+        <SolidColorBrush x:Key="ClrLogoBackground" Color="#1466ac"/>
+
+
     </Application.Resources>
 </Application>

@@ -5,8 +5,11 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:nida.tools_team_9b"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-
+        Title="MainWindow" Height="800" Width="1200">
+    <Grid Background="{StaticResource ClrGridBackground}">
+        <Frame Name="menuHolder"  Width="200" Height="auto" HorizontalAlignment="Left" NavigationUIVisibility="Hidden"  Source="/View/Menu/LederMenu.xaml">
+        </Frame>
+        <Frame Name="pageHolder" Width="1000" Height="auto"  NavigationUIVisibility="Hidden" HorizontalAlignment="Right">
+        </Frame>
     </Grid>
 </Window>
