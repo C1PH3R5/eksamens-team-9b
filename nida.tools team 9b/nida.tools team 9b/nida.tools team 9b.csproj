@@ -8,6 +8,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Resources\Icon\Date.ico" />
     <None Remove="Resources\Icon\Employee.ico" />
     <None Remove="Resources\Icon\RubberStam.ico" />
     <None Remove="Resources\Icon\User-Group.ico" />
@@ -20,6 +21,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Resource Include="Resources\Icon\Date.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
     <Resource Include="Resources\Icon\Employee.ico">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
