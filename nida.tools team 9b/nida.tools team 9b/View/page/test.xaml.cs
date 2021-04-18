@@ -10,14 +10,15 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-namespace nida.tools_team_9b.View.Menu
+
+namespace nida.tools_team_9b.View.page
 {
     /// <summary>
-    /// Interaction logic for LederMenu.xaml hej er
+    /// Interaction logic for test.xaml
     /// </summary>
-    public partial class LederMenu : Page
+    public partial class test : Page
     {
-        public LederMenu()
+        public test()
         {
             InitializeComponent();
         }
