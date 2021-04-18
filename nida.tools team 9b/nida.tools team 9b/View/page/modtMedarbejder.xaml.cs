@@ -8,16 +8,17 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
+using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace nida.tools_team_9b
+namespace nida.tools_team_9b.View.page
 {
     /// <summary>
-    /// Interaction logic for Log_ind_side.xaml
+    /// Interaction logic for modtMedarbejder.xaml
     /// </summary>
-    public partial class Log_ind_side : Window
+    public partial class modtMedarbejder : Page
     {
-        public Log_ind_side()
+        public modtMedarbejder()
         {
             InitializeComponent();
         }

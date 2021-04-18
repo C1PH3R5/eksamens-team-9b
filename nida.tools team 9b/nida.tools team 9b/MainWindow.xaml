@@ -16,7 +16,7 @@
         </Grid.RowDefinitions>
         <Frame Grid.Column="0"  Name="menuHolder"  Width="200" Height="auto" HorizontalAlignment="Left" NavigationUIVisibility="Hidden"  Source="/View/Menu/LederMenu.xaml"/>
 
-        <Frame Grid.Column="1" Name="pageHolder" Width="1000" Height="auto"  NavigationUIVisibility="Hidden" HorizontalAlignment="Right"  Source="/View/page/fremødtMedarbejder.xaml"/>
+        <Frame Grid.Column="1" Name="pageHolder" Width="1000" Height="auto"  NavigationUIVisibility="Hidden" HorizontalAlignment="Right"  Source="/View/page/modtMedarbejder.xaml"/>
 
     </Grid>
 

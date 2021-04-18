@@ -1,12 +1,12 @@
-﻿<Page x:Class="nida.tools_team_9b.View.page.fremødtMedarbejder"
+﻿<Page x:Class="nida.tools_team_9b.View.page.modtMedarbejder"
       xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:nida.tools_team_9b.View.page"
       mc:Ignorable="d" 
-      d:DesignHeight="800" d:DesignWidth="900"
-      Title="fremødtMedarbejder">
+      d:DesignHeight="800" d:DesignWidth="1000"
+      Title="modtMedarbejder">
 
     <Grid>
         <Grid.ColumnDefinitions>
