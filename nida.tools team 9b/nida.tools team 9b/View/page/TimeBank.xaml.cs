@@ -10,21 +10,17 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-namespace nida.tools_team_9b.View.Menu
+
+namespace nida.tools_team_9b.View.page
 {
     /// <summary>
-    /// Interaction logic for LederMenu.xaml hej er
+    /// Interaction logic for TimeBank.xaml
     /// </summary>
-    public partial class LederMenu : Page
+    public partial class TimeBank : Page
     {
-        public LederMenu()
+        public TimeBank()
         {
             InitializeComponent();
-        }
-
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-            Application.Current.Shutdown();
         }
     }
 }

@@ -5,11 +5,22 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:nida.tools_team_9b"
         mc:Ignorable="d"
-        Title="MainWindow" Height="800" Width="1200">
+        ResizeMode="NoResize"
+        WindowStyle="None"
+        Title="MainWindow" Height="800" Width="1200" MaxHeight="800" MaxWidth="1200">
     <Grid Background="{StaticResource ClrGridBackground}">
-        <Frame Name="menuHolder"  Width="200" Height="auto" HorizontalAlignment="Left" NavigationUIVisibility="Hidden"  Source="/View/Menu/LederMenu.xaml">
-        </Frame>
-        <Frame Name="pageHolder" Width="1000" Height="auto"  NavigationUIVisibility="Hidden" HorizontalAlignment="Right">
-        </Frame>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="200"/>
+            <ColumnDefinition Width="1000"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Frame Grid.Column="0"  Name="menuHolder"  Width="200" Height="auto" HorizontalAlignment="Left" NavigationUIVisibility="Hidden"  Source="/View/Menu/LederMenu.xaml"/>
+
+        <Frame Grid.Column="1" Name="pageHolder" Width="1000" Height="auto"  NavigationUIVisibility="Hidden" HorizontalAlignment="Right"  Source="/View/page/modtMedarbejder.xaml"/>
+
     </Grid>
+
+
 </Window>
