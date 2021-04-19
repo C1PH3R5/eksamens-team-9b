@@ -10,8 +10,10 @@
   <ItemGroup>
     <None Remove="Resources\Icon\Date.ico" />
     <None Remove="Resources\Icon\Employee.ico" />
+    <None Remove="Resources\Icon\Lock-Open.ico" />
     <None Remove="Resources\Icon\Logout.ico" />
     <None Remove="Resources\Icon\RubberStam.ico" />
+    <None Remove="Resources\Icon\User-Delete.ico" />
     <None Remove="Resources\Icon\User-Group.ico" />
     <None Remove="Resources\image\Logo.png" />
   </ItemGroup>
@@ -28,10 +30,16 @@
     <Resource Include="Resources\Icon\Employee.ico">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
+    <Resource Include="Resources\Icon\Lock-Open.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
     <Resource Include="Resources\Icon\Logout.ico">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
     <Resource Include="Resources\Icon\RubberStam.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Icon\User-Delete.ico">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
     <Resource Include="Resources\Icon\User-Group.ico">
