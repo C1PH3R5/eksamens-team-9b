@@ -1,0 +1,71 @@
+﻿<Page x:Class="nida.tools_team_9b.View.page.TimeBank"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:nida.tools_team_9b.View.page"
+      mc:Ignorable="d" 
+      d:DesignHeight="800" d:DesignWidth="1000"
+      Title="TimeBank">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="15"/>
+            <RowDefinition Height="85"/>
+            <RowDefinition Height="100"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <StackPanel Grid.Row="0" Grid.Column="0" Height="15" Background="{StaticResource ClrMenuBackground}"/>
+        <StackPanel Grid.Row="1"  Height="85" Background="{StaticResource ClrTopHeaderBackground }"/>
+        <StackPanel Grid.Row="2"  Height="auto" Background="{StaticResource ClrGridBackground}">
+            <DatePicker 
+                Foreground="{StaticResource ClrMenuBackground}"
+                BorderBrush="{StaticResource ClrTopHeaderBackground}"
+                BorderThickness="10"
+                Width="150"
+                HorizontalAlignment="Left"
+                Margin="150,35,0,0"
+                />
+        </StackPanel>
+        <StackPanel Grid.Row="2"  Height="auto">
+            <DatePicker 
+                Foreground="{StaticResource ClrMenuBackground}"
+                BorderBrush="{StaticResource ClrTopHeaderBackground}"
+                BorderThickness="10"
+                Width="150"
+                HorizontalAlignment="Left"
+                Margin="450,35,0,0"
+                />
+        </StackPanel>
+        <StackPanel Grid.Row="2"  Height="auto">
+            <Button 
+                Foreground="{StaticResource ClrMenuBackground}"
+                BorderBrush="{StaticResource ClrTopHeaderBackground}"
+                Background="{StaticResource ClrLogoBackground}"
+                BorderThickness="5"
+                Height="50"
+                Width="150"
+                HorizontalAlignment="right"
+                Margin="450,30,150,0"
+                >
+                <TextBlock Foreground="{StaticResource ClrGridBackground}" FontSize="18" FontFamily="Microsoft sans Seri" FontWeight="Bold">søg</TextBlock>
+            </Button>
+
+
+        </StackPanel>
+        <StackPanel Grid.Row="3"  Height="auto" Background="{StaticResource ClrGridBackground}">
+            <DataGrid Name="ArbjedesTimer" Width="750" Height="500" Margin="0,50,0,0" CanUserAddRows="False" IsReadOnly="True" ColumnHeaderHeight="35">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="Navn" Width="150"/>
+                    <DataGridTextColumn Header="Efternavn" Width="150"/>
+                    <DataGridTextColumn Header="Månelige timer" Width="150"/>
+                    <DataGridTextColumn Header="Overarbejdes timer" Width="150"/>
+                    <DataGridTextColumn Header="Toalt timer antal" Width="*"/>
+                </DataGrid.Columns>
+            </DataGrid>
+        </StackPanel>
+    </Grid>
+</Page>

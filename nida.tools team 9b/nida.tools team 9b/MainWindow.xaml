@@ -9,7 +9,8 @@
     <Grid Background="{StaticResource ClrGridBackground}">
         <Frame Name="menuHolder"  Width="200" Height="auto" HorizontalAlignment="Left" NavigationUIVisibility="Hidden"  Source="/View/Menu/LederMenu.xaml">
         </Frame>
-        <Frame Name="pageHolder" Width="1000" Height="auto"  NavigationUIVisibility="Hidden" HorizontalAlignment="Right">
+        <Frame Name="pageHolder" Width="1000" Height="auto"  NavigationUIVisibility="Hidden" HorizontalAlignment="Right" 
+               Source="/view/page/TimeBank.xaml">
         </Frame>
     </Grid>
 </Window>
