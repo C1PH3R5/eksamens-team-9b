@@ -20,7 +20,14 @@
         <StackPanel Grid.Row="0" Grid.Column="0" Height="15" Background="{StaticResource ClrMenuBackground}"/>
         <StackPanel Grid.Row="1"  Height="85" Background="{StaticResource ClrTopHeaderBackground }"/>
         <StackPanel Grid.Row="2"  Height="auto" Background="{StaticResource ClrGridBackground}">
-            <DataGrid></DataGrid>
+            <DataGrid x:Name="mødtMedarbejder" AlternatingRowBackground="Gray" CanUserAddRows="False" AutoGenerateColumns="False" Height="650">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="FullName"/>
+                    <DataGridTextColumn Header="Status"/>
+                    <DataGridTextColumn Header="Stemple in"/>
+                </DataGrid.Columns>
+
+            </DataGrid>
         </StackPanel>
     </Grid>
 </Page>

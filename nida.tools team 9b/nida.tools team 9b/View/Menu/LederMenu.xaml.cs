@@ -21,5 +21,10 @@ namespace nida.tools_team_9b.View.Menu
         {
             InitializeComponent();
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            Application.Current.Shutdown();
+        }
     }
 }
