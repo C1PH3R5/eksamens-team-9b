@@ -4,7 +4,7 @@ using System.Text;
 
 namespace nida.tools_team_9b.Model
 {
-    class Medarbejder
+   public class Medarbejder
     {
         private string _Navn;
 
