@@ -14,25 +14,34 @@
         <StackPanel x:Name="LogoHeader" Height="85" VerticalAlignment="Top" Margin="0,15,0,0" Background="{StaticResource ClrLogoBackground}">
             <Image Source="/Resources/image/logo.png" Margin="0,18,0,0"/>
         </StackPanel>
+        
         <Button VerticalAlignment="Top" Margin="0,100,0,0" Height="80" Width="auto" Background="{StaticResource ClrMenuBackground}" Padding="0,-33,0,0">
             <TextBlock VerticalAlignment="Top" HorizontalAlignment="Right"  Width="200" Padding="0,33,0,0"  FontSize="15" FontFamily="Microsoft Sans Serif" Margin="0,0,0,0" FontWeight="Heavy" Foreground="{StaticResource ClrGridBackground}" >
                 <Image Width="20" HorizontalAlignment="Left" Height="auto" Source="/Resources/Icon/RubberStam.ico" Margin="10,0,9,-4" />
                 Stemple Ind/Ud
             </TextBlock> 
         </Button>
+        
         <Button VerticalAlignment="Top" Margin="0,180,0,0" Height="80" Width="auto" Background="{StaticResource ClrMenuBackground}" Padding="0,-33,0,0">
             <TextBlock  VerticalAlignment="Top" HorizontalAlignment="Right"  Width="200" Padding="0,33,0,0"  FontSize="15" FontFamily="Microsoft Sans Serif" Margin="0,0,0,0" FontWeight="Heavy" Foreground="{StaticResource ClrGridBackground}" >
                 <Image Width="20" HorizontalAlignment="Left" Height="auto" Source="/Resources/Icon/User-Group.ico" Margin="10,0,9,-4" />
                 Teams
             </TextBlock>
         </Button>
+        
         <Button VerticalAlignment="Top" Margin="0,260,0,0" Height="80" Width="auto" Background="{StaticResource ClrMenuBackground}" Padding="0,-33,0,0">
+            <TextBlock  VerticalAlignment="Top" HorizontalAlignment="Right"  Width="200" Padding="0,33,0,0"  FontSize="15" FontFamily="Microsoft Sans Serif" Margin="0,0,0,0" FontWeight="Heavy" Foreground="{StaticResource ClrGridBackground}" >
+                <Image Width="20" HorizontalAlignment="Left" Height="auto" Source="/Resources/Icon/Date.ico" Margin="10,0,9,-4" />
+                Tjek arbejdstider
+            </TextBlock>
+        </Button>
+        
+        <Button VerticalAlignment="Top" Margin="0,340,0,0" Height="80" Width="auto" Background="{StaticResource ClrMenuBackground}" Padding="0,-33,0,0">
             <TextBlock  VerticalAlignment="Top" HorizontalAlignment="Right"  Width="200" Padding="0,33,0,0"  FontSize="15" FontFamily="Microsoft Sans Serif" Margin="0,0,0,0" FontWeight="Heavy" Foreground="{StaticResource ClrGridBackground}" >
                 <Image Width="20" HorizontalAlignment="Left" Height="auto" Source="/Resources/Icon/Logout.ico" Margin="10,0,9,-4" />
                 Log ud
             </TextBlock>
         </Button>
-
     </Grid>
 </Page>
  
