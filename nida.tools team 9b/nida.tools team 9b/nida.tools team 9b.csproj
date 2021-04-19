@@ -15,6 +15,7 @@
     <None Remove="Resources\Icon\RubberStam.ico" />
     <None Remove="Resources\Icon\User-Delete.ico" />
     <None Remove="Resources\Icon\User-Group.ico" />
+    <None Remove="Resources\Icon\User-Time.ico" />
     <None Remove="Resources\image\Logo.png" />
   </ItemGroup>
 
@@ -43,6 +44,9 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
     <Resource Include="Resources\Icon\User-Group.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Icon\User-Time.ico">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
     <Resource Include="Resources\image\Logo.png">
