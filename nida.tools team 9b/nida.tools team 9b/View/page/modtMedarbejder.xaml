@@ -20,12 +20,13 @@
         <StackPanel Grid.Row="0" Grid.Column="0" Height="15" Background="{StaticResource ClrMenuBackground}"/>
         <StackPanel Grid.Row="1"  Height="85" Background="{StaticResource ClrTopHeaderBackground }"/>
         <StackPanel Grid.Row="2"  Height="auto" Background="{StaticResource ClrGridBackground}">
-            <DataGrid x:Name="mødtMedarbejder" AlternatingRowBackground="Gray" CanUserAddRows="False" AutoGenerateColumns="False" Height="650" Width="800" HorizontalAlignment="Center" Margin="0,25,0,0" ColumnWidth="100">
+            <DataGrid x:Name="mødtMedarbejder" AlternatingRowBackground="Gray" CanUserAddRows="False" AutoGenerateColumns="False" Height="650" Width="800" HorizontalAlignment="Center" Margin="0,25,0,0" ColumnWidth="150"
+                      ColumnHeaderHeight="35" >
                 <DataGrid.Columns>
-                    <DataGridTextColumn Header="Navn" Width="100"/>
-                    <DataGridTextColumn Header="Status" Width="100"/>
-                    <DataGridTextColumn Header="Stemple in" Width="100"/>
-                    <DataGridTextColumn Header="Stemple ud" Width="100"/>
+                    <DataGridTextColumn Header="Navn"/>
+                    <DataGridTextColumn Header="Status"/>
+                    <DataGridTextColumn Header="Stemple in"/>
+                    <DataGridTextColumn Header="Stemple ud"/>
                     <DataGridTextColumn Header="Kommentar" Width="*"/>
                 </DataGrid.Columns>
 

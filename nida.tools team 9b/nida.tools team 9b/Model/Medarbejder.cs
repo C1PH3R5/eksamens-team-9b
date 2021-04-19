@@ -27,7 +27,19 @@ namespace nida.tools_team_9b.Model
             get { return _StempleInd; }
             set { _StempleInd = value; }
         }
+        private DateTime _StempleUD;
 
+        public DateTime stempleUd
+        {
+            get { return _StempleUD; }
+            set { _StempleUD = value; }
+        }
+        private string _Kommentar;
 
+        public string kommentar
+        {
+            get { return _Kommentar; }
+            set { _Kommentar = value; }
+        }
     }
 }
