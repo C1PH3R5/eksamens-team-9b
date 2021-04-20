@@ -25,8 +25,8 @@
                 <DataGrid.Columns>
                     <DataGridTextColumn Header="Navn" MinWidth="150" MaxWidth="150" Binding="{Binding navn}"/>
                     <DataGridTextColumn Header="Status" MinWidth="50" MaxWidth="50" Binding="{Binding status}"/>
-                    <DataGridTextColumn Header="Stemple Ind" MinWidth="150" MaxWidth="150" Binding="{Binding stempleInd}"/>
-                    <DataGridTextColumn Header="Stemple Ud" MinWidth="150" MaxWidth="150" Binding="{Binding stempleUd}"/>
+                    <DataGridTextColumn Header="Stemplet Ind" MinWidth="150" MaxWidth="150" Binding="{Binding stempleInd}"/>
+                    <DataGridTextColumn Header="Stemplet Ud" MinWidth="150" MaxWidth="150" Binding="{Binding stempleUd}"/>
                     <DataGridTextColumn Header="Kommentar" Width="*" Binding="{Binding kommentar}"/>
                 </DataGrid.Columns>
             </DataGrid>

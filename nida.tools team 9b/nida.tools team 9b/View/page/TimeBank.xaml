@@ -51,7 +51,7 @@
                 HorizontalAlignment="right"
                 Margin="450,30,150,0"
                 >
-                <TextBlock Foreground="{StaticResource ClrGridBackground}" FontSize="18" FontFamily="Microsoft sans Seri" FontWeight="Bold">søg</TextBlock>
+                <TextBlock Foreground="{StaticResource ClrGridBackground}" FontSize="18" FontFamily="Microsoft sans Seri" FontWeight="Bold">Søg</TextBlock>
             </Button>
 
 
@@ -61,9 +61,9 @@
                 <DataGrid.Columns>
                     <DataGridTextColumn Header="Navn" Width="150"/>
                     <DataGridTextColumn Header="Efternavn" Width="150"/>
-                    <DataGridTextColumn Header="Månelige timer" Width="150"/>
-                    <DataGridTextColumn Header="Overarbejdes timer" Width="150"/>
-                    <DataGridTextColumn Header="Toalt timer antal" Width="*"/>
+                    <DataGridTextColumn Header="Månedlige timer" Width="150"/>
+                    <DataGridTextColumn Header="Overarbejds timer" Width="150"/>
+                    <DataGridTextColumn Header="Totalt time antal" Width="*"/>
                 </DataGrid.Columns>
             </DataGrid>
         </StackPanel>

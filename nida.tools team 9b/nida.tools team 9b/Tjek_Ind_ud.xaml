@@ -25,7 +25,8 @@
                 Tjek ud
             </Button>
         </StackPanel>
-        <TextBox HorizontalAlignment="center" VerticalAlignment="center" Height="100" Width="300" Margin="0,250,30,0"/>
-
+        <TextBox HorizontalAlignment="center" VerticalAlignment="center" Height="100" Width="300" Margin="0,250,30,0" FontFamily="microsoft sans serif">
+           Evt. kommentar
+        </TextBox>
     </Grid>
 </Window>
