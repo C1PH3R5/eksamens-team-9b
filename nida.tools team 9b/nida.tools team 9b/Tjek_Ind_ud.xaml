@@ -1,0 +1,31 @@
+﻿<Window x:Class="nida.tools_team_9b.Tjek_Ind_ud"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:nida.tools_team_9b"
+        mc:Ignorable="d"
+        Title="Tjek_Ind_ud" Height="500" Width="530">
+    <Grid Background="{StaticResource ClrMenuBackground}">
+       <StackPanel Height="500" Width="30" HorizontalAlignment="Right" Background="{StaticResource ClrLogoBackground}"/>
+
+            <StackPanel x:Name="Logoheader" VerticalAlignment="Top" Height="100">
+            <Image Source="Resources/image/Logo.png" Height="90" Margin="0,15,30,0"/>
+        </StackPanel>
+
+
+        <StackPanel HorizontalAlignment="Left" Height="500" Width="250">
+
+            <Button x:Name="Tjek_ind" Width="150" Height="50" Background="{StaticResource ClrLogoBackground}" Foreground="{StaticResource ClrGridBackground}" FontSize="25" Margin="0,175,0,0" FontFamily="Microsoft sans serif">
+                Tjek ind
+            </Button>
+        </StackPanel>
+        <StackPanel Height="500" Width="250" HorizontalAlignment="Right">
+            <Button x:Name="Tjek_ud" Width="150" Height="50" Margin="0,175,30,0" Background="{StaticResource ClrLogoBackground}" FontSize="25" Foreground="{StaticResource ClrGridBackground}" FontFamily="Microsoft sans serif">
+                Tjek ud
+            </Button>
+        </StackPanel>
+        <TextBox HorizontalAlignment="center" VerticalAlignment="center" Height="100" Width="300" Margin="0,250,30,0"/>
+
+    </Grid>
+</Window>
