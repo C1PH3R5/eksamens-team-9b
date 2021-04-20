@@ -29,5 +29,15 @@ namespace nida.tools_team_9b.ViewModel
 
             return MødtMedarbejder;
         }
+        public static List<Medarbejder> MedarbejderList()
+        {
+            List<Medarbejder> medarbejderList = new List<Medarbejder>();
+            medarbejderList.Add(new Medarbejder() 
+            {
+                navn = "mikkel Christensen",
+                team = "marvel"
+            });
+            return medarbejderList;
+        }
     }
 }

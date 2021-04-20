@@ -41,5 +41,13 @@ namespace nida.tools_team_9b.Model
             get { return _Kommentar; }
             set { _Kommentar = value; }
         }
+        private string _Team;
+
+        public string team
+        {
+            get { return _Team; }
+            set { _Team = value; }
+        }
+
     }
 }
