@@ -8,16 +8,17 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
+using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace nida.tools_team_9b
+namespace nida.tools_team_9b.View.page
 {
     /// <summary>
-    /// Interaction logic for Tjek_Ind_ud.xaml
+    /// Interaction logic for Tjek_ind_ud.xaml
     /// </summary>
-    public partial class Tjek_Ind_ud : Window
+    public partial class Tjek_ind_ud : Page
     {
-        public Tjek_Ind_ud()
+        public Tjek_ind_ud()
         {
             InitializeComponent();
         }
