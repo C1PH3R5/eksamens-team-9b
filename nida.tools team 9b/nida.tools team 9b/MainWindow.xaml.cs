@@ -12,6 +12,8 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using nida.tools_team_9b.View.page;
+using nida.tools_team_9b.ViewModel;
 
 namespace nida.tools_team_9b
 {
@@ -23,6 +25,41 @@ namespace nida.tools_team_9b
         public MainWindow()
         {
             InitializeComponent();
+        }
+
+        private void Temple_Ind_Ud_Click(object sender, RoutedEventArgs e)
+        {
+            DataContext = new Tjek_Ind_Ud();
+        }
+
+        private void Tamplate_MødtMedarbejder_Click(object sender, RoutedEventArgs e)
+        {
+            DataContext = new MødtMedarbejder();
+        }
+
+        private void Tamplate_OpretMedarbejder_Click(object sender, RoutedEventArgs e)
+        {
+            DataContext = new OpretMedarbejder();
+        }
+
+        private void tamplate_MedarbejderList_Click(object sender, RoutedEventArgs e)
+        {
+            DataContext = new MedarbejderList();
+        }
+
+        private void Tamplate_TeamList_Click(object sender, RoutedEventArgs e)
+        {
+            DataContext = new TeamList();
+        }
+
+        private void Tamplate_TimeBank_Click(object sender, RoutedEventArgs e)
+        {
+            DataContext = new TimeBank();
+        }
+
+        private void LogUd_Click(object sender, RoutedEventArgs e)
+        {
+            Close();
         }
     }
 }

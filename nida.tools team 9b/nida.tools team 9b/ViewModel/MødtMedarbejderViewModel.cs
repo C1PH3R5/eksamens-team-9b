@@ -5,7 +5,7 @@ using nida.tools_team_9b.Model;
 
 namespace nida.tools_team_9b.ViewModel
 {
-    public class MødtMedarbejder
+    public class MødtMedarbejderViewModel
     {
         public static List<Medarbejder> LoadMedarbjderDataSet()
         {

@@ -14,11 +14,11 @@ using System.Windows.Shapes;
 namespace nida.tools_team_9b.View.page
 {
     /// <summary>
-    /// Interaction logic for BrugerList.xaml
+    /// Interaction logic for MedarbejderList.xaml
     /// </summary>
-    public partial class BrugerList : UserControl
+    public partial class MedarbejderList : UserControl
     {
-        public BrugerList()
+        public MedarbejderList()
         {
             InitializeComponent();
         }
