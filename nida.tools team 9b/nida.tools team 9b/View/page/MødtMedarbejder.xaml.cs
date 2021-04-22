@@ -21,6 +21,7 @@ namespace nida.tools_team_9b.View.page
         public MødtMedarbejder()
         {
             InitializeComponent();
+
         }
     }
 }
