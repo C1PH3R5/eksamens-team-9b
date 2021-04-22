@@ -1,13 +1,11 @@
-﻿<Page x:Class="nida.tools_team_9b.View.page.Tjek_ind_ud"
-      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
-      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
-      xmlns:local="clr-namespace:nida.tools_team_9b.View.page"
-      mc:Ignorable="d" 
-      d:DesignHeight="800" d:DesignWidth="1000"
-      Title="Tjek_ind_ud">
-
+﻿<UserControl x:Class="nida.tools_team_9b.View.page.Tjek_Ind_Ud"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:nida.tools_team_9b.View.page"
+             mc:Ignorable="d" 
+             d:DesignHeight="800" d:DesignWidth="1000">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*"/>
@@ -34,4 +32,4 @@
             </TextBox>
         </StackPanel>
     </Grid>
-</Page>
+</UserControl>

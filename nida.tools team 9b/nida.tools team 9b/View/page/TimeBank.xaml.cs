@@ -16,7 +16,7 @@ namespace nida.tools_team_9b.View.page
     /// <summary>
     /// Interaction logic for TimeBank.xaml
     /// </summary>
-    public partial class TimeBank : Page
+    public partial class TimeBank : UserControl
     {
         public TimeBank()
         {

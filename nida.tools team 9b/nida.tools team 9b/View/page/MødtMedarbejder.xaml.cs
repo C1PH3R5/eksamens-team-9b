@@ -10,19 +10,17 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-using nida.tools_team_9b.ViewModel;
 
 namespace nida.tools_team_9b.View.page
 {
     /// <summary>
-    /// Interaction logic for modtMedarbejder.xaml
+    /// Interaction logic for MødtMedarbejder.xaml
     /// </summary>
-    public partial class modtMedarbejder : Page
+    public partial class MødtMedarbejder : UserControl
     {
-        public modtMedarbejder()
+        public MødtMedarbejder()
         {
             InitializeComponent();
-            mødtMedarbejder.ItemsSource = MødtMedarbejder.LoadMedarbjderDataSet();
         }
     }
 }
