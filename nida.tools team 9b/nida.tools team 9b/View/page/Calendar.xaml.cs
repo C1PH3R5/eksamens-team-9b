@@ -10,20 +10,17 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-using nida.tools_team_9b.ViewModel;
 
 namespace nida.tools_team_9b.View.page
 {
     /// <summary>
-    /// Interaction logic for MødtMedarbejder.xaml
+    /// Interaction logic for Calendar.xaml
     /// </summary>
-    public partial class MødtMedarbejder : UserControl
+    public partial class Calendar : UserControl
     {
-        public MødtMedarbejder()
+        public Calendar()
         {
             InitializeComponent();
-            mødtMedarbejder.ItemsSource = MødtMedarbejderViewModel.LoadMedarbjderDataSet();
-
         }
     }
 }
