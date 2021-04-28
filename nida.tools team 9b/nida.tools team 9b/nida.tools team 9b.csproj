@@ -25,6 +25,10 @@
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="MySql.Data" Version="8.0.24" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Resource Include="Resources\Icon\Date.ico">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
