@@ -13,34 +13,6 @@ namespace nida.tools_team_9b.Model
             get { return _Navn; }
             set { _Navn = value; }
         }
-        private string _Status;
-
-        public string status
-        {
-            get { return _Status; }
-            set { _Status = value; }
-        }
-        private DateTime _StempleInd;
-
-        public DateTime stempleInd
-        {
-            get { return _StempleInd; }
-            set { _StempleInd = value; }
-        }
-        private DateTime _StempleUD;
-
-        public DateTime stempleUd
-        {
-            get { return _StempleUD; }
-            set { _StempleUD = value; }
-        }
-        private string _Kommentar;
-
-        public string kommentar
-        {
-            get { return _Kommentar; }
-            set { _Kommentar = value; }
-        }
         private string _Team;
 
         public string team
@@ -48,6 +20,43 @@ namespace nida.tools_team_9b.Model
             get { return _Team; }
             set { _Team = value; }
         }
+        private int _RoleId;
+
+        public int roleId
+        {
+            get { return _RoleId; }
+            set { _RoleId = value; }
+        }
+        private string _UserId;
+
+        public string userId
+        {
+            get { return _UserId; }
+            set { _UserId = value; }
+        }
+        private string _Efternavn;
+
+        public string efternavn
+        {
+            get { return _Efternavn; }
+            set { _Efternavn = value; }
+        }
+        private string _Email;
+
+        public string email
+        {
+            get { return _Email; }
+            set { _Email = value; }
+        }
+        private float _Workinghours;
+
+        public float workinghours
+        {
+            get { return _Workinghours; }
+            set { _Workinghours = value; }
+        }
+
+
 
     }
 }

@@ -20,8 +20,8 @@
         <StackPanel Grid.Row="2"  Height="auto" Background="{StaticResource ClrGridBackground}">
             <DataGrid Name="TeamListGrid" AlternatingRowBackground="Gray" CanUserAddRows="False" AutoGenerateColumns="False" Height="650" Width="800"  Margin="0,25,0,0" ColumnHeaderHeight="35" IsReadOnly="True" RowHeight="50" FontFamily="Microsoft sans Seri">
                 <DataGrid.Columns>
-                    <DataGridTextColumn Header="Team navn" MaxWidth="300" MinWidth="300" FontFamily="Microsoft sans Seri" Binding="{Binding teamNavn}"/>
-                    <DataGridTextColumn Header="Team Leder" MaxWidth="300" MinWidth="300" FontFamily="Microsoft sans Seri" Binding="{Binding teamLeder}" />
+                    <DataGridTextColumn Header="Team navn" MaxWidth="300" MinWidth="300" FontFamily="Microsoft sans Seri" Binding="{Binding name}"/>
+                    <DataGridTextColumn Header="Team Leder" MaxWidth="300" MinWidth="300" FontFamily="Microsoft sans Seri" Binding="{Binding id}" />
                     <DataGridTemplateColumn MaxWidth="190" MinWidth="200" Header="Rediger" >
                         <DataGridTemplateColumn.CellTemplate>
                             <DataTemplate>
