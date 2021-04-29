@@ -15,7 +15,7 @@ namespace nida.tools_team_9b.ViewModel
             List<Medarbejder> medarbejderList = new List<Medarbejder>();
             MySqlConnection con = GetConnection();
             con.Open();
-            string sqlQuery = "SELECT * FROM employee;";
+            string sqlQuery = "SELECT employee.roleid, employee.userid, employee.firstname, employee.lastname, employee.email, employee.workinghours, team.teamNavn FROM ((employee INNER JOIN employee_team ON employee.id = employee_team.employee_id) INNER JOIN team ON employee_team.team_id = team.id) WHERE employee.roleid = 3;";
 
             MySqlCommand cmd = new MySqlCommand(sqlQuery, con);
             using (MySqlDataReader Reader = cmd.ExecuteReader())
@@ -34,6 +34,8 @@ namespace nida.tools_team_9b.ViewModel
                             efternavn = Reader.GetString(Reader.GetOrdinal("lastname")),
                             email = Reader.GetString(Reader.GetOrdinal("email")),
                             workinghours = Reader.GetFloat(Reader.GetOrdinal("workinghours")),
+                            team = Reader.GetString(Reader.GetOrdinal("teamNavn")),
+                            fullnavn = (Reader.GetString(Reader.GetOrdinal("firstname")) + " " + Reader.GetString(Reader.GetOrdinal("lastname")))
                         });
                     }
                     Reader.Close();

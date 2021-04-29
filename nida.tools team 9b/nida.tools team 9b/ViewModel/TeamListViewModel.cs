@@ -13,7 +13,7 @@ namespace nida.tools_team_9b.ViewModel
         {
             MySqlConnection con = GetConnection();
             con.Open();
-            string sqlQuery = "SELECT id, name FROM team;";
+            string sqlQuery = "SELECT employee.firstname, employee.lastname, team.teamNavn FROM ((employee INNER JOIN employee_team ON employee.id = employee_team.employee_id) INNER JOIN team ON employee_team.team_id = team.id) WHERE employee.roleid = 2;";
             MySqlCommand cmd = new MySqlCommand(sqlQuery, con);
 
             List<Team> TeamList = new List<Team>();
@@ -27,8 +27,8 @@ namespace nida.tools_team_9b.ViewModel
                         //I would also check for DB.Null here before reading the value.
                         TeamList.Add(new Team() 
                         {
-                            name = Reader.GetString(Reader.GetOrdinal("name")),
-                            id = Reader.GetInt32(Reader.GetOrdinal("id")),
+                            name = Reader.GetString(Reader.GetOrdinal("teamNavn")),
+                            leder = (Reader.GetString(Reader.GetOrdinal("firstname")) + " " + Reader.GetString(Reader.GetOrdinal("lastname"))),
                         });
                     }
                     Reader.Close();

@@ -13,6 +13,16 @@ namespace nida.tools_team_9b.Model
             get { return _Name; }
             set { _Name = value; }
         }
+
+        private string _Leder;
+
+        public string leder
+        {
+            get { return _Leder; }
+            set { _Leder = value; }
+        }
+
+
         private int _Id;
 
         public int id

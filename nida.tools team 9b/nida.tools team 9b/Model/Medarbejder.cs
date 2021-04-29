@@ -41,6 +41,16 @@ namespace nida.tools_team_9b.Model
             get { return _Efternavn; }
             set { _Efternavn = value; }
         }
+
+        private string _Fullnavn;
+
+        public string fullnavn
+        {
+            get { return _Fullnavn; }
+            set { _Fullnavn = value; }
+        }
+
+
         private string _Email;
 
         public string email
