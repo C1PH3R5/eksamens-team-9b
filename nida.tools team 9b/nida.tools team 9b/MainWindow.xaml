@@ -9,7 +9,7 @@
         mc:Ignorable="d"
         ResizeMode="NoResize"
         WindowStyle="None"
-        Title="MainWindow" Height="800" Width="1200" MaxHeight="800" MaxWidth="1200">
+        Title="MainWindow" Height="800" Width="1250" MaxHeight="800" MaxWidth="1250">
     <Window.Resources>
         <DataTemplate x:Name="Tjek_Ind_UdTamplate" DataType="{x:Type ViewModel:Tjek_Ind_UdViewModel}">
             <ViewPage:Tjek_Ind_Ud DataContext="{Binding}"/>
@@ -32,13 +32,13 @@
     </Window.Resources>
     <Grid Background="{StaticResource ClrGridBackground}">
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="200"/>
+            <ColumnDefinition Width="250"/>
             <ColumnDefinition Width="1000"/>
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
-        <StackPanel Grid.Column="0"  Name="menuHolder"  Width="200" Height="auto" HorizontalAlignment="Left" >
+        <StackPanel Grid.Column="0"  Name="menuHolder"  Width="250" Height="auto" HorizontalAlignment="Left" >
             <StackPanel>
                 <StackPanel Height="15" VerticalAlignment="Top" Margin="0,0,0,0" Background="{StaticResource ClrMenuBackground}">
 
