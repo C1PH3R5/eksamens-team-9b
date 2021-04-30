@@ -20,16 +20,19 @@
         <StackPanel Grid.Row="1"  Height="85" Background="{StaticResource ClrTopHeaderBackground }"/>
         <StackPanel Grid.Row="2"  Height="auto" Background="{StaticResource ClrGridBackground}">
             <DatePicker 
+                x:Name="fraDato"
                 Foreground="{StaticResource ClrMenuBackground}"
                 BorderBrush="{StaticResource ClrTopHeaderBackground}"
                 BorderThickness="10"
                 Width="150"
                 HorizontalAlignment="Left"
                 Margin="150,35,0,0"
+                
                 />
         </StackPanel>
         <StackPanel Grid.Row="2"  Height="auto">
             <DatePicker 
+                x:Name="tilDato"
                 Foreground="{StaticResource ClrMenuBackground}"
                 BorderBrush="{StaticResource ClrTopHeaderBackground}"
                 BorderThickness="10"
@@ -40,6 +43,7 @@
         </StackPanel>
         <StackPanel Grid.Row="2"  Height="auto">
             <Button 
+                
                 Foreground="{StaticResource ClrMenuBackground}"
                 BorderBrush="{StaticResource ClrTopHeaderBackground}"
                 Background="{StaticResource ClrLogoBackground}"
@@ -47,7 +51,8 @@
                 Height="50"
                 Width="150"
                 HorizontalAlignment="right"
-                Margin="450,30,150,0"
+                Margin="450,30,150,0" 
+                Click="Søg_Clicked"
                 >
                 <TextBlock Foreground="{StaticResource ClrGridBackground}" FontSize="18" FontFamily="Microsoft sans Seri" FontWeight="Bold">Søg</TextBlock>
             </Button>
@@ -55,13 +60,12 @@
 
         </StackPanel>
         <StackPanel Grid.Row="3"  Height="auto" Background="{StaticResource ClrGridBackground}">
-            <DataGrid Name="ArbjedesTimer" Width="750" Height="500" Margin="0,50,0,0" CanUserAddRows="False" IsReadOnly="True" ColumnHeaderHeight="35">
+            <DataGrid Name="ArbjedesTimer" Width="750" Height="500" Margin="0,50,0,0" CanUserAddRows="False" IsReadOnly="True" ColumnHeaderHeight="35" AutoGenerateColumns="True">
                 <DataGrid.Columns>
-                    <DataGridTextColumn Header="Navn" Width="150"/>
-                    <DataGridTextColumn Header="Efternavn" Width="150"/>
-                    <DataGridTextColumn Header="Månedlige timer" Width="150"/>
-                    <DataGridTextColumn Header="Overarbejds timer" Width="150"/>
-                    <DataGridTextColumn Header="Totalt time antal" Width="*"/>
+                    <DataGridTextColumn Header="Navn" Width="300" Binding="{Binding medarbejderNavn}"/>
+                    <DataGridTextColumn Header="Månedlige timer" Width="150" Binding="{Binding månedligeTimer}"/>
+                    <DataGridTextColumn Header="Overarbejds timer" Width="150" Binding="{Binding overarbejds}"/>
+                    <DataGridTextColumn Header="Totalt time antal" Width="*" Binding="{Binding udregnetTid}"/>
                 </DataGrid.Columns>
             </DataGrid>
         </StackPanel>

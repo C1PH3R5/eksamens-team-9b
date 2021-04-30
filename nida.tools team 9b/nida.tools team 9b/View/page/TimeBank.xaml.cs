@@ -10,6 +10,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using nida.tools_team_9b.ViewModel;
 
 namespace nida.tools_team_9b.View.page
 {
@@ -20,7 +21,19 @@ namespace nida.tools_team_9b.View.page
     {
         public TimeBank()
         {
+
             InitializeComponent();
+            
+
+
+        }
+
+        private void Søg_Clicked(object sender, RoutedEventArgs e)
+        {
+            var til = Convert.ToDateTime(tilDato.SelectedDate).ToString("yyyy/MM/dd");
+            var fra = Convert.ToDateTime(fraDato.SelectedDate).ToString("yyyy/MM/dd");
+            ArbjedesTimer.ItemsSource = TimeBankViewModel.getTimeBankList(til, fra);
+            //ArbjedesTimer.ItemsSource =  TimeBankViewModel.getTimeBankList(fraDato.SelectedDate.ToString(), tilDato.SelectedDate.ToString());
         }
     }
 }

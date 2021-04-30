@@ -28,6 +28,15 @@ namespace nida.tools_team_9b.Model
             get { return _Kommentar; }
             set { _Kommentar = value; }
         }
+ 
+
+        private int _MedarnejderId;
+
+        public int medarbejderId
+        {
+            get { return _MedarnejderId; }
+            set { _MedarnejderId = value; }
+        }
         private string _MedarbejderNavn;
 
         public string medarbejderNavn
@@ -42,6 +51,22 @@ namespace nida.tools_team_9b.Model
             get { return _UdregnetTid; }
             set { _UdregnetTid = value; }
         }
+        private int _Overarbejds;
+
+        public int overarbejds
+        {
+            get { return _Overarbejds; }
+            set { _Overarbejds = value; }
+        }
+        private int _MånedligeTimer;
+
+        public int månedligeTimer
+        {
+            get { return _MånedligeTimer; }
+            set { _MånedligeTimer = value; }
+        }
+
+
 
 
 
