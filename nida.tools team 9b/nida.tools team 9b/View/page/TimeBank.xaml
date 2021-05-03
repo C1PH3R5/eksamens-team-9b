@@ -60,7 +60,7 @@
 
         </StackPanel>
         <StackPanel Grid.Row="3"  Height="auto" Background="{StaticResource ClrGridBackground}">
-            <DataGrid Name="ArbjedesTimer" Width="750" Height="500" Margin="0,50,0,0" CanUserAddRows="False" IsReadOnly="True" ColumnHeaderHeight="35" AutoGenerateColumns="True">
+            <DataGrid Name="ArbjedesTimer" Width="750" Height="500" Margin="0,50,0,0" CanUserAddRows="False" IsReadOnly="True" ColumnHeaderHeight="35" AutoGenerateColumns="False">
                 <DataGrid.Columns>
                     <DataGridTextColumn Header="Navn" Width="300" Binding="{Binding medarbejderNavn}"/>
                     <DataGridTextColumn Header="Månedlige timer" Width="150" Binding="{Binding månedligeTimer}"/>

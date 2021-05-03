@@ -44,9 +44,9 @@ namespace nida.tools_team_9b.Model
             get { return _MedarbejderNavn; }
             set { _MedarbejderNavn = value; }
         }
-        private int _UdregnetTid;
+        private TimeSpan _UdregnetTid;
 
-        public int udregnetTid
+        public TimeSpan udregnetTid
         {
             get { return _UdregnetTid; }
             set { _UdregnetTid = value; }
