@@ -44,23 +44,23 @@ namespace nida.tools_team_9b.Model
             get { return _MedarbejderNavn; }
             set { _MedarbejderNavn = value; }
         }
-        private TimeSpan _UdregnetTid;
+        private double _UdregnetTid;
 
-        public TimeSpan udregnetTid
+        public double udregnetTid
         {
             get { return _UdregnetTid; }
             set { _UdregnetTid = value; }
         }
-        private int _Overarbejds;
+        private double _Overarbejds;
 
-        public int overarbejds
+        public double overarbejds
         {
             get { return _Overarbejds; }
             set { _Overarbejds = value; }
         }
-        private int _MånedligeTimer;
+        private double _MånedligeTimer;
 
-        public int månedligeTimer
+        public double månedligeTimer
         {
             get { return _MånedligeTimer; }
             set { _MånedligeTimer = value; }
