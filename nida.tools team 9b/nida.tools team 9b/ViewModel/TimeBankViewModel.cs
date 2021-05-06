@@ -83,8 +83,9 @@ namespace nida.tools_team_9b.ViewModel
                     }
                 }
             }
-            
+
             // udregning af timer pr bruger 
+            con.Close();
             return timeBankListe;
 
         }
