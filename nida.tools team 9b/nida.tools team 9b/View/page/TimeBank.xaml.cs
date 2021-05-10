@@ -17,17 +17,12 @@ namespace nida.tools_team_9b.View.page
     /// <summary>
     /// Interaction logic for TimeBank.xaml
     /// </summary>
-    public partial class TimeBank : UserControl
+    public partial class TimeBank : Page
     {
         public TimeBank()
         {
-
             InitializeComponent();
-            
-
-
         }
-
         private void Søg_Clicked(object sender, RoutedEventArgs e)
         {
 

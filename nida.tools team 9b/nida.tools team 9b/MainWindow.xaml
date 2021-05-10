@@ -4,32 +4,11 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:nida.tools_team_9b"
-        xmlns:ViewModel="clr-namespace:nida.tools_team_9b.ViewModel"
-        xmlns:ViewPage="clr-namespace:nida.tools_team_9b.View.page"
         mc:Ignorable="d"
         ResizeMode="NoResize"
         WindowStyle="None"
         Title="MainWindow" Height="800" Width="1250" MaxHeight="800" MaxWidth="1250">
-    <Window.Resources>
-        <DataTemplate x:Name="Tjek_Ind_UdTamplate" DataType="{x:Type ViewModel:Tjek_Ind_UdViewModel}">
-            <ViewPage:Tjek_Ind_Ud DataContext="{Binding}"/>
-        </DataTemplate>
-        <DataTemplate x:Name="MødtMedarbejderTamplate" DataType="{x:Type ViewModel:MødtMedarbejderViewModel}">
-            <ViewPage:MødtMedarbejder DataContext="{Binding}"/>
-        </DataTemplate>
-        <DataTemplate x:Name="OpretMedarbejderTamplate" DataType="{x:Type ViewModel:OpretMedarbejderViewModel}">
-            <ViewPage:OpretMedarbejder DataContext="{Binding}"/>
-        </DataTemplate>
-        <DataTemplate x:Name="MedarbejderListTamplate" DataType="{x:Type ViewModel:MedarbejderListViewModel}">
-            <ViewPage:MedarbejderList DataContext="{Binding}"/>
-        </DataTemplate>
-        <DataTemplate x:Name="TeamListTample" DataType="{x:Type ViewModel:TeamListViewModel}">
-            <ViewPage:TeamList DataContext="{Binding}"/>
-        </DataTemplate>
-        <DataTemplate x:Name="TimeBankTamplate" DataType="{x:Type ViewModel:TimeBankViewModel}">
-            <ViewPage:TimeBank DataContext="{Binding}"/>
-        </DataTemplate>
-    </Window.Resources>
+
     <Grid Background="{StaticResource ClrGridBackground}">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="250"/>
@@ -46,57 +25,7 @@
                 <StackPanel x:Name="LogoHeader" Height="85" VerticalAlignment="Top" Background="{StaticResource ClrLogoBackground}">
                     <Image Source="/Resources/image/logo.png" Margin="0,18,0,0"/>
                 </StackPanel>
-                <StackPanel Background="{StaticResource ClrMenuBackground}">
-                    <Button  VerticalAlignment="Top" Height="80" Width="auto" Background="{StaticResource ClrMenuBackground}" Padding="0,-33,0,0" Click="Temple_Ind_Ud_Click">
-                        <TextBlock VerticalAlignment="Top" HorizontalAlignment="Right" Width="200" Padding="0,33,0,0" FontSize="15" FontFamily="Microsoft sans Serif" FontWeight="Heavy" Foreground="{StaticResource ClrGridBackground}">
-                            <Image Width="20" HorizontalAlignment="Left" Height="auto" Source="/Resources/Icon/RubberStam.ico" Margin="10,0,9,-4"/>
-                            Stempel Ind/Ud
-
-                        </TextBlock>
-                    </Button>
-                    <Button VerticalAlignment="Top" Height="80" Width="auto" Background="{StaticResource ClrMenuBackground}" Padding="0,-33,0,0" Click="Tamplate_MødtMedarbejder_Click">
-                        <TextBlock VerticalAlignment="Top" HorizontalAlignment="Right" Width="200" Padding="0,33,0,0" FontSize="15" FontFamily="Microsoft sans Serif"  FontWeight="Heavy" Foreground="{StaticResource ClrGridBackground}">
-                            <Image Width="20" HorizontalAlignment="Left" Height="auto" Source="/Resources/Icon/User-Time.ico" Margin="10,0,9,-4"/>
-                            Fremmødte medarbejder
-
-                        </TextBlock>
-                    </Button>
-                    <Button VerticalAlignment="Top" Height="80" Width="auto" Background="{StaticResource ClrMenuBackground}" Padding="0,-33,0,0" Click="tamplate_MedarbejderList_Click">
-                        <TextBlock VerticalAlignment="Top" HorizontalAlignment="Right" Width="200" Padding="0,33,0,0" FontSize="15" FontFamily="Microsoft sans Serif"  FontWeight="Heavy" Foreground="{StaticResource ClrGridBackground}">
-                            <Image Width="20" HorizontalAlignment="Left" Height="auto" Source="/Resources/Icon/Employee.ico" Margin="10,0,9,-4"/>
-                            Medarbejdere
-
-                        </TextBlock>
-                    </Button>
-                    <Button VerticalAlignment="Top" Height="80" Width="auto" Background="{StaticResource ClrMenuBackground}" Padding="0,-33,0,0" Click="Tamplate_OpretMedarbejder_Click">
-                        <TextBlock VerticalAlignment="Top" HorizontalAlignment="Right" Width="200" Padding="0,33,0,0" FontSize="15" FontFamily="Microsoft sans Serif"  FontWeight="Heavy" Foreground="{StaticResource ClrGridBackground}">
-                            <Image Width="20" HorizontalAlignment="Left" Height="auto" Source="/Resources/Icon/user-add.ico" Margin="10,0,9,-4"/>
-                            Opret medarbejder
-
-                        </TextBlock>
-                    </Button>
-                    <Button VerticalAlignment="Top" Height="80" Width="auto" Background="{StaticResource ClrMenuBackground}" Padding="0,-33,0,0" Click="Tamplate_TeamList_Click">
-                        <TextBlock VerticalAlignment="Top" HorizontalAlignment="Right" Width="200" Padding="0,33,0,0" FontSize="15" FontFamily="Microsoft sans Serif" FontWeight="Heavy" Foreground="{StaticResource ClrGridBackground}">
-                            <Image Width="20" HorizontalAlignment="Left" Height="auto" Source="/Resources/Icon/User-Group.ico" Margin="10,0,9,-4"/>
-                            Teams
-
-                        </TextBlock>
-                    </Button>
-                    <Button VerticalAlignment="Top" Height="80" Width="auto" Background="{StaticResource ClrMenuBackground}" Padding="0,-33,0,0" Click="Tamplate_TimeBank_Click">
-                        <TextBlock VerticalAlignment="Top" HorizontalAlignment="Right" Width="200" Padding="0,33,0,0" FontSize="15" FontFamily="Microsoft sans Serif"  FontWeight="Heavy" Foreground="{StaticResource ClrGridBackground}">
-                            <Image Width="20" HorizontalAlignment="Left" Height="auto" Source="/Resources/Icon/date.ico" Margin="10,0,9,-4"/>
-                            Arbejdstider
-
-                        </TextBlock>
-                    </Button>
-                    <Button VerticalAlignment="bottom" Margin="0,140,0,0" Height="80" Width="auto" Background="{StaticResource ClrMenuBackground}" Padding="0,-33,0,0" Click="LogUd_Click" >
-                        <TextBlock VerticalAlignment="Top" HorizontalAlignment="Right" Width="200" Padding="0,33,0,0" FontSize="15" FontFamily="Microsoft sans Serif"  FontWeight="Heavy" Foreground="{StaticResource ClrGridBackground}">
-                            <Image Width="20" HorizontalAlignment="Left" Height="auto" Source="/Resources/Icon/Logout.ico" Margin="10,0,9,-4"/>
-                            Log ud
-
-                        </TextBlock>
-                    </Button>
-                </StackPanel>
+                
             </StackPanel>
         </StackPanel>
         <ContentControl Grid.Column="1" x:Name="pageHolder" Width="1000" Height="auto"  HorizontalAlignment="Right" Content="{Binding}"/>
