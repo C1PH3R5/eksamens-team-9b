@@ -41,7 +41,7 @@
             <Image Name="messageImage" Source="/Resources/Icon/Warning-Message.ico" Width="25" Height="25" Margin="0,10,40,0" Visibility="Hidden" HorizontalAlignment="right" />
         </StackPanel>
         <StackPanel Grid.Row="3" Grid.ColumnSpan="3" Width="auto" Height="auto">
-            <Button Width="100" Height="50" Background="{StaticResource ClrLogoBackground}" Margin="0,25,300,0" HorizontalAlignment="Right">
+            <Button Width="100" Height="50" Background="{StaticResource ClrLogoBackground}" Margin="0,25,300,0" HorizontalAlignment="Right" Click="LogUd_Button_Click">
                 <TextBlock Height="30" Width="auto" Foreground=" white" FontSize="20" TextAlignment="Center" FontFamily="Microsoft sans Serif">
                     Annuller
                 </TextBlock>

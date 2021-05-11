@@ -14,17 +14,39 @@ namespace nida.tools_team_9b.ViewModel
     {
         public static void LogIndServices(string brugerNavn, string passWordStr, LogIndWindow logIndWindow)
         {
-            if (validatePaasWord(brugerNavn, passWordStr, logIndWindow))
+            MySqlConnection con = GetConnection();
+            if (validatePaasWord(brugerNavn, passWordStr, logIndWindow, con))
             {
-                Application.Current.Properties["Global_userId"] = brugerNavn;
+                SetGrobalProperties(brugerNavn, con);
                 MainWindow mainWindow = new MainWindow();
                 mainWindow.Show();
                 logIndWindow.Close();
             }
         }
-        private static bool validatePaasWord(string brugerNavn, string passWordStr, LogIndWindow logIndWindow)
+
+        private static void SetGrobalProperties(string brugerNavn, MySqlConnection con)
         {
-            MySqlConnection con = GetConnection();
+            
+            string sqlQuery = "SELECT roleid FROM NidaTools.employee WHERE userid = '" + brugerNavn + "';";
+            con.Open();
+            MySqlCommand cmd = new MySqlCommand(sqlQuery, con);
+
+            using (MySqlDataReader Reader = cmd.ExecuteReader())
+            {
+                if (Reader.HasRows)
+                {
+                    Reader.Read();
+                    Application.Current.Properties["Global_userId"] = brugerNavn;
+                    Application.Current.Properties["Global_userRole"] = Reader.GetInt32(Reader.GetOrdinal("roleid"));
+                }
+            }
+            con.Close();
+            
+        }
+
+        private static bool validatePaasWord(string brugerNavn, string passWordStr, LogIndWindow logIndWindow, MySqlConnection con)
+        {
+            
             con.Open();
             LogInd passWord = GetPassWord(brugerNavn, con);
 
@@ -117,6 +139,7 @@ namespace nida.tools_team_9b.ViewModel
                     Reader.Close();
                 }
             }
+            
             return passWord;
         }
         private static string GetCurrentPassWord(int passWordId, MySqlConnection con)
@@ -138,6 +161,8 @@ namespace nida.tools_team_9b.ViewModel
             return currenPassWord;
 
         }
-        
+        public static void Anuller(LogIndWindow window) {
+            window.Close();
+        }
     }
 }

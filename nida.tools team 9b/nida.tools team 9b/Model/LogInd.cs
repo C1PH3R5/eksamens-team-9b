@@ -35,6 +35,14 @@ namespace nida.tools_team_9b.Model
             get { return _InvalidAttemps; }
             set { _InvalidAttemps = value; }
         }
+        private int _Role;
+
+        public int role
+        {
+            get { return _Role; }
+            set { _Role = value; }
+        }
+
 
 
     }

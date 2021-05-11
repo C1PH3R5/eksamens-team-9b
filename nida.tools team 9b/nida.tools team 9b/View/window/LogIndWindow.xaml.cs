@@ -28,5 +28,10 @@ namespace nida.tools_team_9b.View.window
         {
             LogindViewModel.LogIndServices(textUserid.Text, passwordBox.Password.ToString(), this);
         }
+
+        private void LogUd_Button_Click(object sender, RoutedEventArgs e)
+        {
+            LogindViewModel.Anuller(this);
+        }
     }
 }

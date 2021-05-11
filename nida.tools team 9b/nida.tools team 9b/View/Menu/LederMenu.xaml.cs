@@ -10,6 +10,9 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using nida.tools_team_9b.ViewModel;
+using nida.tools_team_9b;
+
 namespace nida.tools_team_9b.View.Menu
 {
     /// <summary>
@@ -24,7 +27,7 @@ namespace nida.tools_team_9b.View.Menu
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            Application.Current.Shutdown();
+            MenuViewModel.MenuButtonOnClick(sender, Window.GetWindow(this) as MainWindow);
         }
     }
 }
