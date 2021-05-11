@@ -17,13 +17,12 @@ namespace nida.tools_team_9b.View.page
     /// <summary>
     /// Interaction logic for MødtMedarbejder.xaml
     /// </summary>
-    public partial class MødtMedarbejder : UserControl
+    public partial class MødtMedarbejder : Page
     {
         public MødtMedarbejder()
         {
             InitializeComponent();
             mødtMedarbejder.ItemsSource = MødtMedarbejderViewModel.LoadMedarbjderDataSet();
-
         }
     }
 }

@@ -14,11 +14,11 @@ using System.Windows.Shapes;
 namespace nida.tools_team_9b.View.page
 {
     /// <summary>
-    /// Interaction logic for Tjek_Ind_Ud.xaml
+    /// Interaction logic for Tjek_ind_ud.xaml
     /// </summary>
-    public partial class Tjek_Ind_Ud : UserControl
+    public partial class Tjek_ind_ud : Page
     {
-        public Tjek_Ind_Ud()
+        public Tjek_ind_ud()
         {
             InitializeComponent();
         }

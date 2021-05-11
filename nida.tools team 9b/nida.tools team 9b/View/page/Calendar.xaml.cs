@@ -16,7 +16,7 @@ namespace nida.tools_team_9b.View.page
     /// <summary>
     /// Interaction logic for Calendar.xaml
     /// </summary>
-    public partial class Calendar : UserControl
+    public partial class Calendar : Page
     {
         public Calendar()
         {

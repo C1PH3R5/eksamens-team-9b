@@ -17,7 +17,7 @@ namespace nida.tools_team_9b.View.page
     /// <summary>
     /// Interaction logic for TeamList.xaml
     /// </summary>
-    public partial class TeamList : UserControl
+    public partial class TeamList : Page
     {
         public TeamList()
         {
