@@ -1,0 +1,71 @@
+﻿<Page x:Class="nida.tools_team_9b.View.page.opretMedarbejder"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:nida.tools_team_9b.View.page"
+      mc:Ignorable="d" 
+      d:DesignHeight="800" d:DesignWidth="1000"
+      Title="opretMedarbejder">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="15"/>
+            <RowDefinition Height="85"/>
+
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <StackPanel Grid.Row="0" Grid.ColumnSpan="2" Height="15" Background="{StaticResource ClrMenuBackground}"/>
+        <StackPanel Grid.Row="1" Grid.ColumnSpan="2"   Height="85" Background="{StaticResource ClrTopHeaderBackground }">
+            <TextBlock Text="Opret Medarbejder" FontFamily="Microsoft sans seri" FontWeight="bold" Foreground="{StaticResource ClrGridBackground}" FontSize="35" Height="50" Width="320" Margin="0,30,0,0"></TextBlock>
+        </StackPanel>
+
+        <StackPanel Grid.Row="3" Grid.Column="0" Height="auto"  Background="{StaticResource ClrGridBackground}">
+            <TextBlock Width="300" Margin="0,100,0,0" FontSize="18" FontFamily="Microsoft sans Seri" FontWeight="Bold">Fornavn:</TextBlock>
+            <TextBox x:Name="Navn" Width="300" Height="40" FontSize="18" BorderThickness="5" FontFamily="Microsoft sans Seri" Margin="0,10,0,0" Padding="0,5,0,0" BorderBrush="{StaticResource ClrTopHeaderBackground}"></TextBox>
+
+        </StackPanel>
+        <StackPanel Grid.Row="3" Grid.Column="0" Height="auto" >
+            <TextBlock Width="300" Margin="0,200,0,0" FontSize="18" FontFamily="Microsoft sans Seri" FontWeight="Bold">Efternavn:</TextBlock>
+            <TextBox x:Name="Efternavn" Width="300" Height="40" FontSize="18" BorderThickness="5" FontFamily="Microsoft sans Seri" Margin="0,10,0,0" Padding="0,5,0,0" BorderBrush="{StaticResource ClrTopHeaderBackground}"></TextBox>
+        </StackPanel>
+        <StackPanel Grid.Row="3" Grid.Column="0" Height="auto">
+            <TextBlock Width="300" Margin="0,300,0,0" FontSize="18" FontFamily="Microsoft sans Seri" FontWeight="Bold">Adresse:</TextBlock>
+            <TextBox x:Name="adderse" Width="300" Height="40" FontSize="18" BorderThickness="5" FontFamily="Microsoft sans Seri" Margin="0,10,0,0" Padding="0,5,0,0" BorderBrush="{StaticResource ClrTopHeaderBackground}"></TextBox>
+            <TextBlock Width="300" Margin="0,20,0,0" FontSize="18" FontFamily="Microsoft sans Seri" FontWeight="Bold">By:</TextBlock>
+            <TextBox x:Name="By" Width="150" Height="40" HorizontalAlignment="Left" FontSize="18" BorderThickness="5" FontFamily="Microsoft sans Seri" Margin="100,10,0,0" Padding="0,5,0,0" BorderBrush="{StaticResource ClrTopHeaderBackground}"></TextBox>
+
+        </StackPanel>
+        <StackPanel Grid.Row="3" Grid.Column="0" Margin="100,320,0,0">
+            <TextBlock Width="100" Margin="100,70,0,0" FontSize="18" FontFamily="Microsoft sans Seri" FontWeight="Bold">Post Nr:</TextBlock>
+            <TextBox x:Name="postNr" Width="100" Height="40" HorizontalAlignment="Left" FontSize="18" BorderThickness="5" FontFamily="Microsoft sans Seri" Margin="200,10,0,0" Padding="0,5,0,0" BorderBrush="{StaticResource ClrTopHeaderBackground}"></TextBox>
+        </StackPanel>
+
+        <StackPanel Grid.Row="3" Grid.Column="1"  Height="auto" Background="{StaticResource ClrGridBackground}">
+            <TextBlock Width="300" Margin="0,100,0,0" FontSize="18" FontFamily="Microsoft sans Seri" FontWeight="Bold">Telefon Nr:</TextBlock>
+            <TextBox x:Name="hjemmeTlf" Width="300" Height="40" FontSize="18" BorderThickness="5" FontFamily="Microsoft sans Seri" Margin="0,10,0,0" Padding="0,5,0,0" BorderBrush="{StaticResource ClrTopHeaderBackground}" Text="Hjemme"></TextBox>
+            <TextBox x:Name="mobil" Width="300" Height="40" FontSize="18" BorderThickness="5" FontFamily="Microsoft sans Seri" Margin="0,10,0,0" Padding="0,5,0,0" BorderBrush="{StaticResource ClrTopHeaderBackground}" Text="Mobil"></TextBox>
+            <TextBox x:Name="arbejds" Width="300" Height="40" FontSize="18" BorderThickness="5" FontFamily="Microsoft sans Seri" Margin="0,10,0,0" Padding="0,5,0,0" BorderBrush="{StaticResource ClrTopHeaderBackground}" Text="Arbejde"></TextBox>
+        </StackPanel>
+        <StackPanel Grid.Row="3" Grid.Column="1" Margin="0,230,0,0">
+            <TextBlock Width="100" Margin="100,70,0,0" FontSize="18" HorizontalAlignment="Left" FontFamily="Microsoft sans Seri" FontWeight="Bold">E-mail:</TextBlock>
+            <TextBox x:Name="Email" Width="300" Height="40" FontSize="18" BorderThickness="5" FontFamily="Microsoft sans Seri" Margin="0,10,0,0" Padding="0,5,0,0" BorderBrush="{StaticResource ClrTopHeaderBackground}"></TextBox>
+        </StackPanel>
+        <StackPanel Grid.Row="3" Grid.Column="1" Margin="0,320,0,0">
+            <TextBlock Width="300" Margin="100,70,0,0" FontSize="18" HorizontalAlignment="Left" FontFamily="Microsoft sans Seri" FontWeight="Bold">Arbejds E-mail:</TextBlock>
+            <TextBox x:Name="arbejdesEmail" Width="300" Height="40" FontSize="18" BorderThickness="5" FontFamily="Microsoft sans Seri" Margin="0,10,0,0" Padding="0,5,0,0" BorderBrush="{StaticResource ClrTopHeaderBackground}"></TextBox>
+        </StackPanel>
+        <StackPanel Grid.Row="3" Grid.Column="1"  Height="auto">
+            <Button x:Name="opret" Foreground="{StaticResource ClrMenuBackground}" BorderBrush="{StaticResource ClrTopHeaderBackground}" Background="{StaticResource ClrLogoBackground}" BorderThickness="5" Height="75" Width="200" HorizontalAlignment="right"  Margin="0,550,100,0">
+                <TextBlock Foreground="{StaticResource ClrGridBackground}" FontSize="18" FontFamily="Microsoft sans Seri" FontWeight="Bold">Opret Bruger</TextBlock>
+            </Button>
+
+
+        </StackPanel>
+
+    </Grid>
+</Page>
