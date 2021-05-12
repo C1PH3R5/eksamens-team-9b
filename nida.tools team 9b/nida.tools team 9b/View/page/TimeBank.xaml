@@ -26,10 +26,10 @@
             <StackPanel Grid.Row="2"  Height="auto" Background="{StaticResource ClrGridBackground}">
             <DatePicker 
                 x:Name="fraDato"
-                Foreground="{StaticResource ClrMenuBackground}"
+
                 BorderBrush="{StaticResource ClrTopHeaderBackground}"
-                BorderThickness="10"
-                Width="150"
+                BorderThickness="5"
+                Width="155"
                 HorizontalAlignment="Left"
                 Margin="125,35,0,0"
                 
@@ -38,10 +38,9 @@
         <StackPanel Grid.Row="2"  Height="auto">
             <DatePicker 
                 x:Name="tilDato"
-                Foreground="{StaticResource ClrMenuBackground}"
                 BorderBrush="{StaticResource ClrTopHeaderBackground}"
-                BorderThickness="10"
-                Width="150"
+                BorderThickness="5"
+                Width="155"
                 HorizontalAlignment="Left"
                 Margin="350,35,0,0"
                 />
@@ -87,7 +86,7 @@
                 Margin="0,0,125,0" 
                 Click="expoter_Clicked"
                 >
-                <TextBlock Foreground="{StaticResource ClrGridBackground}" FontSize="18" FontFamily="Microsoft sans Seri" FontWeight="Bold">Expoter</TextBlock>
+                <TextBlock Foreground="{StaticResource ClrGridBackground}" FontSize="18" FontFamily="Microsoft sans Seri" FontWeight="Bold">Eksportér</TextBlock>
             </Button>
         </StackPanel>
     </Grid>

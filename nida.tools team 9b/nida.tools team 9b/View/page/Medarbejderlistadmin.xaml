@@ -1,0 +1,51 @@
+﻿<Page x:Class="nida.tools_team_9b.View.page.Medarbejderlistadmin"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:nida.tools_team_9b.View.page"
+      mc:Ignorable="d" 
+      d:DesignHeight="800" d:DesignWidth="1000"
+      Title="Medarbejderlistadmin">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="15"/>
+            <RowDefinition Height="85"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <StackPanel Grid.Row="0" Grid.Column="0" Height="15" Background="{StaticResource ClrMenuBackground}"/>
+        <StackPanel Grid.Row="1"  Height="85" Background="{StaticResource ClrTopHeaderBackground }">
+            <TextBlock Text="Medarbejder Liste" FontFamily="Microsoft sans seri" FontWeight="bold" Foreground="{StaticResource ClrGridBackground}" FontSize="35" Height="50" Width="300" Margin="0,30,0,0"></TextBlock>
+        </StackPanel>
+        <StackPanel Grid.Row="2"  Height="auto" Background="{StaticResource ClrGridBackground}">
+            <DataGrid Name="medarbejderList" AlternatingRowBackground="Gray" CanUserAddRows="False" AutoGenerateColumns="False" Height="650" Width="800"  Margin="0,25,0,0" ColumnHeaderHeight="35" IsReadOnly="True" RowHeight="50" FontFamily="Microsoft sans Seri">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="Navn" MaxWidth="260" MinWidth="260" FontFamily="Microsoft sans Seri" Binding="{Binding fullnavn}"/>
+                    <DataGridTextColumn Header="Team" MaxWidth="180" MinWidth="180" FontFamily="Microsoft sans Seri" Binding="{Binding team}" />
+                    <DataGridTemplateColumn MaxWidth="180" MinWidth="180" Header="Rediger" >
+                        <DataGridTemplateColumn.CellTemplate>
+                            <DataTemplate>
+                                <Button x:Name="opret" Foreground="{StaticResource ClrMenuBackground}" Width="150" BorderBrush="{StaticResource ClrTopHeaderBackground}" Background="{StaticResource ClrLogoBackground}" BorderThickness="5" VerticalAlignment="Center" >
+                                    <TextBlock Foreground="{StaticResource ClrGridBackground}" FontSize="18" FontFamily="Microsoft sans Seri" FontWeight="Bold">Rediger Bruger</TextBlock>
+                                </Button>
+                            </DataTemplate>
+                        </DataGridTemplateColumn.CellTemplate>
+                    </DataGridTemplateColumn>
+                    <DataGridTemplateColumn MaxWidth="180" MinWidth="180" Header="Nustill Kodeord" >
+                        <DataGridTemplateColumn.CellTemplate>
+                            <DataTemplate>
+                                <Button x:Name="Nulstil" Foreground="{StaticResource ClrMenuBackground}" Width="150" BorderBrush="{StaticResource ClrTopHeaderBackground}" Background="{StaticResource ClrLogoBackground}" BorderThickness="5" VerticalAlignment="Center" >
+                                    <TextBlock Foreground="{StaticResource ClrGridBackground}" FontSize="18" FontFamily="Microsoft sans Seri" FontWeight="Bold">Nulstil kodeord</TextBlock>
+                                </Button>
+                            </DataTemplate>
+                        </DataGridTemplateColumn.CellTemplate>
+                    </DataGridTemplateColumn>
+                </DataGrid.Columns>
+            </DataGrid>
+        </StackPanel>
+    </Grid>
+</Page>
