@@ -36,10 +36,13 @@
 
             </TextBox>
         </StackPanel>
-        
+        <StackPanel Grid.Row="4" Grid.Column="1" Grid.ColumnSpan="2">
+            <Rectangle Width="500" Height="50" Fill="{StaticResource ClrTopHeaderBackground}" Margin="0,22,0,0">
+            </Rectangle>
+        </StackPanel>
         <StackPanel Grid.Row="4" Grid.Column="1" Grid.ColumnSpan="2">
             <TextBlock Width="auto" Margin="0,0,0,0" FontSize="18" FontFamily="Microsoft sans Seri" FontWeight="Bold">Leder:</TextBlock>
-            <ComboBox Name="vælgTeamLeder" IsEditable="True" Height="40" Width="auto" FontSize="18" FontFamily="Microsoft sans Seri">
+            <ComboBox Name="vælgTeamLeder" IsEditable="True" Height="40" Width="490" FontSize="18" FontFamily="Microsoft sans Seri" Margin="0,5,0,0">
                 <ComboBoxItem IsSelected="True">Vælg en leder</ComboBoxItem>
                 <ComboBoxItem>Mikkel Christensen</ComboBoxItem>
                 <ComboBoxItem>Jens Hansen</ComboBoxItem>

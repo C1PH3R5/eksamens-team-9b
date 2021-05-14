@@ -74,12 +74,14 @@
             <Button x:Name="opret" Foreground="{StaticResource ClrMenuBackground}" BorderBrush="{StaticResource ClrTopHeaderBackground}" Background="{StaticResource ClrLogoBackground}" BorderThickness="5" Height="75" Width="200" HorizontalAlignment="right"  Margin="0,60,100,0">
                 <TextBlock Foreground="{StaticResource ClrGridBackground}" FontSize="18" FontFamily="Microsoft sans Seri" FontWeight="Bold">Opret Bruger</TextBlock>
             </Button>
-               
-
         </StackPanel>
+        <StackPanel Grid.Row="6" Grid.Column="0" Grid.ColumnSpan="2">
+                <Rectangle Width="310" Height="50" Fill="{StaticResource ClrTopHeaderBackground}" Margin="0,22,0,0">
+                </Rectangle>
+            </StackPanel>
         <StackPanel Grid.Row="7" Grid.Column="0" Grid.ColumnSpan="2">
             <TextBlock Width="300" Margin="0,0,0,0" FontSize="18" FontFamily="Microsoft sans Seri" FontWeight="Bold">Team:</TextBlock>
-            <ComboBox Name="vælgTeam" IsEditable="True" Height="40" Width="300" FontSize="18" FontFamily="Microsoft sans Seri" Margin="0,0,0,170">
+            <ComboBox Name="vælgTeam" IsEditable="True" Height="40" Width="300" FontSize="18" FontFamily="Microsoft sans Seri" Margin="0,5,0,170">
                 <ComboBoxItem IsSelected="True">Vælg et Team</ComboBoxItem>
                 <ComboBoxItem>Marvel</ComboBoxItem>
                 <ComboBoxItem>Team-WEB</ComboBoxItem>

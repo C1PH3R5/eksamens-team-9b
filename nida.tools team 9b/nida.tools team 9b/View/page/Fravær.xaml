@@ -42,8 +42,13 @@
 
         </StackPanel>
         <StackPanel Grid.Row="5" Grid.Column="1" Grid.ColumnSpan="2" Width="300">
-            <TextBlock Margin="0,0,0,0" FontSize="18" FontFamily="Microsoft sans Seri" FontWeight="Bold">Årsag:</TextBlock>
-            <ComboBox Name="vælgÅrsag" IsEditable="True" Height="40" Width="auto" FontSize="18" FontFamily="Microsoft sans Seri" BorderBrush="{StaticResource ClrTopHeaderBackground}" BorderThickness="5">
+             <Rectangle Width="auto" Height="50" Fill="{StaticResource ClrTopHeaderBackground}" Margin="0,22,0,0">
+            </Rectangle>
+        </StackPanel>
+        <StackPanel Grid.Row="5" Grid.Column="1" Grid.ColumnSpan="2" Width="300">
+           
+                <TextBlock Margin="0,0,0,0" FontSize="18" FontFamily="Microsoft sans Seri" FontWeight="Bold">Årsag:</TextBlock>
+            <ComboBox Name="vælgÅrsag" IsEditable="True" Height="40" Width="290" FontSize="18" FontFamily="Microsoft sans Seri" Margin="0,5,0,0">
                 <ComboBoxItem IsSelected="True">Vælg en årsag</ComboBoxItem>
                 <ComboBoxItem>Sydom</ComboBoxItem>
                 <ComboBoxItem>Ferie</ComboBoxItem>
