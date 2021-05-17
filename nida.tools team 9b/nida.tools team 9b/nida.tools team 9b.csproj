@@ -12,6 +12,7 @@
     <None Remove="Resources\Icon\Employee.ico" />
     <None Remove="Resources\Icon\Lock-Open.ico" />
     <None Remove="Resources\Icon\Logout.ico" />
+    <None Remove="Resources\Icon\OffWork.ico" />
     <None Remove="Resources\Icon\RubberStam.ico" />
     <None Remove="Resources\Icon\User-Add.ico" />
     <None Remove="Resources\Icon\User-Delete.ico" />
@@ -47,6 +48,9 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
     <Resource Include="Resources\Icon\Logout.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Icon\OffWork.ico">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
     <Resource Include="Resources\Icon\RubberStam.ico">
