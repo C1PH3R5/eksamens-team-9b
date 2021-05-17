@@ -43,15 +43,10 @@
         <StackPanel Grid.Row="4" Grid.Column="1" Grid.ColumnSpan="2">
             <TextBlock Width="auto" Margin="0,0,0,0" FontSize="18" FontFamily="Microsoft sans Seri" FontWeight="Bold">Leder:</TextBlock>
             <ComboBox Name="vælgTeamLeder" IsEditable="True" Height="40" Width="490" FontSize="18" FontFamily="Microsoft sans Seri" Margin="0,5,0,0">
-                <ComboBoxItem IsSelected="True">Vælg en leder</ComboBoxItem>
-                <ComboBoxItem>Mikkel Christensen</ComboBoxItem>
-                <ComboBoxItem>Jens Hansen</ComboBoxItem>
-                <ComboBoxItem>Dennis Svendsen</ComboBoxItem>
-                <ComboBoxItem>Mark Olsen</ComboBoxItem>
             </ComboBox>
         </StackPanel>
         <StackPanel Grid.Row="6" Grid.Column="2">
-            <Button Name="OpretTeam" Height="75" Width="200" Foreground="{StaticResource ClrMenuBackground}" Background="{StaticResource ClrLogoBackground}" BorderBrush="{StaticResource ClrTopHeaderBackground}" BorderThickness="5" HorizontalAlignment="Right" Margin="0,60,0,0">
+            <Button Name="OpretTeam" Height="75" Width="200" Foreground="{StaticResource ClrMenuBackground}" Background="{StaticResource ClrLogoBackground}" BorderBrush="{StaticResource ClrTopHeaderBackground}" BorderThickness="5" HorizontalAlignment="Right" Margin="0,60,0,0" Click="OpretTeam_Click">
                 <TextBlock Foreground="{StaticResource ClrGridBackground}" FontSize="18" FontFamily="Microsoft sans Seri" FontWeight="Bold">Opret Team</TextBlock>
             </Button>
         </StackPanel>
