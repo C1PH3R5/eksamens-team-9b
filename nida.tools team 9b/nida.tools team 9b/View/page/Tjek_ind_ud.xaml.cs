@@ -10,6 +10,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using nida.tools_team_9b.ViewModel;
 
 namespace nida.tools_team_9b.View.page
 {
@@ -21,6 +22,13 @@ namespace nida.tools_team_9b.View.page
         public Tjek_ind_ud()
         {
             InitializeComponent();
+            Tjek_Ind_UdViewModel.ShowStempleSystem(this);
+
+        }
+
+        private void StempleButton_Click(object sender, RoutedEventArgs e)
+        {
+            Tjek_Ind_UdViewModel.TjekIndUd(this);
         }
     }
 }

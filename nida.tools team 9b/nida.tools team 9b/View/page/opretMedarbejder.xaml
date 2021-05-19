@@ -42,13 +42,13 @@
 
         <StackPanel Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="2" Height="auto">
             <TextBlock Width="300" Margin="0,0,0,0" FontSize="18" FontFamily="Microsoft sans Seri" FontWeight="Bold">Adresse:</TextBlock>
-            <TextBox x:Name="adderse" Width="300" Height="40" FontSize="18" BorderThickness="5" FontFamily="Microsoft sans Seri" Margin="0,10,0,0" Padding="0,5,0,0" BorderBrush="{StaticResource ClrTopHeaderBackground}"></TextBox>
+            <TextBox x:Name="adresse" Width="300" Height="40" FontSize="18" BorderThickness="5" FontFamily="Microsoft sans Seri" Margin="0,10,0,0" Padding="0,5,0,0" BorderBrush="{StaticResource ClrTopHeaderBackground}"></TextBox>
             
         </StackPanel>
         
         <StackPanel Grid.Row="5" Grid.Column="1">
             <TextBlock Width="100" Margin="0,0,50,0" FontSize="18" FontFamily="Microsoft sans Seri" FontWeight="Bold">Post Nr:</TextBlock>
-            <TextBox x:Name="postNr" Width="100" Height="40"  FontSize="18" BorderThickness="5" FontFamily="Microsoft sans Seri" Margin="0,0,50,0" Padding="0,5,0,0" BorderBrush="{StaticResource ClrTopHeaderBackground}"></TextBox>
+            <TextBox x:Name="Postnr" Width="100" Height="40"  FontSize="18" BorderThickness="5" FontFamily="Microsoft sans Seri" Margin="0,0,50,0" Padding="0,5,0,0" BorderBrush="{StaticResource ClrTopHeaderBackground}"></TextBox>
         </StackPanel>
                 
         <StackPanel Grid.Row="5" Grid.Column="0">
@@ -71,7 +71,7 @@
             <TextBox x:Name="arbejdesEmail" Width="300" Height="40" FontSize="18" BorderThickness="5" FontFamily="Microsoft sans Seri" Margin="0,0,0,0" Padding="0,5,0,0" BorderBrush="{StaticResource ClrTopHeaderBackground}"></TextBox>
         </StackPanel>
         <StackPanel Grid.Row="6" Grid.Column="2"  Height="auto">
-            <Button x:Name="opret" Foreground="{StaticResource ClrMenuBackground}" BorderBrush="{StaticResource ClrTopHeaderBackground}" Background="{StaticResource ClrLogoBackground}" BorderThickness="5" Height="75" Width="200" HorizontalAlignment="right"  Margin="0,60,100,0">
+            <Button x:Name="opret" Foreground="{StaticResource ClrMenuBackground}" BorderBrush="{StaticResource ClrTopHeaderBackground}" Background="{StaticResource ClrLogoBackground}" BorderThickness="5" Height="75" Width="200" HorizontalAlignment="right"  Margin="0,60,100,0" Click="opret_Click">
                 <TextBlock Foreground="{StaticResource ClrGridBackground}" FontSize="18" FontFamily="Microsoft sans Seri" FontWeight="Bold">Opret Bruger</TextBlock>
             </Button>
         </StackPanel>
@@ -82,11 +82,6 @@
         <StackPanel Grid.Row="7" Grid.Column="0" Grid.ColumnSpan="2">
             <TextBlock Width="300" Margin="0,0,0,0" FontSize="18" FontFamily="Microsoft sans Seri" FontWeight="Bold">Team:</TextBlock>
             <ComboBox Name="vælgTeam" IsEditable="True" Height="40" Width="300" FontSize="18" FontFamily="Microsoft sans Seri" Margin="0,5,0,170">
-                <ComboBoxItem IsSelected="True">Vælg et Team</ComboBoxItem>
-                <ComboBoxItem>Marvel</ComboBoxItem>
-                <ComboBoxItem>Team-WEB</ComboBoxItem>
-                <ComboBoxItem>Bravo six</ComboBoxItem>
-                <ComboBoxItem>AA Odense</ComboBoxItem>
             </ComboBox>
         </StackPanel>
 

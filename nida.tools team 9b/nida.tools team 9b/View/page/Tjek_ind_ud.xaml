@@ -15,20 +15,21 @@
         <Grid.RowDefinitions>
             <RowDefinition Height="15"/>
             <RowDefinition Height="85"/>
+            <RowDefinition Height="250"/>
+            <RowDefinition Height="100"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
         <StackPanel Grid.Row="0" Grid.Column="0" Height="15" Background="{StaticResource ClrMenuBackground}"/>
         <StackPanel Grid.Row="1"   Height="85" Background="{StaticResource ClrTopHeaderBackground }"></StackPanel>
         <StackPanel Grid.Row="2" Grid.Column="0"  Background="{StaticResource ClrGridBackground}">
             <Image Source="/Resources/image/Logo.png" Height="90" Margin="0,75,0,0"/>
-            <Button x:Name="Tjek_ind" Width="150" Height="50" BorderBrush="{StaticResource ClrTopHeaderBackground}" BorderThickness="5" Background="{StaticResource ClrLogoBackground}" Foreground="{StaticResource ClrGridBackground}" FontSize="25" Margin="0,50,0,0" FontFamily="Microsoft sans serif">
-                Tjek ind
-            </Button>
-
-            <Button x:Name="Tjek_ud" Width="150" Height="50" Margin="0,50,0,0" BorderBrush="{StaticResource ClrTopHeaderBackground}" BorderThickness="5" Background="{StaticResource ClrLogoBackground}" FontSize="25" Foreground="{StaticResource ClrGridBackground}" FontFamily="Microsoft sans serif">
-                Tjek ud
-            </Button>
-            <TextBox HorizontalAlignment="center" VerticalAlignment="center" BorderBrush="{StaticResource ClrTopHeaderBackground}" BorderThickness="5" Height="100" Width="300" Margin="0,50,0,0" FontFamily="microsoft sans serif">
+            
+        </StackPanel>
+        <StackPanel Grid.Row="3" Background="{StaticResource ClrGridBackground}">
+            <Button Name="StempleButton" Width="150" Height="50" BorderBrush="{StaticResource ClrTopHeaderBackground}" BorderThickness="5" Background="{StaticResource ClrLogoBackground}" Foreground="{StaticResource ClrGridBackground}" FontSize="25" Margin="0,50,0,0" FontFamily="Microsoft sans serif" Click="StempleButton_Click"/>
+        </StackPanel>
+        <StackPanel Grid.Row="4" Background="{StaticResource ClrGridBackground}">
+            <TextBox Name="KommentarBox" HorizontalAlignment="center" VerticalAlignment="center" BorderBrush="{StaticResource ClrTopHeaderBackground}" BorderThickness="5" Height="100" Width="300" Margin="0,50,0,0" FontFamily="microsoft sans serif" Visibility="hidden">
                 Evt. kommentar
             </TextBox>
         </StackPanel>
