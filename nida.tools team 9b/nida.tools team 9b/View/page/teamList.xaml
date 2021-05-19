@@ -11,18 +11,22 @@
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
             <RowDefinition Height="15"/>
             <RowDefinition Height="85"/>
             <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
-        <StackPanel Grid.Row="0" Grid.Column="0" Height="15" Background="{StaticResource ClrMenuBackground}"/>
-        <StackPanel Grid.Row="1"  Height="85" Background="{StaticResource ClrTopHeaderBackground }">
+        <StackPanel Grid.Row="0" Grid.Column="0" Height="15" Background="{StaticResource ClrMenuBackground}" Grid.ColumnSpan="3"/>
+        <StackPanel Grid.Row="1"  Height="85" Background="{StaticResource ClrTopHeaderBackground }" Grid.ColumnSpan="3">
             <TextBlock Text="Team Liste" FontFamily="Microsoft sans seri" FontWeight="bold" Foreground="{StaticResource ClrGridBackground}" FontSize="35" Height="50" Width="175" Margin="0,30,0,0"></TextBlock>
         </StackPanel>
-        <StackPanel Grid.Row="2"  Height="auto" Background="{StaticResource ClrGridBackground}">
-            <DataGrid Name="TeamListGrid" AlternatingRowBackground="Gray" CanUserAddRows="False" AutoGenerateColumns="False" Height="650" Width="800"  Margin="0,25,0,0" ColumnHeaderHeight="35" IsReadOnly="True" RowHeight="50" FontFamily="Microsoft sans Seri">
+        <StackPanel Grid.Row="2"  Height="auto" Background="{StaticResource ClrGridBackground}" Grid.ColumnSpan="3" Grid.RowSpan="3">
+            <DataGrid Name="TeamListGrid" AlternatingRowBackground="Gray" CanUserAddRows="False" AutoGenerateColumns="False" Height="550" Width="800"  Margin="0,25,0,0" ColumnHeaderHeight="35" IsReadOnly="True" RowHeight="50" FontFamily="Microsoft sans Seri">
                 <DataGrid.Columns>
                     <DataGridTextColumn Header="Team navn" MaxWidth="300" MinWidth="300" FontFamily="Microsoft sans Seri" Binding="{Binding name}"/>
                     <DataGridTextColumn Header="Team Leder" MaxWidth="300" MinWidth="300" FontFamily="Microsoft sans Seri" Binding="{Binding leder}" />
@@ -37,6 +41,24 @@
                     </DataGridTemplateColumn>
                 </DataGrid.Columns>
             </DataGrid>
+        </StackPanel>
+        <StackPanel Grid.Row="4" Grid.Column="0">
+            <Button Name="opretTeam" Height="80" Width="200" BorderBrush="{StaticResource ClrTopHeaderBackground}" BorderThickness="5" Background="{StaticResource ClrLogoBackground}" Margin="68,130,0,0">
+                <TextBlock Foreground="{StaticResource ClrGridBackground}" FontSize="18" FontFamily="Microsoft sans Seri" FontWeight="Bold">Opret Team</TextBlock>
+            </Button>
+                    
+        </StackPanel>
+        <StackPanel Grid.Row="4" Grid.Column="1">
+            <Button Name="fjernTeam" Height="80" Width="200" BorderBrush="{StaticResource ClrTopHeaderBackground}" BorderThickness="5" Background="{StaticResource ClrLogoBackground}" Margin="0,130,0,0">
+                <TextBlock Foreground="{StaticResource ClrGridBackground}" FontSize="18" FontFamily="Microsoft sans Seri" FontWeight="Bold">Slet Team</TextBlock>
+            </Button>
+
+        </StackPanel>
+        <StackPanel Grid.Row="4" Grid.Column="2">
+            <Button Name="redigereTeam" Height="80" Width="200" BorderBrush="{StaticResource ClrTopHeaderBackground}" BorderThickness="5" Background="{StaticResource ClrLogoBackground}" Margin="0,130,67,0">
+                <TextBlock Foreground="{StaticResource ClrGridBackground}" FontSize="18" FontFamily="Microsoft sans Seri" FontWeight="Bold">Redigere Team</TextBlock>
+            </Button>
+
         </StackPanel>
     </Grid>
 </Page>
