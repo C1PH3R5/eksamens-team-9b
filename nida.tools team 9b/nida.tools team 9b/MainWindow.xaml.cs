@@ -29,5 +29,11 @@ namespace nida.tools_team_9b
 
         }
 
+        private void contentHolder_Navigated(object sender, NavigationEventArgs e)
+        {
+
+        }
+
+      
     }
 }
