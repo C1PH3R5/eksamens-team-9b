@@ -10,6 +10,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using nida.tools_team_9b.ViewModel;
 
 namespace nida.tools_team_9b.View.page
 {
@@ -21,6 +22,13 @@ namespace nida.tools_team_9b.View.page
         public opretTeam()
         {
             InitializeComponent();
+
+            OpretTeamViewModel.GetTeamlederList(this);
+        }
+
+        private void OpretTeam_Click(object sender, RoutedEventArgs e)
+        {
+            OpretTeamViewModel.OpretTeamData(this);
         }
     }
 }

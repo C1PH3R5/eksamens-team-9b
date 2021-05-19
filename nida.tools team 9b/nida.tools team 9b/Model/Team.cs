@@ -31,6 +31,13 @@ namespace nida.tools_team_9b.Model
             set { _Id = value; }
         }
 
+        private int _LederId;
+
+        public int lederId
+        {
+            get { return _LederId; }
+            set { _LederId = value; }
+        }
 
     }
 }

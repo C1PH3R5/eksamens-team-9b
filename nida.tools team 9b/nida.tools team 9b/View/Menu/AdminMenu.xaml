@@ -37,13 +37,7 @@
 
             </TextBlock>
         </Button>
-        <Button  Name="nulstilPassword" VerticalAlignment="Top" Margin="0,420,0,0" Height="80" Width="auto" Background="{StaticResource ClrMenuBackground}" Padding="0,-33,0,0" Click="Button_Click">
-            <TextBlock VerticalAlignment="Top" HorizontalAlignment="Right" Width="200" Padding="0,33,0,0" FontSize="15" FontFamily="Microsoft sans Serif" Margin="0,0,0,0" FontWeight="Heavy" Foreground="{StaticResource ClrGridBackground}">
-                <Image Width="20" HorizontalAlignment="Left" Height="auto" Source="/Resources/Icon/Lock-Open.ico" Margin="10,0,9,-4"/>
-                Nustil password
 
-            </TextBlock>
-        </Button>
         <Button Name="TimeBank"  VerticalAlignment="Top" Margin="0,500,0,0" Height="80" Width="auto" Background="{StaticResource ClrMenuBackground}" Padding="0,-33,0,0" Click="Button_Click">
             <TextBlock VerticalAlignment="Top" HorizontalAlignment="Right" Width="200" Padding="0,33,0,0" FontSize="15" FontFamily="Microsoft sans Serif" Margin="0,0,0,0" FontWeight="Heavy" Foreground="{StaticResource ClrGridBackground}">
                 <Image Width="20" HorizontalAlignment="Left" Height="auto" Source="/Resources/Icon/date.ico" Margin="10,0,9,-4"/>
@@ -58,10 +52,17 @@
 
             </TextBlock>
         </Button>
-        <Button  Name="LogUd" VerticalAlignment="bottom" Margin="0,580,0,0" Height="80" Width="auto" Background="{StaticResource ClrMenuBackground}" Padding="0,-33,0,0" Click="Button_Click">
+        <Button  Name="LogUd" VerticalAlignment="bottom" Margin="0,0,0,0" Height="80" Width="auto" Background="{StaticResource ClrMenuBackground}" Padding="0,-33,0,0" Click="Button_Click">
             <TextBlock VerticalAlignment="Top" HorizontalAlignment="Right" Width="200" Padding="0,33,0,0" FontSize="15" FontFamily="Microsoft sans Serif" Margin="0,0,0,0" FontWeight="Heavy" Foreground="{StaticResource ClrGridBackground}">
                 <Image Width="20" HorizontalAlignment="Left" Height="auto" Source="/Resources/Icon/logout.ico" Margin="10,0,9,-4"/>
                 Log ud
+
+            </TextBlock>
+        </Button>
+        <Button  Name="opretTeam" VerticalAlignment="Top" Margin="0,420,0,0" Height="80" Width="auto" Background="{StaticResource ClrMenuBackground}" Padding="0,-33,0,0" Click="Button_Click">
+            <TextBlock VerticalAlignment="Top" HorizontalAlignment="Right" Width="200" Padding="0,33,0,0" FontSize="15" FontFamily="Microsoft sans Serif" Margin="0,0,0,0" FontWeight="Heavy" Foreground="{StaticResource ClrGridBackground}">
+                <Image Width="20" HorizontalAlignment="Left" Height="auto" Source="/Resources/Icon/logout.ico" Margin="10,0,9,-4"/>
+                Opret Team
 
             </TextBlock>
         </Button>
