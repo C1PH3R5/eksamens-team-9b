@@ -11,32 +11,48 @@
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
             <RowDefinition Height="15"/>
             <RowDefinition Height="85"/>
             <RowDefinition Height="*"/>
+            <RowDefinition Height="100"/>
         </Grid.RowDefinitions>
-        <StackPanel Grid.Row="0" Grid.Column="0" Height="15" Background="{StaticResource ClrMenuBackground}"/>
-        <StackPanel Grid.Row="1"  Height="85" Background="{StaticResource ClrTopHeaderBackground }">
+        <StackPanel  Grid.ColumnSpan="3" Grid.RowSpan="4" Background="{StaticResource ClrGridBackground}"/>
+        <StackPanel Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3" Height="15" Background="{StaticResource ClrMenuBackground}"/>
+        <StackPanel Grid.Row="1"  Height="85" Grid.ColumnSpan="3" Background="{StaticResource ClrTopHeaderBackground }">
             <TextBlock Text="Medarbejder Liste" FontFamily="Microsoft sans seri" FontWeight="bold" Foreground="{StaticResource ClrGridBackground}" FontSize="35" Height="50" Width="300" Margin="0,30,0,0"></TextBlock>
         </StackPanel>
-        <StackPanel Grid.Row="2"  Height="auto" Background="{StaticResource ClrGridBackground}">
-            <DataGrid Name="medarbejderList" AlternatingRowBackground="Gray" CanUserAddRows="False" AutoGenerateColumns="False" Height="650" Width="800"  Margin="0,25,0,0" ColumnHeaderHeight="35" IsReadOnly="True" RowHeight="50" FontFamily="Microsoft sans Seri">
+        <StackPanel Grid.Row="2" Grid.ColumnSpan="3"  Height="auto" Background="{StaticResource ClrGridBackground}">
+            <DataGrid Name="medarbejderList" AlternatingRowBackground="Gray" CanUserAddRows="False" AutoGenerateColumns="False" Height="550" Width="800"  Margin="0,25,0,0" IsReadOnly="True"  FontFamily="Microsoft sans Seri">
                 <DataGrid.Columns>
+                    <DataGridTextColumn Header="Bruger ID" MaxWidth="100" MinWidth="100" FontFamily="Microsoft sans Seri" Binding="{Binding id}"/>
+                    <DataGridTextColumn Header="Brugernavn" MaxWidth="100" MinWidth="100" FontFamily="Microsoft sans Seri" Binding="{Binding userId}"/>
                     <DataGridTextColumn Header="Navn" MaxWidth="300" MinWidth="300" FontFamily="Microsoft sans Seri" Binding="{Binding fullnavn}"/>
                     <DataGridTextColumn Header="Team" MaxWidth="300" MinWidth="300" FontFamily="Microsoft sans Seri" Binding="{Binding team}" />
-                    <DataGridTemplateColumn MaxWidth="190" MinWidth="200" Header="Rediger" >
-                        <DataGridTemplateColumn.CellTemplate>
-                            <DataTemplate>
-                                <Button x:Name="opret" Foreground="{StaticResource ClrMenuBackground}" Width="150" BorderBrush="{StaticResource ClrTopHeaderBackground}" Background="{StaticResource ClrLogoBackground}" BorderThickness="5" VerticalAlignment="Center" >
-                                    <TextBlock Foreground="{StaticResource ClrGridBackground}" FontSize="18" FontFamily="Microsoft sans Seri" FontWeight="Bold">Rediger Bruger</TextBlock>
-                                </Button>
-                            </DataTemplate>
-                        </DataGridTemplateColumn.CellTemplate>
-                    </DataGridTemplateColumn>
+                    
                 </DataGrid.Columns>
             </DataGrid>
+        </StackPanel>
+        <StackPanel Grid.Row="4" Grid.Column="0">
+            <Button Name="opretMedarbejder" Height="80" Width="200" BorderBrush="{StaticResource ClrTopHeaderBackground}" BorderThickness="5" Background="{StaticResource ClrLogoBackground}" Margin="68,10,0,0" Click="opretMedarbejder_Click">
+                <TextBlock Foreground="{StaticResource ClrGridBackground}" FontSize="18" FontFamily="Microsoft sans Seri" FontWeight="Bold">Opret Medarbejder</TextBlock>
+            </Button>
+
+        </StackPanel>
+        <StackPanel Grid.Row="4" Grid.Column="1" >
+            <Button Name="fjernMedarbejder" Height="80" Width="200" BorderBrush="{StaticResource ClrTopHeaderBackground}" BorderThickness="5" Background="{StaticResource ClrLogoBackground}" Margin="0,10,0,0">
+                <TextBlock Foreground="{StaticResource ClrGridBackground}" FontSize="18" FontFamily="Microsoft sans Seri" FontWeight="Bold">Slet Medarbejder</TextBlock>
+            </Button>
+
+        </StackPanel>
+        <StackPanel Grid.Row="4" Grid.Column="2">
+            <Button Name="redigereMedarbejder" Height="80" Width="200" BorderBrush="{StaticResource ClrTopHeaderBackground}" BorderThickness="5" Background="{StaticResource ClrLogoBackground}" Margin="0,10,67,0">
+                <TextBlock Foreground="{StaticResource ClrGridBackground}" FontSize="18" FontFamily="Microsoft sans Seri" FontWeight="Bold">Redigere Medarbejder</TextBlock>
+            </Button>
+
         </StackPanel>
     </Grid>
 </Page>

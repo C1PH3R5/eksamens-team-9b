@@ -24,5 +24,10 @@ namespace nida.tools_team_9b.View.page
             InitializeComponent();
             medarbejderList.ItemsSource = MedarbejderListViewModel.GetMedarbejder();
         }
+
+        private void opretMedarbejder_Click(object sender, RoutedEventArgs e)
+        {
+            MedarbejderListViewModel.ShowOpretMedarbejderPage(Window.GetWindow(this) as MainWindow);
+        }
     }
 }

@@ -6,6 +6,14 @@ namespace nida.tools_team_9b.Model
 {
    public class Medarbejder
     {
+        private int _Id;
+
+        public int id
+        {
+            get { return _Id; }
+            set { _Id = value; }
+        }
+
         private string _Navn;
 
         public string navn

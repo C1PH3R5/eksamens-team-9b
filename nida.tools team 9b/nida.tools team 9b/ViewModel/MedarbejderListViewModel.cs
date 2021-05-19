@@ -4,6 +4,9 @@ using System.Text;
 using nida.tools_team_9b.Model;
 using nida.tools_team_9b.Database;
 using MySql.Data.MySqlClient;
+using nida.tools_team_9b;
+using System.Windows;
+using nida.tools_team_9b.View.page;
 
 
 namespace nida.tools_team_9b.ViewModel
@@ -15,7 +18,7 @@ namespace nida.tools_team_9b.ViewModel
             List<Medarbejder> medarbejderList = new List<Medarbejder>();
             MySqlConnection con = GetConnection();
             con.Open();
-            string sqlQuery = "SELECT employee.roleid, employee.userid, employee.firstname, employee.lastname, employee.email, employee.workinghours, team.teamNavn FROM ((employee INNER JOIN employee_team ON employee.id = employee_team.employee_id) INNER JOIN team ON employee_team.team_id = team.id) WHERE employee.roleid = 3;";
+            string sqlQuery = "SELECT employee.id, employee.roleid, employee.userid, employee.firstname, employee.lastname, employee.email, employee.workinghours, team.teamNavn FROM ((employee INNER JOIN employee_team ON employee.id = employee_team.employee_id) INNER JOIN team ON employee_team.team_id = team.id) WHERE employee.roleid = 3;";
 
             MySqlCommand cmd = new MySqlCommand(sqlQuery, con);
             using (MySqlDataReader Reader = cmd.ExecuteReader())
@@ -27,7 +30,7 @@ namespace nida.tools_team_9b.ViewModel
                         //I would also check for DB.Null here before reading the value.
                         medarbejderList.Add(new Medarbejder()
                         {
-                            
+                            id = Reader.GetInt32(Reader.GetOrdinal("id")),
                             roleId = Reader.GetInt32(Reader.GetOrdinal("roleid")),
                             userId = Reader.GetString(Reader.GetOrdinal("userid")),
                             navn = Reader.GetString(Reader.GetOrdinal("firstname")),
@@ -43,6 +46,13 @@ namespace nida.tools_team_9b.ViewModel
             }
             con.Close();
             return medarbejderList;
+        }
+        public static void ShowOpretMedarbejderPage(MainWindow window)
+        {
+
+            //Window mainWindow = this.MainWindow;
+
+            window.contentHolder.Source = new Uri("/View/page/opretMedarbejder.xaml", UriKind.Relative);
         }
     }
 }

@@ -18,6 +18,6 @@
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
         <Frame Grid.Row="0" Grid.Column="0" Name="menuFrame" NavigationUIVisibility="Hidden"/>
-        <Frame Grid.Row="0" Grid.Column="1" Name="contentHolder" NavigationUIVisibility="Hidden" Source="/View/page/Tjek_ind_ud.xaml"/>
+        <Frame Grid.Row="0" Grid.Column="1" Name="contentHolder" NavigationUIVisibility="Hidden" Source="/View/page/Tjek_ind_ud.xaml" Navigated="contentHolder_Navigated"/>
     </Grid>
 </Window>
