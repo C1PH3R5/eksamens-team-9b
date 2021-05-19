@@ -23,13 +23,6 @@
 
             </TextBlock>
         </Button>
-        <Button Name="opretMedarbejder"  VerticalAlignment="Top" Margin="0,260,0,0" Height="80" Width="auto" Background="{StaticResource ClrMenuBackground}" Padding="0,-33,0,0" Click="Button_Click">
-            <TextBlock VerticalAlignment="Top" HorizontalAlignment="Right" Width="200" Padding="0,33,0,0" FontSize="15" FontFamily="Microsoft sans Serif" Margin="0,0,0,0" FontWeight="Heavy" Foreground="{StaticResource ClrGridBackground}">
-                <Image Width="20" HorizontalAlignment="Left" Height="auto" Source="/Resources/Icon/User-add.ico" Margin="10,0,9,-4"/>
-                Opret medarbejder
-
-            </TextBlock>
-        </Button>
         <Button Name="MødtMedarbejder" VerticalAlignment="Top" Margin="0,180,0,0" Height="80" Width="auto" Background="{StaticResource ClrMenuBackground}" Padding="0,-33,0,0" Click="Button_Click">
             <TextBlock VerticalAlignment="Top" HorizontalAlignment="Right" Width="200" Padding="0,33,0,0" FontSize="15" FontFamily="Microsoft sans Serif" Margin="0,0,0,0" FontWeight="Heavy" Foreground="{StaticResource ClrGridBackground}">
                 <Image Width="20" HorizontalAlignment="Left" Height="auto" Source="/Resources/Icon/Employee.ico" Margin="10,0,9,-4"/>
@@ -38,14 +31,14 @@
             </TextBlock>
         </Button>
 
-        <Button Name="TimeBank"  VerticalAlignment="Top" Margin="0,500,0,0" Height="80" Width="auto" Background="{StaticResource ClrMenuBackground}" Padding="0,-33,0,0" Click="Button_Click">
+        <Button Name="TimeBank"  VerticalAlignment="Top" Margin="0,340,0,0" Height="80" Width="auto" Background="{StaticResource ClrMenuBackground}" Padding="0,-33,0,0" Click="Button_Click">
             <TextBlock VerticalAlignment="Top" HorizontalAlignment="Right" Width="200" Padding="0,33,0,0" FontSize="15" FontFamily="Microsoft sans Serif" Margin="0,0,0,0" FontWeight="Heavy" Foreground="{StaticResource ClrGridBackground}">
                 <Image Width="20" HorizontalAlignment="Left" Height="auto" Source="/Resources/Icon/date.ico" Margin="10,0,9,-4"/>
                 Time Bank
 
             </TextBlock>
         </Button>
-        <Button Name="teamList"  VerticalAlignment="Top" Margin="0,340,0,0" Height="80" Width="auto" Background="{StaticResource ClrMenuBackground}" Padding="0,-33,0,0" Click="Button_Click">
+        <Button Name="teamList"  VerticalAlignment="Top" Margin="0,260,0,0" Height="80" Width="auto" Background="{StaticResource ClrMenuBackground}" Padding="0,-33,0,0" Click="Button_Click">
             <TextBlock VerticalAlignment="Top" HorizontalAlignment="Right" Width="200" Padding="0,33,0,0" FontSize="15" FontFamily="Microsoft sans Serif" Margin="0,0,0,0" FontWeight="Heavy" Foreground="{StaticResource ClrGridBackground}">
                 <Image Width="20" HorizontalAlignment="Left" Height="auto" Source="/Resources/Icon/user-group.ico" Margin="10,0,9,-4"/>
                 Teams
@@ -59,12 +52,6 @@
 
             </TextBlock>
         </Button>
-        <Button  Name="opretTeam" VerticalAlignment="Top" Margin="0,420,0,0" Height="80" Width="auto" Background="{StaticResource ClrMenuBackground}" Padding="0,-33,0,0" Click="Button_Click">
-            <TextBlock VerticalAlignment="Top" HorizontalAlignment="Right" Width="200" Padding="0,33,0,0" FontSize="15" FontFamily="Microsoft sans Serif" Margin="0,0,0,0" FontWeight="Heavy" Foreground="{StaticResource ClrGridBackground}">
-                <Image Width="20" HorizontalAlignment="Left" Height="auto" Source="/Resources/Icon/logout.ico" Margin="10,0,9,-4"/>
-                Opret Team
 
-            </TextBlock>
-        </Button>
     </Grid>
 </Page>
