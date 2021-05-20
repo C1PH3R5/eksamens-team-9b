@@ -31,62 +31,62 @@
         </StackPanel>
 
         <StackPanel Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2" Height="auto"  Background="{StaticResource ClrGridBackground}">
-            <TextBlock Width="300" Margin="0,50,0,0" FontSize="18" FontFamily="Microsoft sans Seri" FontWeight="Bold">Fornavn:</TextBlock>
-            <TextBox x:Name="Navn" Width="300" Height="40" FontSize="18" BorderThickness="5" FontFamily="Microsoft sans Seri" Margin="0,10,0,0" Padding="0,5,0,0" BorderBrush="{StaticResource ClrTopHeaderBackground}"></TextBox>
+            <TextBlock Width="300" Margin="0,50,10,0" FontSize="18" FontFamily="Microsoft sans Seri" FontWeight="Bold">Fornavn:</TextBlock>
+            <TextBox x:Name="Navn" Width="310" Height="40" FontSize="18" BorderThickness="5" FontFamily="Microsoft sans Seri" Margin="0,10,0,0" Padding="0,5,0,0" BorderBrush="{StaticResource ClrTopHeaderBackground}"></TextBox>
         </StackPanel>
 
         <StackPanel Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="2" Height="auto" >
-            <TextBlock Width="300" Margin="0,11,0,0" FontSize="18" FontFamily="Microsoft sans Seri" FontWeight="Bold">Efternavn:</TextBlock>
-            <TextBox x:Name="Efternavn" Width="300" Height="40" FontSize="18" BorderThickness="5" FontFamily="Microsoft sans Seri" Margin="0,10,0,0" Padding="0,5,0,0" BorderBrush="{StaticResource ClrTopHeaderBackground}"></TextBox>
+            <TextBlock Width="300" Margin="0,11,10,0" FontSize="18" FontFamily="Microsoft sans Seri" FontWeight="Bold">Efternavn:</TextBlock>
+            <TextBox x:Name="Efternavn" Width="310" Height="40" FontSize="18" BorderThickness="5" FontFamily="Microsoft sans Seri" Margin="0,10,0,0" Padding="0,5,0,0" BorderBrush="{StaticResource ClrTopHeaderBackground}"></TextBox>
         </StackPanel>
 
         <StackPanel Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="2" Height="auto">
-            <TextBlock Width="300" Margin="0,0,0,0" FontSize="18" FontFamily="Microsoft sans Seri" FontWeight="Bold">Adresse:</TextBlock>
-            <TextBox x:Name="adresse" Width="300" Height="40" FontSize="18" BorderThickness="5" FontFamily="Microsoft sans Seri" Margin="0,10,0,0" Padding="0,5,0,0" BorderBrush="{StaticResource ClrTopHeaderBackground}"></TextBox>
+            <TextBlock Width="300" Margin="0,0,10,0" FontSize="18" FontFamily="Microsoft sans Seri" FontWeight="Bold">Adresse:</TextBlock>
+            <TextBox x:Name="adresse" Width="310" Height="40" FontSize="18" BorderThickness="5" FontFamily="Microsoft sans Seri" Margin="0,10,0,0" Padding="0,5,0,0" BorderBrush="{StaticResource ClrTopHeaderBackground}"></TextBox>
             
         </StackPanel>
         
         <StackPanel Grid.Row="5" Grid.Column="1">
-            <TextBlock Width="100" Margin="0,0,50,0" FontSize="18" FontFamily="Microsoft sans Seri" FontWeight="Bold">Post Nr:</TextBlock>
-            <TextBox x:Name="Postnr" Width="100" Height="40"  FontSize="18" BorderThickness="5" FontFamily="Microsoft sans Seri" Margin="0,0,50,0" Padding="0,5,0,0" BorderBrush="{StaticResource ClrTopHeaderBackground}"></TextBox>
+            <TextBlock Width="100" Margin="0,0,70,0" FontSize="18" FontFamily="Microsoft sans Seri" FontWeight="Bold">Post Nr:</TextBlock>
+            <TextBox x:Name="Postnr" Width="120" Height="40"  FontSize="18" BorderThickness="5" FontFamily="Microsoft sans Seri" Margin="0,0,50,0" Padding="0,5,0,0" BorderBrush="{StaticResource ClrTopHeaderBackground}"></TextBox>
         </StackPanel>
                 
         <StackPanel Grid.Row="5" Grid.Column="0">
-            <TextBlock Width="30" Margin="0,0,0,0" FontSize="18" FontFamily="Microsoft sans Seri" FontWeight="Bold">By:</TextBlock>
-            <TextBox x:Name="By" Width="150" Height="40" HorizontalAlignment="Left" FontSize="18" BorderThickness="5" FontFamily="Microsoft sans Seri" Margin="101,0,0,0" Padding="0,5,0,0" BorderBrush="{StaticResource ClrTopHeaderBackground}"></TextBox>
+            <TextBlock Width="30" Margin="0,0,40,0" FontSize="18" FontFamily="Microsoft sans Seri" FontWeight="Bold">By:</TextBlock>
+            <TextBox x:Name="By" Width="160" Height="40" HorizontalAlignment="Left" FontSize="18" BorderThickness="5" FontFamily="Microsoft sans Seri" Margin="90,0,0,0" Padding="0,5,0,0" BorderBrush="{StaticResource ClrTopHeaderBackground}"></TextBox>
         </StackPanel>
 
         <StackPanel Grid.Row="2" Grid.Column="2" Grid.RowSpan="2"  Height="auto" Background="{StaticResource ClrGridBackground}">
-            <TextBlock Width="300" Margin="0,50,0,0" FontSize="18" FontFamily="Microsoft sans Seri" FontWeight="Bold">Telefon Nr:</TextBlock>
-            <TextBox x:Name="hjemmeTlf" Width="300" Height="40" FontSize="18" BorderThickness="5" FontFamily="Microsoft sans Seri" Margin="0,10,0,0" Padding="0,5,0,0" BorderBrush="{StaticResource ClrTopHeaderBackground}" Text="Hjemme"></TextBox>
-            <TextBox x:Name="mobil" Width="300" Height="40" FontSize="18" BorderThickness="5" FontFamily="Microsoft sans Seri" Margin="0,10,0,0" Padding="0,5,0,0" BorderBrush="{StaticResource ClrTopHeaderBackground}" Text="Mobil"></TextBox>
-            <TextBox x:Name="arbejds" Width="300" Height="40" FontSize="18" BorderThickness="5" FontFamily="Microsoft sans Seri" Margin="0,10,0,0" Padding="0,5,0,0" BorderBrush="{StaticResource ClrTopHeaderBackground}" Text="Arbejde"></TextBox>
+            <TextBlock Width="300" Margin="0,50,10,0" FontSize="18" FontFamily="Microsoft sans Seri" FontWeight="Bold">Telefon Nr:</TextBlock>
+            <TextBox x:Name="hjemmeTlf" Width="310" Height="40" FontSize="18" BorderThickness="5" FontFamily="Microsoft sans Seri" Margin="0,10,0,0" Padding="0,5,0,0" BorderBrush="{StaticResource ClrTopHeaderBackground}" Text="Hjemme"></TextBox>
+            <TextBox x:Name="mobil" Width="310" Height="40" FontSize="18" BorderThickness="5" FontFamily="Microsoft sans Seri" Margin="0,10,0,0" Padding="0,5,0,0" BorderBrush="{StaticResource ClrTopHeaderBackground}" Text="Mobil"></TextBox>
+            <TextBox x:Name="arbejds" Width="310" Height="40" FontSize="18" BorderThickness="5" FontFamily="Microsoft sans Seri" Margin="0,10,0,0" Padding="0,5,0,0" BorderBrush="{StaticResource ClrTopHeaderBackground}" Text="Arbejde"></TextBox>
         </StackPanel>
         <StackPanel Grid.Row="4" Grid.Column="2" Margin="0,0,0,0">
-            <TextBlock Width="100" Margin="100,0,0,0" FontSize="18" HorizontalAlignment="Left" FontFamily="Microsoft sans Seri" FontWeight="Bold">E-mail:</TextBlock>
-            <TextBox x:Name="Email" Width="300" Height="40" FontSize="18" BorderThickness="5" FontFamily="Microsoft sans Seri" Margin="0,10,0,0" Padding="0,5,0,0" BorderBrush="{StaticResource ClrTopHeaderBackground}"></TextBox>
+            <TextBlock Width="100" Margin="95,0,0,0" FontSize="18" HorizontalAlignment="Left" FontFamily="Microsoft sans Seri" FontWeight="Bold">E-mail:</TextBlock>
+            <TextBox x:Name="Email" Width="310" Height="40" FontSize="18" BorderThickness="5" FontFamily="Microsoft sans Seri" Margin="0,10,0,0" Padding="0,5,0,0" BorderBrush="{StaticResource ClrTopHeaderBackground}"></TextBox>
         </StackPanel>
         <StackPanel Grid.Row="5" Grid.Column="2" Margin="0,0,0,0">
-            <TextBlock Width="300" Margin="100,0,0,0" FontSize="18" HorizontalAlignment="Left" FontFamily="Microsoft sans Seri" FontWeight="Bold">Arbejds E-mail:</TextBlock>
-            <TextBox x:Name="arbejdesEmail" Width="300" Height="40" FontSize="18" BorderThickness="5" FontFamily="Microsoft sans Seri" Margin="0,0,0,0" Padding="0,5,0,0" BorderBrush="{StaticResource ClrTopHeaderBackground}"></TextBox>
+            <TextBlock Width="300" Margin="95,0,0,0" FontSize="18" HorizontalAlignment="Left" FontFamily="Microsoft sans Seri" FontWeight="Bold">Arbejds E-mail:</TextBlock>
+            <TextBox x:Name="arbejdesEmail" Width="310" Height="40" FontSize="18" BorderThickness="5" FontFamily="Microsoft sans Seri" Margin="0,0,0,0" Padding="0,5,0,0" BorderBrush="{StaticResource ClrTopHeaderBackground}"></TextBox>
         </StackPanel>
         
         <StackPanel Grid.Row="6" Grid.Column="0" Grid.ColumnSpan="2">
-                <Rectangle Width="310" Height="50" Fill="{StaticResource ClrTopHeaderBackground}" Margin="0,22,0,0">
+                <Rectangle Width="320" Height="50" Fill="{StaticResource ClrTopHeaderBackground}" Margin="0,22,0,0">
                 </Rectangle>
             </StackPanel>
         <StackPanel Grid.Row="6" Grid.Column="0" Grid.ColumnSpan="2">
-            <TextBlock Width="300" Margin="0,0,0,0" FontSize="18" FontFamily="Microsoft sans Seri" FontWeight="Bold">Team:</TextBlock>
-            <ComboBox Name="vælgTeam" IsEditable="True" Height="40" Width="300" FontSize="18" FontFamily="Microsoft sans Seri" Margin="0,5,0,170">
+            <TextBlock Width="300" Margin="0,0,10,0" FontSize="18" FontFamily="Microsoft sans Seri" FontWeight="Bold">Team:</TextBlock>
+            <ComboBox Name="vælgTeam" IsEditable="True" Height="40" Width="310" FontSize="18" FontFamily="Microsoft sans Seri" Margin="0,5,0,170">
             </ComboBox>
         </StackPanel>
         <StackPanel Grid.Row="6" Grid.Column="2"  Height="auto">
-            <Button x:Name="opret" Foreground="{StaticResource ClrMenuBackground}" BorderBrush="{StaticResource ClrTopHeaderBackground}" Background="{StaticResource ClrLogoBackground}" BorderThickness="5" Height="75" Width="200" HorizontalAlignment="right"  Margin="0,60,100,0" Click="opret_Click">
+            <Button x:Name="opret" Foreground="{StaticResource ClrMenuBackground}" BorderBrush="{StaticResource ClrTopHeaderBackground}" Background="{StaticResource ClrLogoBackground}" BorderThickness="5" Height="75" Width="140" HorizontalAlignment="right"  Margin="0,60,95,0" Click="opret_Click">
                 <TextBlock Foreground="{StaticResource ClrGridBackground}" FontSize="18" FontFamily="Microsoft sans Seri" FontWeight="Bold">Opret Bruger</TextBlock>
             </Button>
         </StackPanel>
         <StackPanel Grid.Row="6" Grid.Column="2"  Height="auto">
-            <Button x:Name="anuller" Foreground="{StaticResource ClrMenuBackground}" BorderBrush="{StaticResource ClrTopHeaderBackground}" Background="{StaticResource ClrLogoBackground}" BorderThickness="5" Height="75" Width="150" HorizontalAlignment="left"  Margin="0,60,100,0" Click="anuller_Click">
+            <Button x:Name="anuller" Foreground="{StaticResource ClrMenuBackground}" BorderBrush="{StaticResource ClrTopHeaderBackground}" Background="{StaticResource ClrLogoBackground}" BorderThickness="5" Height="75" Width="140" HorizontalAlignment="left"  Margin="97,60,0,0" Click="anuller_Click">
                 <TextBlock Foreground="{StaticResource ClrGridBackground}" FontSize="18" FontFamily="Microsoft sans Seri" FontWeight="Bold">Anuller</TextBlock>
             </Button>
         </StackPanel>
