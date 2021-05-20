@@ -21,8 +21,10 @@
     <None Remove="Resources\Icon\Warning-Message.ico" />
     <None Remove="Resources\image\BlåLogo.png" />
     <None Remove="Resources\image\HvidLogo.png" />
+    <None Remove="Resources\image\HvidNlogo.png" />
     <None Remove="Resources\image\Logo.png" />
     <None Remove="Resources\image\SortLogo.png" />
+    <None Remove="Resources\image\SortNlogo.png" />
   </ItemGroup>
 
   <ItemGroup>
@@ -80,10 +82,16 @@
     <Resource Include="Resources\image\HvidLogo.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
+    <Resource Include="Resources\image\HvidNlogo.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
     <Resource Include="Resources\image\Logo.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
     <Resource Include="Resources\image\SortLogo.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\image\SortNlogo.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
   </ItemGroup>
