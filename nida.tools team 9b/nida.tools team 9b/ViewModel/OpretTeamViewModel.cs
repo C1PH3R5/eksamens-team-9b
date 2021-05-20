@@ -108,6 +108,10 @@ namespace nida.tools_team_9b.ViewModel
             window.vælgTeamLeder.DisplayMemberPath = "name";
             return lederList;
         }
+        public static void anuller(MainWindow window)
+        {
+            window.contentHolder.Source = new Uri("/View/page/teamList.xaml", UriKind.Relative);
+        }
     }
         
 }

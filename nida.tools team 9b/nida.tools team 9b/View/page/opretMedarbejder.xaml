@@ -70,19 +70,25 @@
             <TextBlock Width="300" Margin="100,0,0,0" FontSize="18" HorizontalAlignment="Left" FontFamily="Microsoft sans Seri" FontWeight="Bold">Arbejds E-mail:</TextBlock>
             <TextBox x:Name="arbejdesEmail" Width="300" Height="40" FontSize="18" BorderThickness="5" FontFamily="Microsoft sans Seri" Margin="0,0,0,0" Padding="0,5,0,0" BorderBrush="{StaticResource ClrTopHeaderBackground}"></TextBox>
         </StackPanel>
+        
+        <StackPanel Grid.Row="6" Grid.Column="0" Grid.ColumnSpan="2">
+                <Rectangle Width="310" Height="50" Fill="{StaticResource ClrTopHeaderBackground}" Margin="0,22,0,0">
+                </Rectangle>
+            </StackPanel>
+        <StackPanel Grid.Row="6" Grid.Column="0" Grid.ColumnSpan="2">
+            <TextBlock Width="300" Margin="0,0,0,0" FontSize="18" FontFamily="Microsoft sans Seri" FontWeight="Bold">Team:</TextBlock>
+            <ComboBox Name="vælgTeam" IsEditable="True" Height="40" Width="300" FontSize="18" FontFamily="Microsoft sans Seri" Margin="0,5,0,170">
+            </ComboBox>
+        </StackPanel>
         <StackPanel Grid.Row="6" Grid.Column="2"  Height="auto">
             <Button x:Name="opret" Foreground="{StaticResource ClrMenuBackground}" BorderBrush="{StaticResource ClrTopHeaderBackground}" Background="{StaticResource ClrLogoBackground}" BorderThickness="5" Height="75" Width="200" HorizontalAlignment="right"  Margin="0,60,100,0" Click="opret_Click">
                 <TextBlock Foreground="{StaticResource ClrGridBackground}" FontSize="18" FontFamily="Microsoft sans Seri" FontWeight="Bold">Opret Bruger</TextBlock>
             </Button>
         </StackPanel>
-        <StackPanel Grid.Row="6" Grid.Column="0" Grid.ColumnSpan="2">
-                <Rectangle Width="310" Height="50" Fill="{StaticResource ClrTopHeaderBackground}" Margin="0,22,0,0">
-                </Rectangle>
-            </StackPanel>
-        <StackPanel Grid.Row="7" Grid.Column="0" Grid.ColumnSpan="2">
-            <TextBlock Width="300" Margin="0,0,0,0" FontSize="18" FontFamily="Microsoft sans Seri" FontWeight="Bold">Team:</TextBlock>
-            <ComboBox Name="vælgTeam" IsEditable="True" Height="40" Width="300" FontSize="18" FontFamily="Microsoft sans Seri" Margin="0,5,0,170">
-            </ComboBox>
+        <StackPanel Grid.Row="6" Grid.Column="2"  Height="auto">
+            <Button x:Name="anuller" Foreground="{StaticResource ClrMenuBackground}" BorderBrush="{StaticResource ClrTopHeaderBackground}" Background="{StaticResource ClrLogoBackground}" BorderThickness="5" Height="75" Width="150" HorizontalAlignment="left"  Margin="0,60,100,0" Click="anuller_Click">
+                <TextBlock Foreground="{StaticResource ClrGridBackground}" FontSize="18" FontFamily="Microsoft sans Seri" FontWeight="Bold">Anuller</TextBlock>
+            </Button>
         </StackPanel>
 
     </Grid>

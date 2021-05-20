@@ -181,6 +181,10 @@ namespace nida.tools_team_9b.ViewModel
             }
             return medarbejderId;
         }
+        public static void anuller(MainWindow window)
+        {
+            window.contentHolder.Source = new Uri("/View/page/medarbejderList.xaml", UriKind.Relative);
+        }
     }
 }
 //MySqlConnection con = GetConnection();
