@@ -13,7 +13,7 @@
             
         </StackPanel>
         <StackPanel x:Name="LogoHeader" Height="85" VerticalAlignment="Top" Margin="0,15,0,0" Background="{StaticResource ClrLogoBackground}" >
-            <Image Source="/Resources/image/SortLogo.png" Margin="0,18,0,0"/>
+            <Image Source="/Resources/image/hvidLogo.png" Margin="0,28,0,0"/>
        
         </StackPanel>
         <Button Name="Tjek_ind_ud"  VerticalAlignment="Top" Margin="0,100,0,0" Height="80" Width="auto" Background="{StaticResource ClrMenuBackground}" Padding="0,-33,0,0" Click="Button_Click">
@@ -47,7 +47,7 @@
         <Button Name="TimeBank" VerticalAlignment="Top" Margin="0,420,0,0" Height="80" Width="auto" Background="{StaticResource ClrMenuBackground}" Padding="0,-33,0,0" Click="Button_Click">
             <TextBlock VerticalAlignment="Top" HorizontalAlignment="Right" Width="200" Padding="0,33,0,0" FontSize="15" FontFamily="Microsoft sans Serif" Margin="0,0,0,0" FontWeight="Heavy" Foreground="{StaticResource ClrGridBackground}">
                 <Image Width="20" HorizontalAlignment="Left" Height="auto" Source="/Resources/Icon/date.ico" Margin="10,0,9,-4"/>
-                Time Bank
+                Tjek arbejdstider
 
             </TextBlock>
         </Button>

@@ -24,7 +24,7 @@
 
 
         <StackPanel Grid.Row="0" Grid.ColumnSpan="3" x:Name="Logoheader" VerticalAlignment="Top" Height="auto">
-            <Image Source="/Resources/image/SortLogo.png" Height="90" Margin="0,15,0,0"/>
+            <Image Source="/Resources/image/sortLogo.png" Height="90" Margin="0,15,0,0"/>
         </StackPanel>
         <StackPanel Grid.Row="1" Grid.ColumnSpan="3" Height="auto" Width="500" HorizontalAlignment="Center" VerticalAlignment="Center">
             <TextBlock Height="30"  HorizontalAlignment="Left" Margin="100,30,0,0" Text="Username" VerticalAlignment="Top" Width="100" Foreground="White" FontFamily="Microsoft Sans Serif" FontSize="20" />
@@ -41,15 +41,15 @@
             <Image Name="messageImage" Source="/Resources/Icon/Warning-Message.ico" Width="25" Height="25" Margin="0,10,40,0" Visibility="Hidden" HorizontalAlignment="right" />
         </StackPanel>
         <StackPanel Grid.Row="3" Grid.ColumnSpan="3" Width="auto" Height="auto">
-            <Button Width="100" Height="50" Background="{StaticResource ClrLogoBackground}" Margin="0,25,300,0" HorizontalAlignment="Right" Click="LogUd_Button_Click">
-                <TextBlock Height="30" Width="auto" Foreground=" white" FontSize="20" TextAlignment="Center" FontFamily="Microsoft sans Serif">
+            <Button Width="100" Height="40" Background="{StaticResource ClrLogoBackground}" Margin="0,25,300,0" HorizontalAlignment="Right" Click="LogUd_Button_Click">
+                <TextBlock Height="30" Width="auto" Foreground=" white" FontSize="22" TextAlignment="Center" FontFamily="Microsoft sans Serif">
                     Annuller
                 </TextBlock>
             </Button>
         </StackPanel>
         <StackPanel Grid.Row="3" Grid.ColumnSpan="3" Width="auto" Height="auto">
-            <Button Width="100" Height="50" Background="{StaticResource ClrLogoBackground}" Margin="0,25,100,0" HorizontalAlignment="Right" Click="LogIndButton_Click" >
-                <TextBlock Height="30" Width="auto" Foreground=" white" FontSize="20" TextAlignment="Center" FontFamily="Microsoft sans Serif">
+            <Button Width="100" Height="40" Background="{StaticResource ClrLogoBackground}" Margin="0,25,100,0" HorizontalAlignment="Right" Click="LogIndButton_Click" >
+                <TextBlock Height="30" Width="auto" Foreground=" white" FontSize="22" TextAlignment="Center" FontFamily="Microsoft sans Serif">
                     Logind
                 </TextBlock>
             </Button>
