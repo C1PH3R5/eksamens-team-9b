@@ -13,7 +13,7 @@ namespace nida.tools_team_9b.ViewModel
         {
             MySqlConnection con = GetConnection();
             con.Open();
-            string sqlQuery = "SELECT employee.firstname, employee.lastname, team.teamNavn FROM ((employee INNER JOIN employee_team ON employee.id = employee_team.employee_id) INNER JOIN team ON employee_team.team_id = team.id) WHERE employee.roleid = 2;";
+            string sqlQuery = "SELECT employee.firstname, employee.lastname, team.teamNavn, team.id FROM ((employee INNER JOIN employee_team ON employee.id = employee_team.employee_id) INNER JOIN team ON employee_team.team_id = team.id) WHERE employee.roleid = 2;";
             MySqlCommand cmd = new MySqlCommand(sqlQuery, con);
 
             List<Team> TeamList = new List<Team>();
@@ -27,6 +27,7 @@ namespace nida.tools_team_9b.ViewModel
                         //I would also check for DB.Null here before reading the value.
                         TeamList.Add(new Team() 
                         {
+                            id = Reader.GetInt32(Reader.GetOrdinal("id")),
                             name = Reader.GetString(Reader.GetOrdinal("teamNavn")),
                             leder = (Reader.GetString(Reader.GetOrdinal("firstname")) + " " + Reader.GetString(Reader.GetOrdinal("lastname"))),
                         });
@@ -37,5 +38,10 @@ namespace nida.tools_team_9b.ViewModel
             con.Close();
             return TeamList;
         }
+        public static void ShowTeamListPage(MainWindow window)
+        {
+            window.contentHolder.Source = new Uri("/View/page/opretTeam.xaml", UriKind.Relative);
+        }
+
     }
 }

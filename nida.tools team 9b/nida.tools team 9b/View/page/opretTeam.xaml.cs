@@ -30,5 +30,10 @@ namespace nida.tools_team_9b.View.page
         {
             OpretTeamViewModel.OpretTeamData(this);
         }
+
+        private void anulereTeam_Click(object sender, RoutedEventArgs e)
+        {
+            OpretTeamViewModel.anuller(Window.GetWindow(this) as MainWindow);
+        }
     }
 }

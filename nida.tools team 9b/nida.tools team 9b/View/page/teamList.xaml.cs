@@ -24,5 +24,10 @@ namespace nida.tools_team_9b.View.page
             InitializeComponent();
             TeamListGrid.ItemsSource = TeamListViewModel.GetTeam();
         }
+
+        private void opretTeam_Click(object sender, RoutedEventArgs e)
+        {
+            TeamListViewModel.ShowTeamListPage(Window.GetWindow(this) as MainWindow);
+        }
     }
 }

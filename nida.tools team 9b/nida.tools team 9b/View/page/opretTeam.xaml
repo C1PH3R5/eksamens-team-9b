@@ -52,7 +52,7 @@
         </StackPanel>
 
         <StackPanel Grid.Row="6" Grid.Column="1">
-            <Button Name="anulereTeam" Height="75" Width="200" Foreground="{StaticResource ClrMenuBackground}" Background="{StaticResource ClrLogoBackground}" BorderBrush="{StaticResource ClrTopHeaderBackground}" BorderThickness="5" HorizontalAlignment="Left" Margin="0,60,0,0">
+            <Button Name="anulereTeam" Height="75" Width="200" Foreground="{StaticResource ClrMenuBackground}" Background="{StaticResource ClrLogoBackground}" BorderBrush="{StaticResource ClrTopHeaderBackground}" BorderThickness="5" HorizontalAlignment="Left" Margin="0,60,0,0" Click="anulereTeam_Click">
                 <TextBlock Foreground="{StaticResource ClrGridBackground}" FontSize="18" FontFamily="Microsoft sans Seri" FontWeight="Bold">Anullere</TextBlock>
             </Button>
         </StackPanel>
