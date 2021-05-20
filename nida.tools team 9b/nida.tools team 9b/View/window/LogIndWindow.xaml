@@ -24,7 +24,7 @@
 
 
         <StackPanel Grid.Row="0" Grid.ColumnSpan="3" x:Name="Logoheader" VerticalAlignment="Top" Height="auto">
-            <Image Source="/Resources/image/Logo.png" Height="90" Margin="0,15,0,0"/>
+            <Image Source="/Resources/image/SortLogo.png" Height="90" Margin="0,15,0,0"/>
         </StackPanel>
         <StackPanel Grid.Row="1" Grid.ColumnSpan="3" Height="auto" Width="500" HorizontalAlignment="Center" VerticalAlignment="Center">
             <TextBlock Height="30"  HorizontalAlignment="Left" Margin="100,30,0,0" Text="Username" VerticalAlignment="Top" Width="100" Foreground="White" FontFamily="Microsoft Sans Serif" FontSize="20" />
