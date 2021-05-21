@@ -29,6 +29,7 @@ namespace nida.tools_team_9b.ViewModel
                     }
                 }
             con.Close();
+
         }
         private static void tjekType(MySqlDataReader Reader, Tjek_ind_ud window)
         {
@@ -57,7 +58,7 @@ namespace nida.tools_team_9b.ViewModel
             }
 
         }
-        public static void TjekIndUd(Tjek_ind_ud window)
+        public static void TjekIndUd(Tjek_ind_ud window, MainWindow mainWindow)
         {
             MySqlConnection con = GetConnection();
             switch (window.StempleButton.Content)
@@ -72,6 +73,7 @@ namespace nida.tools_team_9b.ViewModel
 
             }
             con.Close();
+            mainWindow.contentHolder.NavigationService.Refresh();
         }
         private static void stempleSystemAction(string action, int brugerId, MySqlConnection con)
         {
@@ -81,6 +83,7 @@ namespace nida.tools_team_9b.ViewModel
             MySqlCommand cmd = new MySqlCommand(sqlQuery, con);
             cmd.ExecuteNonQuery();
             con.Close();
+
         }
         private static int GetEmployeeId(MySqlConnection con)
         {   

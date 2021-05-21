@@ -28,7 +28,7 @@ namespace nida.tools_team_9b.View.page
 
         private void StempleButton_Click(object sender, RoutedEventArgs e)
         {
-            Tjek_Ind_UdViewModel.TjekIndUd(this);
+            Tjek_Ind_UdViewModel.TjekIndUd(this, Window.GetWindow(this) as MainWindow);
         }
     }
 }

@@ -11,7 +11,7 @@ namespace nida.tools_team_9b.ViewModel
 {
     public class OpretTeamViewModel : DBCon
     {
-        public static void OpretTeamData(opretTeam window)
+        public static void OpretTeamData(opretTeam window, MainWindow mainwindow)
         {
             MySqlConnection con = GetConnection();
             String sqlQuery = "INSERT INTO team SET teamNavn ='" + window.teamNavn.Text + "';";
@@ -21,6 +21,7 @@ namespace nida.tools_team_9b.ViewModel
             cmd.ExecuteNonQuery();
             SetTeamLeder(window, con);
             con.Close();
+            mainwindow.contentHolder.Source = new Uri("/View/page/teamList.xaml", UriKind.Relative);
 
         }
 

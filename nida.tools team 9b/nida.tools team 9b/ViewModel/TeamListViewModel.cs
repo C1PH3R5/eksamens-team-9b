@@ -73,7 +73,8 @@ namespace nida.tools_team_9b.ViewModel
                 MySqlCommand cmd = new MySqlCommand(sqlQuery, con);
                 cmd.ExecuteNonQuery();
                 con.Close();
-                mainWindow.contentHolder.Source = new Uri("/View/page/teamList.xaml", UriKind.Relative);
+                //mainWindow.contentHolder.Source = new Uri("/View/page/teamList.xaml", UriKind.Relative);
+                mainWindow.contentHolder.NavigationService.Refresh();
             }
             else
             {

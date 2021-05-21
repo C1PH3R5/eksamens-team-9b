@@ -28,7 +28,7 @@ namespace nida.tools_team_9b.View.page
 
         private void OpretTeam_Click(object sender, RoutedEventArgs e)
         {
-            OpretTeamViewModel.OpretTeamData(this);
+            OpretTeamViewModel.OpretTeamData(this, Window.GetWindow(this) as MainWindow);
         }
 
         private void anulereTeam_Click(object sender, RoutedEventArgs e)
