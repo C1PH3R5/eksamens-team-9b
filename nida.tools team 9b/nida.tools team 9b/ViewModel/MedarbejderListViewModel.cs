@@ -13,7 +13,18 @@ namespace nida.tools_team_9b.ViewModel
 {
     public class MedarbejderListViewModel : DBCon
     {
-        public static List<Medarbejder> GetMedarbejder()
+        public static void ShowMedarbejderListButtons(MedarbejderList window)
+        {
+            string roleId = Application.Current.Properties["Global_userRole"].ToString();
+            int convertedRoleId = Convert.ToInt32(roleId);
+            if (convertedRoleId < 3)
+            {
+                window.opretMedarbejder.Visibility = Visibility.Visible;
+                window.fjernMedarbejder.Visibility = Visibility.Visible;
+                window.redigereMedarbejder.Visibility = Visibility.Visible;
+            }
+        }
+            public static List<Medarbejder> GetMedarbejder()
         {
             List<Medarbejder> medarbejderList = new List<Medarbejder>();
             MySqlConnection con = GetConnection();

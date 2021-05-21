@@ -28,7 +28,7 @@
         <StackPanel Grid.Row="2"  Height="auto" Background="{StaticResource ClrGridBackground}" Grid.ColumnSpan="3" Grid.RowSpan="3">
             <DataGrid Name="TeamListGrid" AlternatingRowBackground="Gray" CanUserAddRows="False" AutoGenerateColumns="False" Height="550" Width="800"  Margin="0,25,0,0" ColumnHeaderHeight="35" IsReadOnly="True" RowHeight="50" FontFamily="Microsoft sans Seri">
                 <DataGrid.Columns>
-                    <DataGridTextColumn Header="Team Id" MaxWidth="100" MinWidth="100" FontFamily="Microsoft sans Seri" Binding="{Binding id}" />
+                    <DataGridTextColumn Header="Id" MaxWidth="100" MinWidth="100" FontFamily="Microsoft sans Seri" Binding="{Binding id}" />
                     <DataGridTextColumn Header="Team navn" MaxWidth="400" MinWidth="400" FontFamily="Microsoft sans Seri" Binding="{Binding name}"/>
                     <DataGridTextColumn Header="Team Leder" MaxWidth="400" MinWidth="400" FontFamily="Microsoft sans Seri" Binding="{Binding leder}" />
                     
@@ -37,19 +37,19 @@
             </DataGrid>
         </StackPanel>
         <StackPanel Grid.Row="4" Grid.Column="0">
-            <Button Name="opretTeam" Height="80" Width="200" BorderBrush="{StaticResource ClrTopHeaderBackground}" BorderThickness="5" Background="{StaticResource ClrLogoBackground}" Margin="68,130,0,0" Click="opretTeam_Click">
+            <Button Name="opretTeam" Height="80" Width="200" BorderBrush="{StaticResource ClrTopHeaderBackground}" BorderThickness="5" Background="{StaticResource ClrLogoBackground}" Margin="68,130,0,0" Click="opretTeam_Click" Visibility="Hidden">
                 <TextBlock Foreground="{StaticResource ClrGridBackground}" FontSize="18" FontFamily="Microsoft sans Seri" FontWeight="Bold">Opret Team</TextBlock>
             </Button>
                     
         </StackPanel>
         <StackPanel Grid.Row="4" Grid.Column="1">
-            <Button Name="fjernTeam" Height="80" Width="200" BorderBrush="{StaticResource ClrTopHeaderBackground}" BorderThickness="5" Background="{StaticResource ClrLogoBackground}" Margin="0,130,0,0">
+            <Button Name="fjernTeam" Height="80" Width="200" BorderBrush="{StaticResource ClrTopHeaderBackground}" BorderThickness="5" Background="{StaticResource ClrLogoBackground}" Margin="0,130,0,0" Click="fjernTeam_Click" Visibility="Hidden">
                 <TextBlock Foreground="{StaticResource ClrGridBackground}" FontSize="18" FontFamily="Microsoft sans Seri" FontWeight="Bold">Slet Team</TextBlock>
             </Button>
 
         </StackPanel>
         <StackPanel Grid.Row="4" Grid.Column="2">
-            <Button Name="redigereTeam" Height="80" Width="200" BorderBrush="{StaticResource ClrTopHeaderBackground}" BorderThickness="5" Background="{StaticResource ClrLogoBackground}" Margin="0,130,67,0">
+            <Button Name="redigereTeam" Height="80" Width="200" BorderBrush="{StaticResource ClrTopHeaderBackground}" BorderThickness="5" Background="{StaticResource ClrLogoBackground}" Margin="0,130,67,0" Visibility="Hidden">
                 <TextBlock Foreground="{StaticResource ClrGridBackground}" FontSize="18" FontFamily="Microsoft sans Seri" FontWeight="Bold">Redigere Team</TextBlock>
             </Button>
 

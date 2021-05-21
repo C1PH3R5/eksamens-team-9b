@@ -23,11 +23,18 @@ namespace nida.tools_team_9b.View.page
         {
             InitializeComponent();
             TeamListGrid.ItemsSource = TeamListViewModel.GetTeam();
+            TeamListViewModel.ShowTeamListButtons(this);
         }
 
         private void opretTeam_Click(object sender, RoutedEventArgs e)
         {
-            TeamListViewModel.ShowTeamListPage(Window.GetWindow(this) as MainWindow);
+            TeamListViewModel.ShowOpretTeamPage(Window.GetWindow(this) as MainWindow);
+        }
+
+        private void fjernTeam_Click(object sender, RoutedEventArgs e)
+        {
+
+            TeamListViewModel.DeleteTeam(this, Window.GetWindow(this) as MainWindow);
         }
     }
 }
