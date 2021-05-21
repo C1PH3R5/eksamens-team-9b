@@ -71,13 +71,13 @@
             <TextBox x:Name="arbejdesEmail" Width="310" Height="40" FontSize="18" BorderThickness="5" FontFamily="Microsoft sans Seri" Margin="0,0,0,0" Padding="0,5,0,0" BorderBrush="{StaticResource ClrTopHeaderBackground}"></TextBox>
         </StackPanel>
         
-        <StackPanel Grid.Row="6" Grid.Column="0" Grid.ColumnSpan="2">
-                <Rectangle Width="320" Height="50" Fill="{StaticResource ClrTopHeaderBackground}" Margin="0,22,0,0">
+        <StackPanel Grid.Row="5" Grid.Column="0" Grid.ColumnSpan="2" Grid.RowSpan="2">
+                <Rectangle Width="320" Height="50" Fill="{StaticResource ClrTopHeaderBackground}" Margin="0,92,0,0">
                 </Rectangle>
             </StackPanel>
-        <StackPanel Grid.Row="6" Grid.Column="0" Grid.ColumnSpan="2">
-            <TextBlock Width="300" Margin="0,0,10,0" FontSize="18" FontFamily="Microsoft sans Seri" FontWeight="Bold">Team:</TextBlock>
-            <ComboBox Name="vælgTeam" IsEditable="True" Height="40" Width="310" FontSize="18" FontFamily="Microsoft sans Seri" Margin="0,5,0,170">
+        <StackPanel Grid.Row="5" Grid.Column="0" Grid.ColumnSpan="2" Grid.RowSpan="2">
+            <TextBlock Width="300" Margin="0,70,10,0" FontSize="18" FontFamily="Microsoft sans Seri" FontWeight="Bold">Team:</TextBlock>
+            <ComboBox Name="vælgTeam" IsEditable="True" Height="40" Width="310" FontSize="20" FontFamily="Microsoft sans Seri" Margin="0,5,0,170">
             </ComboBox>
         </StackPanel>
         <StackPanel Grid.Row="6" Grid.Column="2"  Height="auto">
@@ -90,6 +90,17 @@
                 <TextBlock Foreground="{StaticResource ClrGridBackground}" FontSize="18" FontFamily="Microsoft sans Seri" FontWeight="Bold">Anuller</TextBlock>
             </Button>
         </StackPanel>
-
+        <StackPanel Grid.Row="5" Grid.Column="2" Grid.RowSpan="2">
+            <Rectangle Width="310" Height="50" Fill="{StaticResource ClrTopHeaderBackground}" Margin="0,94,0,0"/>
+        </StackPanel>
+        <StackPanel Grid.Row="5" Grid.Column="2" Grid.RowSpan="2">
+            <TextBlock Width="300" FontSize="18" FontFamily="Microsoft sans Seri" FontWeight="Bold" Margin="0,72,10,0">Vælg Stilling</TextBlock>
+            <ComboBox Name="VælgRole" IsEditable="True" Height="40" Width="300" Margin="0,5,0,0" FontSize="20">
+                <ComboBoxItem IsSelected="True">Medarbejder</ComboBoxItem>
+                <ComboBoxItem>Leder</ComboBoxItem>
+                <ComboBoxItem>Admin</ComboBoxItem>
+            </ComboBox>
+        </StackPanel>
+        
     </Grid>
 </Page>
