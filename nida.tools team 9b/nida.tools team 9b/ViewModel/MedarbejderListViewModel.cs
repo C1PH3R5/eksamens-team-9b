@@ -24,8 +24,9 @@ namespace nida.tools_team_9b.ViewModel
                 window.redigereMedarbejder.Visibility = Visibility.Visible;
             }
         }
-            public static List<Medarbejder> GetMedarbejder()
-        {
+            public static List<Medarbejder> GetMedarbejder(MedarbejderList window)
+            {
+            window.medarbejderList.Columns[0].Visibility = Visibility.Hidden;
             List<Medarbejder> medarbejderList = new List<Medarbejder>();
             MySqlConnection con = GetConnection();
             con.Open();

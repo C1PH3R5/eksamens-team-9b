@@ -23,8 +23,9 @@ namespace nida.tools_team_9b.ViewModel
                 window.redigereTeam.Visibility = Visibility.Visible;
             }
         }
-        public static List<Team> GetTeam()
+        public static List<Team> GetTeam(TeamList window)
         {
+            window.TeamListGrid.Columns[0].Visibility = Visibility.Hidden;
             MySqlConnection con = GetConnection();
             con.Open();
             string sqlQuery = "SELECT employee.firstname, employee.lastname, team.teamNavn, team.id FROM ((employee INNER JOIN employee_team ON employee.id = employee_team.employee_id) INNER JOIN team ON employee_team.team_id = team.id) WHERE employee.roleid = 2;";

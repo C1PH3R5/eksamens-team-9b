@@ -22,7 +22,7 @@ namespace nida.tools_team_9b.View.page
         public TeamList()
         {
             InitializeComponent();
-            TeamListGrid.ItemsSource = TeamListViewModel.GetTeam();
+            TeamListGrid.ItemsSource = TeamListViewModel.GetTeam(this);
             TeamListViewModel.ShowTeamListButtons(this);
         }
 

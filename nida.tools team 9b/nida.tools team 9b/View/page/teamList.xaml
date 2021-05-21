@@ -26,11 +26,11 @@
             <TextBlock Text="Team Liste" FontFamily="Microsoft sans seri" FontWeight="bold" Foreground="{StaticResource ClrGridBackground}" FontSize="35" Height="50" Width="175" Margin="0,30,0,0"></TextBlock>
         </StackPanel>
         <StackPanel Grid.Row="2"  Height="auto" Background="{StaticResource ClrGridBackground}" Grid.ColumnSpan="3" Grid.RowSpan="3">
-            <DataGrid Name="TeamListGrid" AlternatingRowBackground="Gray" CanUserAddRows="False" AutoGenerateColumns="False" Height="550" Width="800"  Margin="0,25,0,0" ColumnHeaderHeight="35" IsReadOnly="True" RowHeight="50" FontFamily="Microsoft sans Seri">
+            <DataGrid Name="TeamListGrid"  AlternatingRowBackground="Gray" CanUserAddRows="False" AutoGenerateColumns="False" Height="550" Width="800"  Margin="0,25,0,0" ColumnHeaderHeight="35" IsReadOnly="True" RowHeight="50" FontFamily="Microsoft sans Seri">
                 <DataGrid.Columns>
-                    <DataGridTextColumn Header="Id" MaxWidth="100" MinWidth="100" FontFamily="Microsoft sans Seri" Binding="{Binding id}" />
-                    <DataGridTextColumn Header="Team navn" MaxWidth="400" MinWidth="400" FontFamily="Microsoft sans Seri" Binding="{Binding name}"/>
-                    <DataGridTextColumn Header="Team Leder" MaxWidth="400" MinWidth="400" FontFamily="Microsoft sans Seri" Binding="{Binding leder}" />
+                    <DataGridTextColumn  Header="Id" MaxWidth="100" MinWidth="100" FontFamily="Microsoft sans Seri" Binding="{Binding id}" />
+                    <DataGridTextColumn Header="Team navn" MaxWidth="300" MinWidth="300" FontFamily="Microsoft sans Seri" Binding="{Binding name}"/>
+                    <DataGridTextColumn Header="Team Leder" MaxWidth="300" MinWidth="300" FontFamily="Microsoft sans Seri" Binding="{Binding leder}" />
                     
 
                 </DataGrid.Columns>

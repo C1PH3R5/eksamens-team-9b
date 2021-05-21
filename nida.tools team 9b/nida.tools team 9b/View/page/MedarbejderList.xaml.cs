@@ -22,7 +22,7 @@ namespace nida.tools_team_9b.View.page
         public MedarbejderList()
         {
             InitializeComponent();
-            medarbejderList.ItemsSource = MedarbejderListViewModel.GetMedarbejder();
+            medarbejderList.ItemsSource = MedarbejderListViewModel.GetMedarbejder(this);
             MedarbejderListViewModel.ShowMedarbejderListButtons(this);
         }
 
