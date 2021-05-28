@@ -15,7 +15,7 @@ namespace nida.tools_team_9b.ViewModel
 
             MySqlConnection con = GetConnection();
             con.Open();
-            string sqlQuery = "SELECT firstname, lastname, comment, type, time, comment from timeBank INNER JOIN employee ON timeBank.employee_id = employee.id WHERE time BETWEEN '2021-05-28 00:00:00' AND '2021-05-28 23:59:59'";
+            string sqlQuery = "SELECT firstname, lastname, comment, type, time, comment from timeBank INNER JOIN employee ON timeBank.employee_id = employee.id WHERE time BETWEEN '"+ DateTime.Now.ToString("yyyy-MM-dd") + " 00:00:00' AND '" + DateTime.Now.ToString("yyyy-MM-dd") + " 23:59:59'";
             MySqlCommand cmd = new MySqlCommand(sqlQuery, con);
 
             using (MySqlDataReader Reader = cmd.ExecuteReader())
