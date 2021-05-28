@@ -96,73 +96,194 @@
         </member>
         <member name="M:nida.tools_team_9b.ViewModel.LogindViewModel.ResetInValidAttemps(MySql.Data.MySqlClient.MySqlConnection,nida.tools_team_9b.Model.LogInd)">
             <summary>
-            
+            ResetInValidAttemps, sætter ValidAttemps til 0 igen hvis ens login er succesfuld
             </summary>
-            <param name="con"></param>
-            <param name="passWord"></param>
+            <param name="con">con er obejct af Database Connection</param>
+            <param name="passWord">passWord er en obejct af modellen LogInd</param>
         </member>
-        <member name="T:nida.tools_team_9b.ViewModel.CopyOfLogindViewModel">
+        <member name="M:nida.tools_team_9b.ViewModel.LogindViewModel.SetErrorMessage(nida.tools_team_9b.View.window.LogIndWindow,System.String)">
             <summary>
-            LogindViewModel class håndtere metoder der bliver brugt af windoet LoginWindow
+            set error message, vis en logger ind med forkert brugernavn eller password, sættes der en fejl besked i logind windoet 
             </summary>
+            <param name="logIndWindow">logIndWindow er en instans af windoet LogIndWindow.</param>
+            <param name="message"> det er parameteren der bliver modtaget af metoden</param>
         </member>
-        <member name="M:nida.tools_team_9b.ViewModel.CopyOfLogindViewModel.LogIndServices(System.String,System.String,nida.tools_team_9b.View.window.LogIndWindow)">
+        <member name="M:nida.tools_team_9b.ViewModel.LogindViewModel.invalidAttempsHandler(nida.tools_team_9b.Model.LogInd,MySql.Data.MySqlClient.MySqlConnection)">
             <summary>
-            LogIndServices moedtager de tildelte parameter og exekver validatePaasWord og tejkker om den returner true.
-            exekver og sætter Global Properties 
-            vis sandt vis MainWindow og lukker LogindWindow
+            invalidAttempsHandler sætter bruger til blocked vis man har flere forkerte logind end 3
             </summary>
-            <param name="brugerNavn">Brugernavn tildelt af bruger i textboxen i loginWindow.</param>
-            <param name="passWordStr">Brugernavn tildelt af bruger i PasswordBox i loginWindow.</param>
-            <param name="logIndWindow"> en instans af windoet LogIndWindow</param>
-        </member>
-        <member name="M:nida.tools_team_9b.ViewModel.CopyOfLogindViewModel.SetGrobalProperties(System.String,MySql.Data.MySqlClient.MySqlConnection)">
-            <summary>
-            SetGrobalProperties sætter 2 Grobal Properties, med brugernavnet henter metoden userId.
-            sætter de 2 Grobal Properties brugernavn og userId
-            </summary>
-            <param name="brugerNavn">Brugernavn tildelt af bruger i textboxen i loginWindow</param>
+            <param name="passWord">passWord er en obejct af modellen LogInd</param>
             <param name="con">con er obejct af Database Connection</param>
         </member>
-        <member name="M:nida.tools_team_9b.ViewModel.CopyOfLogindViewModel.validatePaasWord(System.String,System.String,nida.tools_team_9b.View.window.LogIndWindow,MySql.Data.MySqlClient.MySqlConnection)">
+        <member name="M:nida.tools_team_9b.ViewModel.LogindViewModel.GetPassWord(System.String,MySql.Data.MySqlClient.MySqlConnection)">
             <summary>
-            metoden tjekker om stringen passWord er null 
+            denne funktioner henter det nyeste password fra databasen
             </summary>
             <param name="brugerNavn">Brugernavn tildelt af bruger i textboxen i loginWindow.</param>
-            <param name="passWordStr">Brugernavn tildelt af bruger i PasswordBox i loginWindow.</param>
-            <param name="logIndWindow"> en instans af windoet LogIndWindow. </param>
-            <param name="con">con er obejct af Database Connection.</param>
-            <returns> returner true eller false </returns>
+            <param name="con">con er obejct af Database Connection</param>
+            <returns> returner pass word fra databasen</returns>
         </member>
-        <member name="M:nida.tools_team_9b.ViewModel.CopyOfLogindViewModel.TjekStatus(System.String,nida.tools_team_9b.View.window.LogIndWindow,MySql.Data.MySqlClient.MySqlConnection,nida.tools_team_9b.Model.LogInd)">
-            <summary>
-            TjekStatus metode tjekker i databasen om brugeren er aktiv eller blocked 
-            </summary>
-            <param name="passWordStr">Brugernavn tildelt af bruger i PasswordBox i loginWindow.</param>
-            <param name="logIndWindow"> logIndWindow er en instans af windoet LogIndWindow.</param>
-            <param name="con">con er obejct af Database Connection.</param>
-            <param name="passWord"> passWord er en obejct af modellen LogInd</param>
-            <returns> returns true eller false</returns>
-        </member>
-        <member name="M:nida.tools_team_9b.ViewModel.CopyOfLogindViewModel.ResetInValidAttemps(MySql.Data.MySqlClient.MySqlConnection,nida.tools_team_9b.Model.LogInd)">
+        <member name="M:nida.tools_team_9b.ViewModel.LogindViewModel.GetCurrentPassWord(System.Int32,MySql.Data.MySqlClient.MySqlConnection)">
             <summary>
             
             </summary>
+            <param name="passWordId"></param>
             <param name="con"></param>
-            <param name="passWord"></param>
+            <returns></returns>
+        </member>
+        <member name="M:nida.tools_team_9b.ViewModel.LogindViewModel.Anuller(nida.tools_team_9b.View.window.LogIndWindow)">
+            <summary>
+            denne funktion lukker programme 
+            </summary>
+            <param name="window">  window er en instans af windoet LogIndWindow </param>
+        </member>
+        <member name="M:nida.tools_team_9b.ViewModel.MedarbejderListViewModel.ShowMedarbejderListButtons(nida.tools_team_9b.View.page.MedarbejderList)">
+            <summary>
+            denne metoden vis vilken knapper der skal vise efter vilken bruger der logget ind og vilke rolle de har 
+            </summary>
+            <param name="window">window er en instans af medarbejderList page</param>
+        </member>
+        <member name="M:nida.tools_team_9b.ViewModel.MedarbejderListViewModel.GetMedarbejder(nida.tools_team_9b.View.page.MedarbejderList)">
+            <summary>
+            denne metoden henter alle med arbejder der har et team og viser dem i medarbejderlist pagen
+            </summary>
+            <param name="window">window er en instans af medarbejderList page</param>
+            <returns>returner en list til datagrid i medarbjderlist pagen</returns>
+        </member>
+        <member name="M:nida.tools_team_9b.ViewModel.MedarbejderListViewModel.ShowOpretMedarbejderPage(nida.tools_team_9b.MainWindow)">
+            <summary>
+            metoden sætter source på contentholder framen   
+            </summary>
+            <param name="window"> window er en instans af mainwindow</param>
         </member>
         <member name="M:nida.tools_team_9b.ViewModel.MenuViewModel.GetMenu(nida.tools_team_9b.MainWindow)">
             <summary>
-            
+            sætter menuen til den rolleder passer med brugen der er logget ind 
             </summary>
-            <param name="mainWindow"></param>
+            <param name="mainWindow"> mainWindow er en instans af MainWindow </param>
         </member>
         <member name="M:nida.tools_team_9b.ViewModel.MenuViewModel.MenuButtonOnClick(System.Object,nida.tools_team_9b.MainWindow)">
             <summary>
-            
+            MenuButtonOnClick sætter sourcen på contenholder framen eller sætter de globale properties til null, vis logud knapper bliver trykket 
             </summary>
             <param name="sender"></param>
-            <param name="mainWindow"></param>
+            <param name="mainWindow">er en instans af mainwindow</param>
+        </member>
+        <member name="M:nida.tools_team_9b.ViewModel.MødtMedarbejderViewModel.LoadMedarbjderDataSet">
+            <summary>
+            LoadMedarbjderDataSet henter dataen ned fra databasen og gemmer den i en liste af timebank 
+            </summary>
+            <returns>metoden returner liste af timebank</returns>
+        </member>
+        <member name="M:nida.tools_team_9b.ViewModel.OpretMedarbejderViewModel.GetTeamList(nida.tools_team_9b.View.page.opretMedarbejder)">
+            <summary>
+            denne metode henter alle team ned og pakker det ned i list af typen Team
+            </summary>
+            <param name="window"> window er en instans af opretMedarbejder pagen</param>
+            <returns> returner listen af team til bomboboxen i opretMedarbejder pagen</returns>
+        </member>
+        <member name="M:nida.tools_team_9b.ViewModel.OpretMedarbejderViewModel.OpretMedarbejderData(nida.tools_team_9b.View.page.opretMedarbejder)">
+            <summary>
+            metoden her opretter nye medarbejder i databasen
+            </summary>
+            <param name="window"> window er en instans af opretMedarbejder page</param>
+        </member>
+        <member name="M:nida.tools_team_9b.ViewModel.OpretMedarbejderViewModel.SetTeam(nida.tools_team_9b.View.page.opretMedarbejder,MySql.Data.MySqlClient.MySqlConnection,System.Int32)">
+            <summary>
+            denne metode sætter linket mellem teamet og medarbejderen 
+            </summary>
+            <param name="window"> window er en instans af opretMedarbejder pagen</param>
+            <param name="con">con er obejct af Database Connection</param>
+            <param name="medarbejderId"> er den nye medarbejders id </param>
+        </member>
+        <member name="M:nida.tools_team_9b.ViewModel.OpretMedarbejderViewModel.OpretKontaktData(nida.tools_team_9b.View.page.opretMedarbejder,MySql.Data.MySqlClient.MySqlConnection,System.Int32)">
+            <summary>
+            metoden her opretter alle kontakt dater i databasen til den nye medarbejder
+            </summary>
+            <param name="window"> window er en instans af opretMedarbejder pagen</param>
+            <param name="con">con er obejct af Database Connection</param>
+            <param name="medarbejderId"> er den nye medarbejders id </param>
+        </member>
+        <member name="M:nida.tools_team_9b.ViewModel.OpretMedarbejderViewModel.SetPasswordStatus(nida.tools_team_9b.View.page.opretMedarbejder,MySql.Data.MySqlClient.MySqlConnection,System.Int32)">
+            <summary>
+            metoden her opretter og sætter password status til aktiv
+            </summary>
+            <param name="window"> window er en instans af opretMedarbejder pagen</param>
+            <param name="con">con er obejct af Database Connection</param>
+            <param name="medarbejderId"> er den nye medarbejders id </param>
+        </member>
+        <member name="M:nida.tools_team_9b.ViewModel.OpretMedarbejderViewModel.generePassword(nida.tools_team_9b.View.page.opretMedarbejder,MySql.Data.MySqlClient.MySqlConnection,System.Int32)">
+            <summary>
+            metoden her genere password ud fra navn og efternavn
+            </summary>
+            <param name="window"> window er en instans af opretMedarbejder pagen</param>
+            <param name="con">con er obejct af Database Connection</param>
+            <param name="medarbejderId"> er den nye medarbejders id </param>
+        </member>
+        <member name="M:nida.tools_team_9b.ViewModel.OpretMedarbejderViewModel.FindPasswordStatusId(MySql.Data.MySqlClient.MySqlConnection,System.Int32)">
+            <summary>
+            metoden finder password status iden
+            </summary>
+            <param name="con">con er obejct af Database Connection</param>
+            <param name="medarbejderId"> er den nye medarbejders id </param>
+            <returns>returner password status id </returns>
+        </member>
+        <member name="M:nida.tools_team_9b.ViewModel.OpretMedarbejderViewModel.GetMedarbejderId(nida.tools_team_9b.View.page.opretMedarbejder,MySql.Data.MySqlClient.MySqlConnection)">
+            <summary>
+            henter id'en på den nye medarbejder
+            </summary>
+            <param name="window"> window er en instans af opretMedarbejder pagen</param>
+            <param name="con">con er obejct af Database Connection</param>
+            <returns> returner id'en på den nye medarbejder</returns>
+        </member>
+        <member name="M:nida.tools_team_9b.ViewModel.OpretMedarbejderViewModel.anuller(nida.tools_team_9b.MainWindow)">
+            <summary>
+            metoden anuller opretlsen af medarbejderen og sender en tilbage til medarbejderList
+            </summary>
+            <param name="window">window er en instans af MainWindow</param>
+        </member>
+        <member name="M:nida.tools_team_9b.ViewModel.OpretTeamViewModel.OpretTeamData(nida.tools_team_9b.View.page.opretTeam,nida.tools_team_9b.MainWindow)">
+            <summary>
+            metoden opretter et nyt team i databasen
+            </summary>
+            <param name="window">window er en instans af OpretTeam pagen</param>
+            <param name="mainwindow"> mmainwindow er en instans af MainWindow</param>
+        </member>
+        <member name="M:nida.tools_team_9b.ViewModel.OpretTeamViewModel.SetTeamLeder(nida.tools_team_9b.View.page.opretTeam,MySql.Data.MySqlClient.MySqlConnection)">
+            <summary>
+            metoden sætter en leder til det nye team
+            </summary>
+            <param name="window"> window er en instan af OretTeam pagen</param>
+            <param name="con">con er obejct af Database Connection</param>
+        </member>
+        <member name="M:nida.tools_team_9b.ViewModel.OpretTeamViewModel.GetTeamId(nida.tools_team_9b.View.page.opretTeam,MySql.Data.MySqlClient.MySqlConnection)">
+            <summary>
+            metoden henter det teams id fra databasen
+            </summary>
+            <param name="window"> window er en instan af OretTeam pagen</param>
+            <param name="con">con er obejct af Database Connection</param>
+            <returns>returner id'en fra det nye team </returns>
+        </member>
+        <member name="M:nida.tools_team_9b.ViewModel.OpretTeamViewModel.GetEmployeeId(nida.tools_team_9b.View.page.opretTeam,MySql.Data.MySqlClient.MySqlConnection)">
+            <summary>
+            henter id'en fra leder der skal være på det nye team
+            </summary>
+            <param name="window"> window er en instan af OretTeam pagen</param>
+            <param name="con">con er obejct af Database Connection</param>
+            <returns>returner leder id </returns>
+        </member>
+        <member name="M:nida.tools_team_9b.ViewModel.OpretTeamViewModel.GetTeamlederList(nida.tools_team_9b.View.page.opretTeam)">
+            <summary>
+            denne metode henter alle leder ned fra databasen
+            </summary>
+            <param name="window"> window er en instans af opretteam pagen</param>
+            <returns>returner en list af leder til comboboxen </returns>
+        </member>
+        <member name="M:nida.tools_team_9b.ViewModel.OpretTeamViewModel.anuller(nida.tools_team_9b.MainWindow)">
+            <summary>
+            metoden anuller opretelsen af teamet og sender en tilbage til TeamList pagen
+            </summary>
+            <param name="window">window er en instans af MainWindow</param>
         </member>
         <member name="T:nida.tools_team_9b.ViewModel.TeamListViewModel">
             <summary>
@@ -235,6 +356,48 @@
             <param name="til">Til parammeterne skal være et timeStamp i form af en string</param>
             <param name="fra">Fra parammeterne skal være et timeStamp i form af en string</param>
         </member>
+        <member name="M:nida.tools_team_9b.ViewModel.Tjek_Ind_UdViewModel.ShowStempleSystem(nida.tools_team_9b.View.page.Tjek_ind_ud)">
+            <summary>
+            denne tjeker vilken type af  tjek ind der er sidst er regsiteret, og bestemmer vilken knap der skal vises 
+            </summary>
+            <param name="window">window er en instans af Tjek_ind_ud pagen</param>
+        </member>
+        <member name="M:nida.tools_team_9b.ViewModel.Tjek_Ind_UdViewModel.tjekType(MySql.Data.MySqlClient.MySqlDataReader,nida.tools_team_9b.View.page.Tjek_ind_ud)">
+            <summary>
+            denne metode  tjeker vilken type af  tjek ind der er sidst er regsiteret og vægler vilken parameter der skal sendes med videre i showStempleButtons
+            </summary>
+            <param name="Reader"> reader inholder alle data der er trukket ned fra databasen </param>
+            <param name="window">window er en instans af Tjek_ind_ud pagen</param>
+        </member>
+        <member name="M:nida.tools_team_9b.ViewModel.Tjek_Ind_UdViewModel.showStempleButtons(nida.tools_team_9b.View.page.Tjek_ind_ud,System.String)">
+            <summary>
+            metoden skifter texten på knapper på pagen efter og man er tjeket ind eller ej
+            </summary>
+            <param name="window">window er en instans af Tjek_ind_ud pagen</param>
+            <param name="btnText"> er texten der bliver vist på pagen</param>
+        </member>
+        <member name="M:nida.tools_team_9b.ViewModel.Tjek_Ind_UdViewModel.TjekIndUd(nida.tools_team_9b.View.page.Tjek_ind_ud,nida.tools_team_9b.MainWindow)">
+            <summary>
+            metoden ind sætter i data basen om man tjekker ind eller ud 
+            </summary>
+            <param name="window">window er en instans af Tjek_ind_ud pagen</param>
+            <param name="mainWindow"> mainwindow er en instans af Mainwindow</param>
+        </member>
+        <member name="M:nida.tools_team_9b.ViewModel.Tjek_Ind_UdViewModel.stempleSystemAction(System.String,System.Int32,MySql.Data.MySqlClient.MySqlConnection)">
+            <summary>
+            indsætter hvilken type af tejk ind eller ud i databsen 
+            </summary>
+            <param name="action">actio er type afom man er tejkket ind eller ud </param>
+            <param name="brugerId"> brugen id der der logget id</param>
+            <param name="con">con er obejct af Database Connection</param>
+        </member>
+        <member name="M:nida.tools_team_9b.ViewModel.Tjek_Ind_UdViewModel.GetEmployeeId(MySql.Data.MySqlClient.MySqlConnection)">
+            <summary>
+            henter den medarbjeder der er logget inds id
+            </summary>
+            <param name="con">con er obejct af Database Connection</param>
+            <returns>returner iden på brugeren der er logget ind</returns>
+        </member>
         <member name="T:nida.tools_team_9b.View.Menu.AdminMenu">
             <summary>
             Interaction logic for AdminMenu.xaml
@@ -274,19 +437,6 @@
             InitializeComponent
             </summary>
         </member>
-        <member name="T:nida.tools_team_9b.View.page.Calendar">
-            <summary>
-            Interaction logic for Calendar.xaml
-            </summary>
-            <summary>
-            Calendar
-            </summary>
-        </member>
-        <member name="M:nida.tools_team_9b.View.page.Calendar.InitializeComponent">
-            <summary>
-            InitializeComponent
-            </summary>
-        </member>
         <member name="T:nida.tools_team_9b.View.page.Fravær">
             <summary>
             Interaction logic for Fravær.xaml
@@ -306,19 +456,6 @@
             </summary>
         </member>
         <member name="M:nida.tools_team_9b.View.page.MedarbejderList.InitializeComponent">
-            <summary>
-            InitializeComponent
-            </summary>
-        </member>
-        <member name="T:nida.tools_team_9b.View.page.Medarbejderlistadmin">
-            <summary>
-            Interaction logic for Medarbejderlistadmin.xaml
-            </summary>
-            <summary>
-            Medarbejderlistadmin
-            </summary>
-        </member>
-        <member name="M:nida.tools_team_9b.View.page.Medarbejderlistadmin.InitializeComponent">
             <summary>
             InitializeComponent
             </summary>

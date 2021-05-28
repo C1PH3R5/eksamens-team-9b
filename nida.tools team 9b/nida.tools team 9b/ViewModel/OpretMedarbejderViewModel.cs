@@ -13,6 +13,11 @@ namespace nida.tools_team_9b.ViewModel
     
     public class OpretMedarbejderViewModel : DBCon
     {
+        /// <summary>
+        /// denne metode henter alle team ned og pakker det ned i list af typen Team
+        /// </summary>
+        /// <param name="window"> window er en instans af opretMedarbejder pagen</param>
+        /// <returns> returner listen af team til bomboboxen i opretMedarbejder pagen</returns>
         public static List<Team> GetTeamList(opretMedarbejder window)
         {
             List<Team> TeamList = new List<Team>();
@@ -43,6 +48,10 @@ namespace nida.tools_team_9b.ViewModel
             return null;
 
         }
+        /// <summary>
+        /// metoden her opretter nye medarbejder i databasen
+        /// </summary>
+        /// <param name="window"> window er en instans af opretMedarbejder page</param>
         public static void OpretMedarbejderData(opretMedarbejder window)
         {
 
@@ -69,6 +78,12 @@ namespace nida.tools_team_9b.ViewModel
             con.Close();
         }
 
+        /// <summary>
+        /// denne metode sætter linket mellem teamet og medarbejderen 
+        /// </summary>
+        /// <param name="window"> window er en instans af opretMedarbejder pagen</param>
+        /// <param name="con">con er obejct af Database Connection</param>
+        /// <param name="medarbejderId"> er den nye medarbejders id </param>
         private static void SetTeam(opretMedarbejder window, MySqlConnection con, int medarbejderId)
         {
 
@@ -97,7 +112,12 @@ namespace nida.tools_team_9b.ViewModel
             }
             return teamId;
         }
-
+        /// <summary>
+        /// metoden her opretter alle kontakt dater i databasen til den nye medarbejder
+        /// </summary>
+        /// <param name="window"> window er en instans af opretMedarbejder pagen</param>
+        /// <param name="con">con er obejct af Database Connection</param>
+        /// <param name="medarbejderId"> er den nye medarbejders id </param>
         private static void OpretKontaktData(opretMedarbejder window, MySqlConnection con, int medarbejderId)
         {
             string sqlQuery = null;
@@ -120,7 +140,12 @@ namespace nida.tools_team_9b.ViewModel
                 cmd.ExecuteNonQuery();
             }
         }
-
+        /// <summary>
+        /// metoden her opretter og sætter password status til aktiv
+        /// </summary>
+        /// <param name="window"> window er en instans af opretMedarbejder pagen</param>
+        /// <param name="con">con er obejct af Database Connection</param>
+        /// <param name="medarbejderId"> er den nye medarbejders id </param>
         private static void SetPasswordStatus(opretMedarbejder window, MySqlConnection con, int medarbejderId)
         {
             
@@ -129,7 +154,12 @@ namespace nida.tools_team_9b.ViewModel
             cmd.ExecuteNonQuery();
             
         }
-
+        /// <summary>
+        /// metoden her genere password ud fra navn og efternavn
+        /// </summary>
+        /// <param name="window"> window er en instans af opretMedarbejder pagen</param>
+        /// <param name="con">con er obejct af Database Connection</param>
+        /// <param name="medarbejderId"> er den nye medarbejders id </param>
         private static void generePassword(opretMedarbejder window, MySqlConnection con, int medarbejderId)
         {
             
@@ -142,7 +172,12 @@ namespace nida.tools_team_9b.ViewModel
             cmd.ExecuteNonQuery();
 
         }
-
+        /// <summary>
+        /// metoden finder password status iden
+        /// </summary>
+        /// <param name="con">con er obejct af Database Connection</param>
+        /// <param name="medarbejderId"> er den nye medarbejders id </param>
+        /// <returns>returner password status id </returns>
         private static int FindPasswordStatusId(MySqlConnection con, int medarbejderId)
         {
 
@@ -162,7 +197,12 @@ namespace nida.tools_team_9b.ViewModel
             }
             return passwordStatusId;
         }
-
+        /// <summary>
+        /// henter id'en på den nye medarbejder
+        /// </summary>
+        /// <param name="window"> window er en instans af opretMedarbejder pagen</param>
+        /// <param name="con">con er obejct af Database Connection</param>
+        /// <returns> returner id'en på den nye medarbejder</returns>
         private static int GetMedarbejderId(opretMedarbejder window, MySqlConnection con)
         {
             string sqlQuery = "SELECT id FROM employee WHERE firstname = '"+ window.Navn.Text + "' AND lastname = '"+ window.Efternavn.Text + "';";
@@ -181,6 +221,10 @@ namespace nida.tools_team_9b.ViewModel
             }
             return medarbejderId;
         }
+        /// <summary>
+        /// metoden anuller opretlsen af medarbejderen og sender en tilbage til medarbejderList
+        /// </summary>
+        /// <param name="window">window er en instans af MainWindow</param>
         public static void anuller(MainWindow window)
         {
             window.contentHolder.Source = new Uri("/View/page/medarbejderList.xaml", UriKind.Relative);

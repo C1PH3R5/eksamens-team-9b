@@ -9,6 +9,10 @@ namespace nida.tools_team_9b.ViewModel
 {
     public class MødtMedarbejderViewModel : DBCon
     {
+        /// <summary>
+        /// LoadMedarbjderDataSet henter dataen ned fra databasen og gemmer den i en liste af timebank 
+        /// </summary>
+        /// <returns>metoden returner liste af timebank</returns>
         public static List<TimeBank> LoadMedarbjderDataSet()
         {
             List<TimeBank> MødtMedarbejder = new List<TimeBank>();

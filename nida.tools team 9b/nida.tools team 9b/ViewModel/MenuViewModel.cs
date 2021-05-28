@@ -13,9 +13,9 @@ namespace nida.tools_team_9b.ViewModel
     public class MenuViewModel
     {
         /// <summary>
-        /// 
+        /// sætter menuen til den rolleder passer med brugen der er logget ind 
         /// </summary>
-        /// <param name="mainWindow"></param>
+        /// <param name="mainWindow"> mainWindow er en instans af MainWindow </param>
         public static void GetMenu(MainWindow mainWindow)
         {
             mainWindow.menuFrame.Source = new Uri("/View/Menu/" + GetMenuName(Convert.ToInt32(Application.Current.Properties["Global_userRole"])) + ".xaml", UriKind.Relative);
@@ -39,10 +39,10 @@ namespace nida.tools_team_9b.ViewModel
         }
 
         /// <summary>
-        /// 
+        /// MenuButtonOnClick sætter sourcen på contenholder framen eller sætter de globale properties til null, vis logud knapper bliver trykket 
         /// </summary>
         /// <param name="sender"></param>
-        /// <param name="mainWindow"></param>
+        /// <param name="mainWindow">er en instans af mainwindow</param>
         public static void MenuButtonOnClick(object sender, MainWindow mainWindow)
         {
             Button btn = (Button)sender;

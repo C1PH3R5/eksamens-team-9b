@@ -10,6 +10,10 @@ namespace nida.tools_team_9b.ViewModel
 {
     public class Tjek_Ind_UdViewModel : DBCon
     {
+        /// <summary>
+        /// denne tjeker vilken type af  tjek ind der er sidst er regsiteret, og bestemmer vilken knap der skal vises 
+        /// </summary>
+        /// <param name="window">window er en instans af Tjek_ind_ud pagen</param>
         public static void ShowStempleSystem(Tjek_ind_ud window)
         {
             MySqlConnection con = GetConnection();
@@ -31,6 +35,11 @@ namespace nida.tools_team_9b.ViewModel
             con.Close();
 
         }
+        /// <summary>
+        /// denne metode  tjeker vilken type af  tjek ind der er sidst er regsiteret og vægler vilken parameter der skal sendes med videre i showStempleButtons
+        /// </summary>
+        /// <param name="Reader"> reader inholder alle data der er trukket ned fra databasen </param>
+        /// <param name="window">window er en instans af Tjek_ind_ud pagen</param>
         private static void tjekType(MySqlDataReader Reader, Tjek_ind_ud window)
         {
             switch (Reader.GetString(Reader.GetOrdinal("type")))
@@ -44,6 +53,11 @@ namespace nida.tools_team_9b.ViewModel
 
             }
         }
+        /// <summary>
+        /// metoden skifter texten på knapper på pagen efter og man er tjeket ind eller ej
+        /// </summary>
+        /// <param name="window">window er en instans af Tjek_ind_ud pagen</param>
+        /// <param name="btnText"> er texten der bliver vist på pagen</param>
         private static void showStempleButtons(Tjek_ind_ud window, string btnText)
         {
             if (btnText == "Tjek Ind")
@@ -58,6 +72,12 @@ namespace nida.tools_team_9b.ViewModel
             }
 
         }
+
+        /// <summary>
+        /// metoden ind sætter i data basen om man tjekker ind eller ud 
+        /// </summary>
+        /// <param name="window">window er en instans af Tjek_ind_ud pagen</param>
+        /// <param name="mainWindow"> mainwindow er en instans af Mainwindow</param>
         public static void TjekIndUd(Tjek_ind_ud window, MainWindow mainWindow)
         {
             MySqlConnection con = GetConnection();
@@ -75,6 +95,12 @@ namespace nida.tools_team_9b.ViewModel
             con.Close();
             mainWindow.contentHolder.NavigationService.Refresh();
         }
+        /// <summary>
+        /// indsætter hvilken type af tejk ind eller ud i databsen 
+        /// </summary>
+        /// <param name="action">actio er type afom man er tejkket ind eller ud </param>
+        /// <param name="brugerId"> brugen id der der logget id</param>
+        /// <param name="con">con er obejct af Database Connection</param>
         private static void stempleSystemAction(string action, int brugerId, MySqlConnection con)
         {
             
@@ -85,6 +111,11 @@ namespace nida.tools_team_9b.ViewModel
             con.Close();
 
         }
+        /// <summary>
+        /// henter den medarbjeder der er logget inds id
+        /// </summary>
+        /// <param name="con">con er obejct af Database Connection</param>
+        /// <returns>returner iden på brugeren der er logget ind</returns>
         private static int GetEmployeeId(MySqlConnection con)
         {   
             string sqlQuery = "SELECT id FROM NidaTools.employee WHERE userid = '" + Application.Current.Properties["Global_userId"] + "';";

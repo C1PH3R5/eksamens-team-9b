@@ -13,6 +13,10 @@ namespace nida.tools_team_9b.ViewModel
 {
     public class MedarbejderListViewModel : DBCon
     {
+        /// <summary>
+        /// denne metoden vis vilken knapper der skal vise efter vilken bruger der logget ind og vilke rolle de har 
+        /// </summary>
+        /// <param name="window">window er en instans af medarbejderList page</param>
         public static void ShowMedarbejderListButtons(MedarbejderList window)
         {
             string roleId = Application.Current.Properties["Global_userRole"].ToString();
@@ -24,7 +28,12 @@ namespace nida.tools_team_9b.ViewModel
                 window.redigereMedarbejder.Visibility = Visibility.Visible;
             }
         }
-            public static List<Medarbejder> GetMedarbejder(MedarbejderList window)
+        /// <summary>
+        /// denne metoden henter alle med arbejder der har et team og viser dem i medarbejderlist pagen
+        /// </summary>
+        /// <param name="window">window er en instans af medarbejderList page</param>
+        /// <returns>returner en list til datagrid i medarbjderlist pagen</returns>
+        public static List<Medarbejder> GetMedarbejder(MedarbejderList window)
             {
                 window.medarbejderList.Columns[0].Visibility = Visibility.Hidden;
                 List<Medarbejder> medarbejderList = new List<Medarbejder>();
@@ -73,7 +82,10 @@ namespace nida.tools_team_9b.ViewModel
             con.Close();
             return medarbejderList;
             }
-
+        /// <summary>
+        /// metoden sætter source på contentholder framen   
+        /// </summary>
+        /// <param name="window"> window er en instans af mainwindow</param>
         public static void ShowOpretMedarbejderPage(MainWindow window)
         {
 
