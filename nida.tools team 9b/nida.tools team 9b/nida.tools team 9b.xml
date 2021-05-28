@@ -1,0 +1,431 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>nida.tools team 9b</name>
+    </assembly>
+    <members>
+        <member name="T:nida.tools_team_9b.App">
+            <summary>
+            Interaction logic for App.xaml
+            </summary>
+            <summary>
+            App
+            </summary>
+        </member>
+        <member name="M:nida.tools_team_9b.App.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="M:nida.tools_team_9b.App.Main">
+            <summary>
+            Application Entry Point.
+            </summary>
+        </member>
+        <member name="T:nida.tools_team_9b.MainWindow">
+            <summary>
+            Interaction logic for MainWindow.xaml
+            </summary>
+            <summary>
+            MainWindow
+            </summary>
+        </member>
+        <member name="M:nida.tools_team_9b.MainWindow.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:nida.tools_team_9b.Properties.Resources">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:nida.tools_team_9b.Properties.Resources.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:nida.tools_team_9b.Properties.Resources.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+        <member name="T:nida.tools_team_9b.ViewModel.LogindViewModel">
+            <summary>
+            LogindViewModel class håndtere metoder der bliver brugt af windoet LoginWindow
+            </summary>
+        </member>
+        <member name="M:nida.tools_team_9b.ViewModel.LogindViewModel.LogIndServices(System.String,System.String,nida.tools_team_9b.View.window.LogIndWindow)">
+            <summary>
+            LogIndServices moedtager de tildelte parameter og exekver validatePaasWord og tejkker om den returner true.
+            exekver og sætter Global Properties 
+            vis sandt vis MainWindow og lukker LogindWindow
+            </summary>
+            <param name="brugerNavn">Brugernavn tildelt af bruger i textboxen i loginWindow.</param>
+            <param name="passWordStr">Brugernavn tildelt af bruger i PasswordBox i loginWindow.</param>
+            <param name="logIndWindow"> en instans af windoet LogIndWindow</param>
+        </member>
+        <member name="M:nida.tools_team_9b.ViewModel.LogindViewModel.SetGrobalProperties(System.String,MySql.Data.MySqlClient.MySqlConnection)">
+            <summary>
+            SetGrobalProperties sætter 2 Grobal Properties, med brugernavnet henter metoden userId.
+            sætter de 2 Grobal Properties brugernavn og userId
+            </summary>
+            <param name="brugerNavn">Brugernavn tildelt af bruger i textboxen i loginWindow</param>
+            <param name="con">con er obejct af Database Connection</param>
+        </member>
+        <member name="M:nida.tools_team_9b.ViewModel.LogindViewModel.validatePaasWord(System.String,System.String,nida.tools_team_9b.View.window.LogIndWindow,MySql.Data.MySqlClient.MySqlConnection)">
+            <summary>
+            metoden tjekker om stringen passWord er null 
+            </summary>
+            <param name="brugerNavn">Brugernavn tildelt af bruger i textboxen i loginWindow.</param>
+            <param name="passWordStr">Brugernavn tildelt af bruger i PasswordBox i loginWindow.</param>
+            <param name="logIndWindow"> en instans af windoet LogIndWindow. </param>
+            <param name="con">con er obejct af Database Connection.</param>
+            <returns> returner true eller false </returns>
+        </member>
+        <member name="M:nida.tools_team_9b.ViewModel.LogindViewModel.TjekStatus(System.String,nida.tools_team_9b.View.window.LogIndWindow,MySql.Data.MySqlClient.MySqlConnection,nida.tools_team_9b.Model.LogInd)">
+            <summary>
+            TjekStatus metode tjekker i databasen om brugeren er aktiv eller blocked 
+            </summary>
+            <param name="passWordStr">Brugernavn tildelt af bruger i PasswordBox i loginWindow.</param>
+            <param name="logIndWindow"> logIndWindow er en instans af windoet LogIndWindow.</param>
+            <param name="con">con er obejct af Database Connection.</param>
+            <param name="passWord"> passWord er en obejct af modellen LogInd</param>
+            <returns> returns true eller false</returns>
+        </member>
+        <member name="M:nida.tools_team_9b.ViewModel.LogindViewModel.ResetInValidAttemps(MySql.Data.MySqlClient.MySqlConnection,nida.tools_team_9b.Model.LogInd)">
+            <summary>
+            
+            </summary>
+            <param name="con"></param>
+            <param name="passWord"></param>
+        </member>
+        <member name="T:nida.tools_team_9b.ViewModel.CopyOfLogindViewModel">
+            <summary>
+            LogindViewModel class håndtere metoder der bliver brugt af windoet LoginWindow
+            </summary>
+        </member>
+        <member name="M:nida.tools_team_9b.ViewModel.CopyOfLogindViewModel.LogIndServices(System.String,System.String,nida.tools_team_9b.View.window.LogIndWindow)">
+            <summary>
+            LogIndServices moedtager de tildelte parameter og exekver validatePaasWord og tejkker om den returner true.
+            exekver og sætter Global Properties 
+            vis sandt vis MainWindow og lukker LogindWindow
+            </summary>
+            <param name="brugerNavn">Brugernavn tildelt af bruger i textboxen i loginWindow.</param>
+            <param name="passWordStr">Brugernavn tildelt af bruger i PasswordBox i loginWindow.</param>
+            <param name="logIndWindow"> en instans af windoet LogIndWindow</param>
+        </member>
+        <member name="M:nida.tools_team_9b.ViewModel.CopyOfLogindViewModel.SetGrobalProperties(System.String,MySql.Data.MySqlClient.MySqlConnection)">
+            <summary>
+            SetGrobalProperties sætter 2 Grobal Properties, med brugernavnet henter metoden userId.
+            sætter de 2 Grobal Properties brugernavn og userId
+            </summary>
+            <param name="brugerNavn">Brugernavn tildelt af bruger i textboxen i loginWindow</param>
+            <param name="con">con er obejct af Database Connection</param>
+        </member>
+        <member name="M:nida.tools_team_9b.ViewModel.CopyOfLogindViewModel.validatePaasWord(System.String,System.String,nida.tools_team_9b.View.window.LogIndWindow,MySql.Data.MySqlClient.MySqlConnection)">
+            <summary>
+            metoden tjekker om stringen passWord er null 
+            </summary>
+            <param name="brugerNavn">Brugernavn tildelt af bruger i textboxen i loginWindow.</param>
+            <param name="passWordStr">Brugernavn tildelt af bruger i PasswordBox i loginWindow.</param>
+            <param name="logIndWindow"> en instans af windoet LogIndWindow. </param>
+            <param name="con">con er obejct af Database Connection.</param>
+            <returns> returner true eller false </returns>
+        </member>
+        <member name="M:nida.tools_team_9b.ViewModel.CopyOfLogindViewModel.TjekStatus(System.String,nida.tools_team_9b.View.window.LogIndWindow,MySql.Data.MySqlClient.MySqlConnection,nida.tools_team_9b.Model.LogInd)">
+            <summary>
+            TjekStatus metode tjekker i databasen om brugeren er aktiv eller blocked 
+            </summary>
+            <param name="passWordStr">Brugernavn tildelt af bruger i PasswordBox i loginWindow.</param>
+            <param name="logIndWindow"> logIndWindow er en instans af windoet LogIndWindow.</param>
+            <param name="con">con er obejct af Database Connection.</param>
+            <param name="passWord"> passWord er en obejct af modellen LogInd</param>
+            <returns> returns true eller false</returns>
+        </member>
+        <member name="M:nida.tools_team_9b.ViewModel.CopyOfLogindViewModel.ResetInValidAttemps(MySql.Data.MySqlClient.MySqlConnection,nida.tools_team_9b.Model.LogInd)">
+            <summary>
+            
+            </summary>
+            <param name="con"></param>
+            <param name="passWord"></param>
+        </member>
+        <member name="M:nida.tools_team_9b.ViewModel.MenuViewModel.GetMenu(nida.tools_team_9b.MainWindow)">
+            <summary>
+            
+            </summary>
+            <param name="mainWindow"></param>
+        </member>
+        <member name="M:nida.tools_team_9b.ViewModel.MenuViewModel.MenuButtonOnClick(System.Object,nida.tools_team_9b.MainWindow)">
+            <summary>
+            
+            </summary>
+            <param name="sender"></param>
+            <param name="mainWindow"></param>
+        </member>
+        <member name="T:nida.tools_team_9b.ViewModel.TeamListViewModel">
+            <summary>
+            TeamListViewModel inholder metoder som er tildelt til teamList page.
+            </summary>
+        </member>
+        <member name="M:nida.tools_team_9b.ViewModel.TeamListViewModel.ShowTeamListButtons(nida.tools_team_9b.View.page.TeamList)">
+            <summary>
+            ShowTeamListButtons metoden viser funktions knapperne efter hvilken rolle id der er gemt i global values, ved hjelp af Visibility funktionen i WPF.
+            Metoden tager 1 parameter.
+            </summary>
+            <param name="window">window er en instans af TeamList pagen</param>
+        </member>
+        <member name="M:nida.tools_team_9b.ViewModel.TeamListViewModel.GetTeam(nida.tools_team_9b.View.page.TeamList)">
+            <summary>
+            GetTeam metoden henter data ned fra tabellen Team og pakker det sammen i en liste af objected team modellen.
+            Metoden tager 1 parameter.
+            </summary>
+            <param name="window">window er en instans af TeamList pagen</param>
+            <returns> returner en liste af objected team.</returns>
+        </member>
+        <member name="M:nida.tools_team_9b.ViewModel.TeamListViewModel.ShowOpretTeamPage(nida.tools_team_9b.MainWindow)">
+            <summary>
+            ShowOpretTeamPage metoden sætter en nye source i MainWindow contentHolder frame. 
+            Metoden tager 1 parameter.
+            </summary>
+            <param name="window">window er en instans af MainWindow</param>
+        </member>
+        <member name="M:nida.tools_team_9b.ViewModel.TeamListViewModel.DeleteTeam(nida.tools_team_9b.View.page.TeamList,nida.tools_team_9b.MainWindow)">
+            <summary>
+            DeleteTeam metoden sletter det valgte team i Databasen, teamet der boliver sletted bliver valgt i TeamListGrid Datagrid i teamList pagen. 
+            Metoden tager 2 parameter
+            </summary>
+            <param name="window">window er en instans af teamList page</param>
+            <param name="mainWindow">window er en instans af MainWindow </param>
+        </member>
+        <member name="M:nida.tools_team_9b.ViewModel.TeamListViewModel.DeleteTeamBindings(System.Object,MySql.Data.MySqlClient.MySqlConnection)">
+            <summary>
+            DeleteTeamBindings sletter bendingen mellem teams og medarbejder i Databasen
+            Metoden tager 2 parameter 
+            </summary>
+            <param name="dataRow"> dataRow obeject af modellen team </param>
+            <param name="con">con er obejct af Database Connection</param>
+        </member>
+        <member name="T:nida.tools_team_9b.ViewModel.TimeBankViewModel">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:nida.tools_team_9b.ViewModel.TimeBankViewModel.timeBankListe">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:nida.tools_team_9b.ViewModel.TimeBankViewModel.GetTimeBankList(System.String,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="til"></param>
+            <param name="fra"></param>
+            <returns></returns>
+        </member>
+        <member name="M:nida.tools_team_9b.ViewModel.TimeBankViewModel.CsvFileWriter(System.String,System.String)">
+            <summary>
+            CsvFileWriter Metoden henter alle timer som er blevet sammen regnet af GetTimeBankList metoden (GetTimeBankList returner en list af TimeBank).
+            Efter bruges SaveFileDialog til at sætte navn og stien hvor filen skal gemmes.
+            Inden filen bliver flush, sætter vi nogle header i for af en den første Record
+            Her efter skriver alt daten og til sidst bliver den flush.
+            </summary>
+            <param name="til">Til parammeterne skal være et timeStamp i form af en string</param>
+            <param name="fra">Fra parammeterne skal være et timeStamp i form af en string</param>
+        </member>
+        <member name="T:nida.tools_team_9b.View.Menu.AdminMenu">
+            <summary>
+            Interaction logic for AdminMenu.xaml
+            </summary>
+            <summary>
+            AdminMenu
+            </summary>
+        </member>
+        <member name="M:nida.tools_team_9b.View.Menu.AdminMenu.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:nida.tools_team_9b.View.Menu.LederMenu">
+            <summary>
+            Interaction logic for LederMenu.xaml hej er
+            </summary>
+            <summary>
+            LederMenu
+            </summary>
+        </member>
+        <member name="M:nida.tools_team_9b.View.Menu.LederMenu.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:nida.tools_team_9b.View.Menu.MedarbejderMenu">
+            <summary>
+            Interaction logic for MedarbejderMenu.xaml
+            </summary>
+            <summary>
+            MedarbejderMenu
+            </summary>
+        </member>
+        <member name="M:nida.tools_team_9b.View.Menu.MedarbejderMenu.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:nida.tools_team_9b.View.page.Calendar">
+            <summary>
+            Interaction logic for Calendar.xaml
+            </summary>
+            <summary>
+            Calendar
+            </summary>
+        </member>
+        <member name="M:nida.tools_team_9b.View.page.Calendar.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:nida.tools_team_9b.View.page.Fravær">
+            <summary>
+            Interaction logic for Fravær.xaml
+            </summary>
+            <summary>
+            Fravær
+            </summary>
+        </member>
+        <member name="M:nida.tools_team_9b.View.page.Fravær.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:nida.tools_team_9b.View.page.MedarbejderList">
+            <summary>
+            MedarbejderList
+            </summary>
+        </member>
+        <member name="M:nida.tools_team_9b.View.page.MedarbejderList.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:nida.tools_team_9b.View.page.Medarbejderlistadmin">
+            <summary>
+            Interaction logic for Medarbejderlistadmin.xaml
+            </summary>
+            <summary>
+            Medarbejderlistadmin
+            </summary>
+        </member>
+        <member name="M:nida.tools_team_9b.View.page.Medarbejderlistadmin.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:nida.tools_team_9b.View.page.MødtMedarbejder">
+            <summary>
+            Interaction logic for MødtMedarbejder.xaml
+            </summary>
+            <summary>
+            MødtMedarbejder
+            </summary>
+        </member>
+        <member name="M:nida.tools_team_9b.View.page.MødtMedarbejder.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:nida.tools_team_9b.View.page.nytPassword">
+            <summary>
+            Interaction logic for nytPassword.xaml
+            </summary>
+            <summary>
+            nytPassword
+            </summary>
+        </member>
+        <member name="M:nida.tools_team_9b.View.page.nytPassword.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:nida.tools_team_9b.View.page.opretMedarbejder">
+            <summary>
+            Interaction logic for opretMedarbejder.xaml
+            </summary>
+            <summary>
+            opretMedarbejder
+            </summary>
+        </member>
+        <member name="M:nida.tools_team_9b.View.page.opretMedarbejder.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:nida.tools_team_9b.View.page.opretTeam">
+            <summary>
+            Interaction logic for opretTeam.xaml
+            </summary>
+            <summary>
+            opretTeam
+            </summary>
+        </member>
+        <member name="M:nida.tools_team_9b.View.page.opretTeam.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:nida.tools_team_9b.View.page.TeamList">
+            <summary>
+            Interaction logic for TeamList.xaml
+            </summary>
+            <summary>
+            TeamList
+            </summary>
+        </member>
+        <member name="M:nida.tools_team_9b.View.page.TeamList.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:nida.tools_team_9b.View.page.TimeBank">
+            <summary>
+            Interaction logic for TimeBank.xaml
+            </summary>
+            <summary>
+            TimeBank
+            </summary>
+        </member>
+        <member name="M:nida.tools_team_9b.View.page.TimeBank.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:nida.tools_team_9b.View.page.Tjek_ind_ud">
+            <summary>
+            Interaction logic for Tjek_ind_ud.xaml
+            </summary>
+            <summary>
+            Tjek_ind_ud
+            </summary>
+        </member>
+        <member name="M:nida.tools_team_9b.View.page.Tjek_ind_ud.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:nida.tools_team_9b.View.window.LogIndWindow">
+            <summary>
+            Interaction logic for LogIndWindow.xaml
+            </summary>
+            <summary>
+            LogIndWindow
+            </summary>
+        </member>
+        <member name="M:nida.tools_team_9b.View.window.LogIndWindow.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+    </members>
+</doc>

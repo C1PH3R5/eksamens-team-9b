@@ -1,0 +1,257 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="NameAndType">
+  <Class Name="nida.tools_team_9b.App" Collapsed="true">
+    <Position X="30.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>App.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="nida.tools_team_9b.MainWindow" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="30.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>MainWindow.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="nida.tools_team_9b.Properties.Resources" Collapsed="true">
+    <Position X="32" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABEAAAAQAAAAAAAAAAAAAAAIA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="nida.tools_team_9b.Database.DBCon">
+    <Position X="15.25" Y="0.5" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAA=</HashCode>
+      <FileName>Database\DBCon.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="nida.tools_team_9b.Model.LogInd" Collapsed="true">
+    <Position X="37.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAABAACAAAAAAKAAAABAAAQAAAAAAAAYAAAAEAgA=</HashCode>
+      <FileName>Model\LogInd.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="nida.tools_team_9b.Model.Medarbejder" Collapsed="true">
+    <Position X="32" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACgAAAAACABIoCAAAAQAAAAMQAgACABAAAAQEAgA=</HashCode>
+      <FileName>Model\Medarbejder.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="nida.tools_team_9b.Model.Menu" Collapsed="true">
+    <Position X="28.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAADAABAAAAAAAAAAAAgAACAAAAAAAIAAgAAAAAAEA=</HashCode>
+      <FileName>Model\Menu.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="nida.tools_team_9b.Model.PhoneNumber" Collapsed="true">
+    <Position X="30.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAQACAAEAEAAAAAAABAAAAAAAAAAAABAA=</HashCode>
+      <FileName>Model\PhoneNumber.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="nida.tools_team_9b.Model.Team" Collapsed="true">
+    <Position X="33.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QgAAAAAAAAAAAAAAAAAAIAAAAAAEAAAAQAAAAAAEAgA=</HashCode>
+      <FileName>Model\Team.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="nida.tools_team_9b.Model.TimeBank" Collapsed="true">
+    <Position X="28.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gEABAAAAAACBABCABAAAAAAACAANAAAAAAACACAABAA=</HashCode>
+      <FileName>Model\TimeBank.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="nida.tools_team_9b.View.Menu.AdminMenu" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="28.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>View\Menu\AdminMenu.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="nida.tools_team_9b.View.Menu.LederMenu" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="35.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>View\Menu\LederMenu.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="nida.tools_team_9b.View.Menu.MedarbejderMenu" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="37.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>View\Menu\MedarbejderMenu.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="nida.tools_team_9b.View.page.Calendar" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="32" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>View\page\Calendar.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="nida.tools_team_9b.View.page.Fravær" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="33.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>View\page\Fravær.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="nida.tools_team_9b.View.page.MedarbejderList" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="33.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>View\page\MedarbejderList.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="nida.tools_team_9b.View.page.Medarbejderlistadmin" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="35.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>View\page\Medarbejderlistadmin.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="nida.tools_team_9b.View.page.MødtMedarbejder" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="32" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>View\page\MødtMedarbejder.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="nida.tools_team_9b.View.page.nytPassword" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="35.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>View\page\nytPassword.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="nida.tools_team_9b.View.page.opretMedarbejder" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="37.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAACAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>View\page\opretMedarbejder.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="nida.tools_team_9b.View.page.opretTeam" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="28.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAEAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>View\page\opretTeam.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="nida.tools_team_9b.View.page.TeamList" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="35.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAQAAAAAAAAAAA=</HashCode>
+      <FileName>View\page\teamList.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="nida.tools_team_9b.View.page.TimeBank" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="37.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>View\page\TimeBank.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="nida.tools_team_9b.View.page.Tjek_ind_ud" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="30.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>View\page\Tjek_ind_ud.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="nida.tools_team_9b.View.window.LogIndWindow" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="28.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAEAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>View\window\LogIndWindow.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Orientation="Bottom" Position="0.1" Collapsed="true" />
+  </Class>
+  <Class Name="nida.tools_team_9b.ViewModel.LogindViewModel">
+    <Position X="15.25" Y="2.25" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AQAAAgIoAAAAAAAAAAAAAggAAQAAAAgAAAAAABAAAAA=</HashCode>
+      <FileName>ViewModel\LogindViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="nida.tools_team_9b.ViewModel.MedarbejderListViewModel">
+    <Position X="21.25" Y="2.25" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAAAAAAAAAABAAAAAAAAACAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ViewModel\MedarbejderListViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="nida.tools_team_9b.ViewModel.MenuViewModel" Collapsed="true">
+    <Position X="30.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAgAAAAAAAAAACAAAAAACAAAAAAAAAA=</HashCode>
+      <FileName>ViewModel\MenuViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="nida.tools_team_9b.ViewModel.MødtMedarbejderViewModel" Collapsed="true">
+    <Position X="33.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAA=</HashCode>
+      <FileName>ViewModel\MødtMedarbejderViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="nida.tools_team_9b.ViewModel.OpretMedarbejderViewModel">
+    <Position X="5.75" Y="2.25" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAAgAAAAAIAAAAAEAAIAAAAAIBAAAAAAAAEBAIAA=</HashCode>
+      <FileName>ViewModel\OpretMedarbejderViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="nida.tools_team_9b.ViewModel.OpretTeamViewModel">
+    <Position X="12" Y="2.25" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAAEAAAAAAAAAAAAAAAAgAAAIAAACAAAAAAAAEAA=</HashCode>
+      <FileName>ViewModel\OpretTeamViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="nida.tools_team_9b.ViewModel.TeamListViewModel">
+    <Position X="9" Y="2.25" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAYAAEAAAAAAAAAAAAEAAgAAAA=</HashCode>
+      <FileName>ViewModel\TeamListViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="nida.tools_team_9b.ViewModel.TimeBankViewModel">
+    <Position X="24.75" Y="2.25" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>ACAAAAAEAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ViewModel\TimeBankViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="nida.tools_team_9b.ViewModel.Tjek_Ind_UdViewModel">
+    <Position X="18.25" Y="2.25" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAIAAAAAQAAAAAgABAAQAAAAAAAAAEAAAA=</HashCode>
+      <FileName>ViewModel\Tjek_Ind_UdViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

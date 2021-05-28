@@ -14,9 +14,7 @@ using nida.tools_team_9b.ViewModel;
 
 namespace nida.tools_team_9b.View.page
 {
-    /// <summary>
-    /// Interaction logic for MedarbejderList.xaml
-    /// </summary>
+    
     public partial class MedarbejderList : Page
     {
         public MedarbejderList()

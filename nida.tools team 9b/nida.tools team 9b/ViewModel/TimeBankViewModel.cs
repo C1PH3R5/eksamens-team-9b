@@ -12,10 +12,23 @@ using System.Windows;
 
 namespace nida.tools_team_9b.ViewModel
 {
+    /// <summary>
+    /// 
+    /// </summary>
     public class TimeBankViewModel : DBCon
     {
-        public static List<TimeBank> timeBankListe { get; set; }
 
+        /// <summary>
+        /// 
+        /// </summary>
+       public static List<TimeBank> timeBankListe { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="til"></param>
+        /// <param name="fra"></param>
+        /// <returns></returns>
         public static List<TimeBank> GetTimeBankList(string til, string fra)
         {
             timeBankListe = new List<TimeBank>();
@@ -89,6 +102,15 @@ namespace nida.tools_team_9b.ViewModel
             return timeBankListe;
 
         }
+
+        /// <summary>
+        /// CsvFileWriter Metoden henter alle timer som er blevet sammen regnet af GetTimeBankList metoden (GetTimeBankList returner en list af TimeBank).
+        /// Efter bruges SaveFileDialog til at sætte navn og stien hvor filen skal gemmes.
+        /// Inden filen bliver flush, sætter vi nogle header i for af en den første Record
+        /// Her efter skriver alt daten og til sidst bliver den flush.
+        /// </summary>
+        /// <param name="til">Til parammeterne skal være et timeStamp i form af en string</param>
+        /// <param name="fra">Fra parammeterne skal være et timeStamp i form af en string</param>
         public static void CsvFileWriter(string til, string fra)
         {
             SaveFileDialog sfd = new SaveFileDialog() { Filter = "CSV|*.csv", ValidateNames = true };
