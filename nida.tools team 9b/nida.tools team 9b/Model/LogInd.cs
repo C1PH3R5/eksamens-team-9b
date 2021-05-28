@@ -3,9 +3,10 @@ using System.Collections.Generic;
 using System.Text;
 
 namespace nida.tools_team_9b.Model
-{
+{   
     public class LogInd
     {
+
         private int _ID;
 
         public int id

@@ -12,6 +12,10 @@ namespace nida.tools_team_9b.ViewModel
 {
     public class MenuViewModel
     {
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="mainWindow"></param>
         public static void GetMenu(MainWindow mainWindow)
         {
             mainWindow.menuFrame.Source = new Uri("/View/Menu/" + GetMenuName(Convert.ToInt32(Application.Current.Properties["Global_userRole"])) + ".xaml", UriKind.Relative);
@@ -33,6 +37,12 @@ namespace nida.tools_team_9b.ViewModel
             }
             return menuName;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="mainWindow"></param>
         public static void MenuButtonOnClick(object sender, MainWindow mainWindow)
         {
             Button btn = (Button)sender;

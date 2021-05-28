@@ -7,6 +7,11 @@
     <UseWPF>true</UseWPF>
   </PropertyGroup>
 
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile>nida.tools team 9b.xml</DocumentationFile>
+    <OutputPath>/</OutputPath>
+  </PropertyGroup>
+
   <ItemGroup>
     <None Remove="Resources\Icon\Date.ico" />
     <None Remove="Resources\Icon\Employee.ico" />

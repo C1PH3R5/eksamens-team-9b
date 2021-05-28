@@ -34,6 +34,11 @@ namespace nida.tools_team_9b
 
         }
 
-      
+
     }
+
+    /// <summary>
+    /// Interaction logic for MainWindow.xaml
+    /// </summary>
+    
 }

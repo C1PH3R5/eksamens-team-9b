@@ -25,10 +25,9 @@
             <DataGrid Name="mødtMedarbejder" AlternatingRowBackground="Gray" CanUserAddRows="False" AutoGenerateColumns="False" Height="650" Width="800" HorizontalAlignment="Center" Margin="0,25,0,0" ColumnWidth="150"
                       ColumnHeaderHeight="35" IsReadOnly="True">
                 <DataGrid.Columns>
-                    <DataGridTextColumn Header="Navn" MinWidth="150" MaxWidth="150" Binding="{Binding navn}"/>
-                    <DataGridTextColumn Header="Status" MinWidth="50" MaxWidth="50" Binding="{Binding status}"/>
-                    <DataGridTextColumn Header="Stemplet Ind" MinWidth="150" MaxWidth="150" Binding="{Binding stempleInd}"/>
-                    <DataGridTextColumn Header="Stemplet Ud" MinWidth="150" MaxWidth="150" Binding="{Binding stempleUd}"/>
+                    <DataGridTextColumn Header="Navn" MinWidth="200" MaxWidth="200" Binding="{Binding medarbejderNavn}"/>
+                    <DataGridTextColumn Header="Status" MinWidth="100" MaxWidth="100" Binding="{Binding type}"/>
+                    <DataGridTextColumn Header="Mødt ind" MinWidth="200" MaxWidth="200" Binding="{Binding time}"/>
                     <DataGridTextColumn Header="Kommentar" Width="*" Binding="{Binding kommentar}"/>
                 </DataGrid.Columns>
             </DataGrid>
